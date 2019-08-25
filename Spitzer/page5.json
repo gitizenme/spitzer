@@ -1,0 +1,2590 @@
+{
+    "collection": {
+        "metadata": {
+            "total_hits": 500
+        },
+        "href": "https://images-api.nasa.gov/search?media_type=image%2C+audio%2C+video&q=Spitzer+space+telescope&page=5&keywords=spitzer+space+telescope",
+        "links": [
+            {
+                "rel": "prev",
+                "prompt": "Previous",
+                "href": "https://images-api.nasa.gov/search?page=4&keywords=spitzer+space+telescope&q=Spitzer+space+telescope&media_type=image%2C+audio%2C+video"
+            }
+        ],
+        "version": "1.0",
+        "items": [
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22093/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22093/PIA22093~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist's concept shows what the TRAPPIST-1 planetary system may look like, based on available data about the planets' diameters, masses and distances from the host star, as of February 2018.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "TRAPPIST-1 Planet Lineup - Updated Feb. 2018",
+                        "description": "This artist's concept shows what the TRAPPIST-1 planetary system may look like, based on available data about the planets' diameters, masses and distances from the host star, as of February 2018.  This image represents an updated version of PIA21422, which was created in 2017. The planets' appearances were re-imagined based on a 2018 study using additional observations from NASA's Spitzer and Kepler space telescopes, in addition to previous data from Spitzer, the ground-based TRAPPIST (TRAnsiting Planets and PlanetesImals Small Telescope) telescope and other ground-based observatories. The system was named for the TRAPPIST telescope.  The new analysis concludes that the seven planets of TRAPPIST-1 are all rocky, and some could contain significant amounts of water. TRAPPIST-1 is an ultra-cool dwarf star in the constellation Aquarius, and its planets orbit very close to it.  The form that water would take on TRAPPIST-1 planets would depend on the amount of heat they receive from their star, which is a mere 9 percent as massive as our Sun. Planets closest to the star are more likely to host water in the form of atmospheric vapor, while those farther away may have water frozen on their surfaces as ice. TRAPPIST-1e is the rockiest planet of them all, but still is believed to have the potential to host some liquid water.  In this illustration, the relative sizes of the planets and their host star, an ultracool dwarf, are all shown to scale.  An annotated image is available at https://photojournal.jpl.nasa.gov/catalog/PIA22093",
+                        "date_created": "2018-02-05T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "TRAPPIST-1",
+                            "exoplanet"
+                        ],
+                        "nasa_id": "PIA22093",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA21751/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA21751/PIA21751~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist's concept shows what the TRAPPIST-1 planetary system may look like from a vantage point near planet TRAPPIST-1f (at right).",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "TRAPPIST-1 System - Artist Concept",
+                        "description": "This illustration shows what the TRAPPIST-1 system might look like from a vantage point near planet TRAPPIST-1f (at right).  The system has been revealed through observations from NASA's Spitzer Space Telescope and the ground-based TRAPPIST (TRAnsiting Planets and PlanetesImals Small Telescope) telescope, as well as other ground-based observatories. The system was named for the TRAPPIST telescope.  The seven planets of TRAPPIST-1 are all Earth-sized and terrestrial, according to research published in 2017 in the journal Nature. TRAPPIST-1 is an ultra-cool dwarf star in the constellation Aquarius, and its planets orbit very close to it.  They are likely all tidally locked, meaning the same face of the planet is always pointed at the star, as the same side of our moon is always pointed at Earth. This creates a perpetual night side and perpetual day side on each planet.  TRAPPIST-1b and c receive the most light from the star and would be the warmest. TRAPPIST-1e, f and g all orbit in the habitable zone, the area where liquid water is most likely to be detected. But any of the planets could potentially harbor liquid water, depending on their compositions.   https://photojournal.jpl.nasa.gov/catalog/PIA21751",
+                        "date_created": "2017-08-11T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "artist concept",
+                            "TRAPPIST-1"
+                        ],
+                        "nasa_id": "PIA21751",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA19831/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA19831/PIA19831~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist conception shows the silhouette of a rocky planet, dubbed HD 219134b, as it passes in front of its star. At 21 light-years away, the planet is the closest outside of our solar system that can be seen crossing, or transiting, its star.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Little Black Spot on the Star Today Artist Concept",
+                        "description": "This artist's conception shows the silhouette of a rocky planet, dubbed HD 219134b, as it passes in front of its star. At 21 light-years away, the planet is the closest outside of our solar system that can be seen crossing, or transiting, its star -- a bonus for astronomers because transiting planets make ideal specimens for detailed studies of their atmospheres. It was discovered using the HARPS-North instrument on the Italian 3.6-meter National Galileo Telescope in the Canary Islands, and NASA's Spitzer Space Telescope.  The planet, which is about 1.6 times the size of Earth, is also the nearest confirmed rocky planet outside our solar system. It orbits a star that is cooler and smaller than our sun, whipping closely around it in a mere three days. The proximity of the planet to the star means that it would be scorching hot and not habitable.  Transiting planets are ideal targets for astronomers wanting to know more about planetary compositions and atmospheres. As a planet passes in front of its star, it causes the starlight to dim, and telescopes can measure this effect. If molecules are present in the planet's atmosphere, they can absorb certain wavelengths of light, leaving imprints in the starlight. This type of technique will be used in the future to investigate potentially habitable planets and search for signs of life.  http://photojournal.jpl.nasa.gov/catalog/PIA19831",
+                        "date_created": "2015-07-30T17:49:10Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "artist concept",
+                            "HD 219134b"
+                        ],
+                        "nasa_id": "PIA19831",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA05988/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA05988/PIA05988~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "In this artist conception, a possible newfound planet spins through a clearing in a nearby star dusty, planet-forming disc. This clearing was detected around the star CoKu Tau 4 by NASA Spitzer Space Telescope. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Out of the Dust, A Planet is Born  Artist Concept",
+                        "description": "In this artist's conception, a possible newfound planet spins through a clearing in a nearby star's dusty, planet-forming disc. This clearing was detected around the star CoKu Tau 4 by NASA's Spitzer Space Telescope. Astronomers believe that an orbiting massive body, like a planet, may have swept away the star's disc material, leaving a central hole.      The possible planet is theorized to be at least as massive as Jupiter, and may have a similar appearance to what the giant planets in our own solar system looked like billions of years ago. A graceful ring, much like Saturn's, spins high above the planet's cloudy atmosphere. The ring is formed from countless small orbiting particles of dust and ice, leftovers from the initial gravitational collapse that formed the possible giant planet.      If we were to visit a planet like this, we would have a very different view of the universe. The sky, instead of being the familiar dark expanse lit by distant stars, would be dominated by the thick disc of dust that fills this young planetary system. The view looking toward CoKu Tau 4 would be relatively clear, as the dust in the interior of the disc has fallen into the accreting star. A bright band would seem to surround the central star, caused by light scattered back by the dust in the disc. Looking away from CoKu Tau 4, the dusty disc would appear dark, blotting out light from all the stars in the sky except those which lie well above the plane of the disc.   http://photojournal.jpl.nasa.gov/catalog/PIA05988",
+                        "date_created": "2004-05-27T16:58:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "CoKu Tau 4"
+                        ],
+                        "nasa_id": "PIA05988",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22094/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22094/PIA22094~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This chart shows artist concepts of the seven planets of TRAPPIST-1 with their orbital periods, distances from their star, radii, masses, densities and surface gravity as compared to those of Earth. These numbers are current as of February 2018.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "TRAPPIST-1 Planet Lineup - Updated Feb. 2018",
+                        "description": "This chart shows, on the top row, artist concepts of the seven planets of TRAPPIST-1 with their orbital periods, distances from their star, radii, masses, densities and surface gravity as compared to those of Earth. These numbers are current as of February 2018.  On the bottom row, the same numbers are displayed for the bodies of our inner solar system: Mercury, Venus, Earth and Mars. The TRAPPIST-1 planets orbit their star extremely closely, with periods ranging from 1.5 to only about 20 days. This is much shorter than the period of Mercury, which orbits our sun in about 88 days.  The masses and densities of the TRAPPIST-1 planets were determined by careful measurements of slight variations in the timings of their orbits using extensive observations made by NASA's Spitzer and Kepler space telescopes, in combination with data from Hubble and a number of ground-based telescopes. These measurements are the most precise to date for any system of exoplanets.  In this illustration, the relative sizes of the planets are all shown to scale.  https://photojournal.jpl.nasa.gov/catalog/PIA22094",
+                        "date_created": "2018-02-05T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "TRAPPIST-1",
+                            "exoplanet"
+                        ],
+                        "nasa_id": "PIA22094",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18472/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18472/PIA18472~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Millions of galaxies populate the patch of sky known as the COSMOS field, short for Cosmic Evolution Survey, a portion of which is shown here. Even the smallest dots in this image are galaxies, some up to 12 billion light-years away.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Take a Splash Into the Cosmos",
+                        "description": "Millions of galaxies populate the patch of sky known as the COSMOS field, short for Cosmic Evolution Survey, a portion of which is shown here. Even the smallest dots in this image are galaxies, some up to 12 billion light-years away.",
+                        "date_created": "2014-09-09T17:55:40Z",
+                        "keywords": [
+                            "Spitzer Space Telescope,Subaru Telescope"
+                        ],
+                        "nasa_id": "PIA18472",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA06853/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA06853/PIA06853~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This false-color image from NASA Spitzer Space Telescope reveals hidden populations of newborn stars at the heart of the colliding Antennae galaxies. These two galaxies are known individually as NGC 4038 and 4039.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/Harvard-Smithsonian CfA",
+                        "title": "Life at the Intersection of Colliding Galaxies",
+                        "description": "This false-color image from NASA's Spitzer Space Telescope reveals hidden populations of newborn stars at the heart of the colliding \"Antennae\" galaxies. These two galaxies, known individually as NGC 4038 and 4039, are located around 68 million light-years away and have been merging together for about the last 800 million years. The latest Spitzer observations provide a snapshot of the tremendous burst of star formation triggered in the process of this collision, particularly at the site where the two galaxies overlap.  The image was taken by Spitzer's infrared array camera and is a combination of infrared light ranging from 3.6 microns (shown in blue) to 8.0 microns (shown in red). The dust emission (red) is by far the strongest feature in this image. Starlight was systematically subtracted from the longer wavelength data (red) to enhance dust features.  The two nuclei, or centers, of the merging galaxies show up as white areas, one above the other. The brightest clouds of forming stars lie in the overlap region between and left of the nuclei.  Throughout the sky, astronomers have identified many of these so-called \"interacting\" galaxies, whose spiral discs have been stretched and distorted by their mutual gravity as they pass close to one another. The distances involved are so large that the interactions evolve on timescales comparable to geologic changes on Earth. Observations of such galaxies, combined with computer models of these collisions, show that the galaxies often become forever bound to one another, eventually merging into a single, spheroidal-shaped galaxy.  Wavelengths of 3.6 microns are represented in blue, 4.5 microns in green and 5.8-8.0 microns in red. This image was taken on Dec. 24, 2003.  http://photojournal.jpl.nasa.gov/catalog/PIA06853",
+                        "date_created": "2004-09-07T20:58:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "galaxy",
+                            "NGC 4038",
+                            "NGC 4039"
+                        ],
+                        "nasa_id": "PIA06853",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA06854/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA06854/PIA06854~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This false-color image from NASA Spitzer Space Telescope reveals hidden populations of newborn stars at the heart of the colliding Antennae galaxies. These two galaxies are known individually as NGC 4038 and 4039.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/Harvard-Smithsonian CfA/NOAO/AURA",
+                        "title": "Fire within the Antennae Galaxies",
+                        "description": "This false-color image composite from NASA's Spitzer Space Telescope reveals hidden populations of newborn stars at the heart of the colliding \"Antennae\" galaxies. These two galaxies, known individually as NGC 4038 and 4039, are located around 68 million light-years away and have been merging together for about the last 800 million years. The latest Spitzer observations provide a snapshot of the tremendous burst of star formation triggered in the process of this collision, particularly at the site where the two galaxies overlap.      The image is a composite of infrared data from Spitzer and visible-light data from Kitt Peak National Observatory, Tucson, Ariz. Visible light from stars in the galaxies (blue and green) is shown together with infrared light from warm dust clouds heated by newborn stars (red).      The two nuclei, or centers, of the merging galaxies show up as yellow-white areas, one above the other. The brightest clouds of forming stars lie in the overlap region between and left of the nuclei.      Throughout the sky, astronomers have identified many of these so-called \"interacting\" galaxies, whose spiral discs have been stretched and distorted by their mutual gravity as they pass close to one another. The distances involved are so large that the interactions evolve on timescales comparable to geologic changes on Earth. Observations of such galaxies, combined with computer models of these collisions, show that the galaxies often become forever bound to one another, eventually merging into a single, spheroidal-shaped galaxy.      Wavelengths of 0.44 microns are represented in blue, .70 microns in green and 8.0 microns in red. This image was taken on Dec. 24, 2003.  http://photojournal.jpl.nasa.gov/catalog/PIA06854",
+                        "date_created": "2004-09-07T20:59:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "galaxy",
+                            "NGC 4038",
+                            "NGC 4039"
+                        ],
+                        "nasa_id": "PIA06854",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03538/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03538/PIA03538~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist conception symbolically represents complex organic molecules, known as polycyclic aromatic hydrocarbons, seen in the early universe. These large molecules, comprised of carbon and hydrogen, are considered among the building blocks of life. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Ingredients for Life Artist Concept",
+                        "description": "This artist conception symbolically represents complex organic molecules, known as polycyclic aromatic hydrocarbons, seen in the early universe. These large molecules, comprised of carbon and hydrogen, are considered among the building blocks of life. ",
+                        "date_created": "2005-07-27T21:58:13Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA03538",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA09931/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA09931/PIA09931~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of the stars.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Birth of an Earth-like Planet Artist Xoncept",
+                        "description": "This artist conception shows a binary-star, or two-star, system, called HD 113766, where astronomers suspect a rocky Earth-like planet is forming around one of the stars.",
+                        "date_created": "2007-10-03T14:36:09Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA09931",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA07490/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA07490/PIA07490~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows what a fiery hot star and its close-knit planetary companion might look close up if viewed in visible and infrared light . ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Blinded by the Light Artist Concept",
+                        "description": "This artist concept shows what a fiery hot star and its close-knit planetary companion might look close up if viewed in visible and infrared light . ",
+                        "date_created": "2005-03-22T19:55:31Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA07490",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA08042/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA08042/PIA08042~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept depicts the pulsar planet system discovered by Aleksander Wolszczan in 1992. Wolszczan used the Arecibo radio telescope in Puerto Rico to find three planets circling a pulsar called PSR B1257+12.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Extreme Planets  Artist Concept",
+                        "description": "This artist concept depicts the pulsar planet system discovered by Aleksander Wolszczan in 1992. Wolszczan used the Arecibo radio telescope in Puerto Rico to find three planets circling a pulsar called PSR B1257+12.",
+                        "date_created": "2006-04-05T16:30:03Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA08042",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA09117/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA09117/PIA09117~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This is an artist concept of a hypothetical 10-million-year-old star system. The bright blur at the center is a star much like our sun. The other orb in the image is a gas-giant planet like Jupiter.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Gas Giants Form Quickly  Artist Concept",
+                        "description": "This is an artist concept of a hypothetical 10-million-year-old star system. The bright blur at the center is a star much like our sun. The other orb in the image is a gas-giant planet like Jupiter.",
+                        "date_created": "2007-01-26T20:57:02Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA09117",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA09227/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA09227/PIA09227~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This diagram illustrates that mature planetary systems like our own might be more common around twin, or binary, stars that are either really close together, or really far apart.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/Univ. of Ariz.",
+                        "title": "Where Planets Take up Residence",
+                        "description": "This diagram illustrates that mature planetary systems like our own might be more common around twin, or binary, stars that are either really close together, or really far apart.",
+                        "date_created": "2007-03-29T16:55:01Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA09227",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15413/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15413/PIA15413~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This nebula, which is in the constellation of Scutum, has no common name since it is hidden behind dust clouds. It takes an infrared telescope like NASA Spitzer to see through this dark veil and reveal this spectacular hidden nebula.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/University of Wisconsin",
+                        "title": "An Audience Favorite Nebula",
+                        "description": "This nebula, which is in the constellation of Scutum, has no common name since it is hidden behind dust clouds. It takes an infrared telescope like NASA Spitzer to see through this dark veil and reveal this spectacular hidden nebula.",
+                        "date_created": "2012-03-08T18:39:37Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA15413",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15630/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15630/PIA15630~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image of the Pinwheel Galaxy, or M101, in the constellation of Ursa Major, combines data from four of NASA space telescopes. The view shows that both young and old stars are evenly distributed along M101 tightly wound spiral arms.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/ESA/STScI/CXC",
+                        "title": "Pinwheel Galaxy Rainbow",
+                        "description": "This image of the Pinwheel Galaxy, or M101, in the constellation of Ursa Major, combines data from four of NASA space telescopes. The view shows that both young and old stars are evenly distributed along M101 tightly wound spiral arms.",
+                        "date_created": "2012-05-23T22:21:03Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA15630",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12164/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12164/PIA12164~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image is one of the first to be taken during Spitzer warm mission -- a new phase that began after the telescope, which operated for more than five-and-a-half years, ran out of liquid coolant.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Spitzer First Warm Images",
+                        "description": "This image is one of the first to be taken during Spitzer warm mission -- a new phase that began after the telescope, which operated for more than five-and-a-half years, ran out of liquid coolant.",
+                        "date_created": "2009-08-05T17:00:23Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA12164",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA20645/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA20645/PIA20645~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This illustration shows a star surrounded by a protoplanetary disk.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Protoplanetary Disk Artist Concept",
+                        "description": "This illustration shows a star surrounded by a protoplanetary disk.",
+                        "date_created": "2016-04-26T16:58:28Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA20645",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12484/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12484/PIA12484~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Every 27 years, a bright star called Epsilon Aurigae fades over period of two years, then brightens back up again. A companion is known to be surrounded by a dusty disk, as illustrated in this artist concept.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Mystery of the Fading Star  Artist Concept",
+                        "description": "Every 27 years, a bright star called Epsilon Aurigae fades over period of two years, then brightens back up again. A companion is known to be surrounded by a dusty disk, as illustrated in this artist concept.",
+                        "date_created": "2010-01-05T13:56:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA12484",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12966/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12966/PIA12966~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist conception illustrates one of the most primitive supermassive black holes known central black dot at the core of a young, star-rich galaxy.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Prehistoric Black Hole Artist Concept",
+                        "description": "This artist conception illustrates one of the most primitive supermassive black holes known central black dot at the core of a young, star-rich galaxy.",
+                        "date_created": "2010-03-17T18:00:02Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA12966",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11435/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11435/PIA11435~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respectively,",
+                        "center": "JPL",
+                        "secondary_creator": "MPIA/NASA/Calar Alto Observatory",
+                        "title": "Vivid View of Tycho Supernova Remnant",
+                        "description": "This composite image of the Tycho supernova remnant combines infrared and X-ray observations obtained with NASA Spitzer and Chandra space observatories, respectively,",
+                        "date_created": "2008-12-03T18:43:53Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA11435",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA07396/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA07396/PIA07396~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept demonstrates that an invisible galaxy shrouded in dust can become glaringly bright when viewed in infrared light. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Invisible Galaxies Come to Life! Artist Concept",
+                        "description": "This artist concept demonstrates that an invisible galaxy shrouded in dust can become glaringly bright when viewed in infrared light. ",
+                        "date_created": "2005-03-01T17:54:08Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA07396",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA13335/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA13335/PIA13335~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Astronomers have found that stars are forming more rapidly in the center of a distant galaxy cluster than at its edges, which is completely reversed from galaxy clusters seen in the local universe.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/Texas A&M",
+                        "title": "Ancient Galaxy Cluster Still Producing Stars",
+                        "description": "Astronomers have found that stars are forming more rapidly in the center of a distant galaxy cluster than at its edges, which is completely reversed from galaxy clusters seen in the local universe.",
+                        "date_created": "2010-08-18T17:00:47Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA13335",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11980/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11980/PIA11980~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist conception shows a young, hypothetical planet around a cool star. A soupy mix of potentially life-forming chemicals can be seen pooling around the base of the jagged rocks.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Chemical Soups Around Cool Stars Artist Concept",
+                        "description": "This artist conception shows a young, hypothetical planet around a cool star. A soupy mix of potentially life-forming chemicals can be seen pooling around the base of the jagged rocks.",
+                        "date_created": "2009-04-07T16:56:41Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA11980",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA23003/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA23003/PIA23003~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This diagram image shows the estimated radii of the six planets in the planetary system K2-128, as well as their distance from the parent star.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "K2-138 System Diagram",
+                        "description": "This image shows the estimated radii of the six planets in the planetary system K2-128, as well as their distance from the parent star. The radii of the Earth and Neptune are shown for scale.  https://photojournal.jpl.nasa.gov/catalog/PIA23003",
+                        "date_created": "2019-01-07T00:00:00Z",
+                        "keywords": [
+                            "Kepler",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA23003",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18902/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18902/PIA18902~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "A new feature in the evolution of galaxies has been captured in this image of galactic interactions. The two galaxies seen here -- NGC 3226 at the top, NGC 3227 at the bottom.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/CFHT/NRAO/JPL-Caltech/Duc/Cuillandre",
+                        "title": "A Flood of Gas",
+                        "description": "A new feature in the evolution of galaxies has been captured in this image of galactic interactions. The two galaxies seen here -- NGC 3226 at the top, NGC 3227 at the bottom.",
+                        "date_created": "2014-12-05T19:05:43Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18902",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03048/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03048/PIA03048~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows microscopic crystals in the dusty disk surrounding a brown dwarf, or failed star. The crystals, made up of a green mineral found on Earth called olivine, are thought to help seed the formation of planets.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Sowing the Seeds of Planets? Artist Concept",
+                        "description": "This artist concept shows microscopic crystals in the dusty disk surrounding a brown dwarf, or failed star. The crystals, made up of a green mineral found on Earth called olivine, are thought to help seed the formation of planets.",
+                        "date_created": "2005-10-20T16:44:17Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA03048",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA17252/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA17252/PIA17252~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "In this artist impression, a pair of stars peeks out from a tilted disk twirling around them, allowing astronomers to monitor their blinking pattern.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Dusty Hula Hoop Rings Blinking Stellar Duo Illustration",
+                        "description": "In this artist impression, a pair of stars peeks out from a tilted disk twirling around them, allowing astronomers to monitor their blinking pattern.",
+                        "date_created": "2013-07-31T17:30:58Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA17252",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA09118/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA09118/PIA09118~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows a gas-giant planet orbiting very close to its parent star, creating searingly hot conditions on the planet surface",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Forecasting Weather on Distant Worlds  Artist Concept",
+                        "description": "This artist concept shows a gas-giant planet orbiting very close to its parent star, creating searingly hot conditions on the planet surface",
+                        "date_created": "2007-01-26T20:59:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA09118",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA10723/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA10723/PIA10723~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image illustrates how a light echo works, and how an optical illusion of material moving outward is created. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Dissecting a Light Echo",
+                        "description": "This image illustrates how a light echo works, and how an optical illusion of material moving outward is created. ",
+                        "date_created": "2008-05-29T16:48:37Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA10723",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18014/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18014/PIA18014~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Studied by astronomers, Serpens Cloud Core is one of the youngest collections of stars ever seen in our galaxy. This infrared image combines data from NASA Spitzer with shorter-wavelength observations from the Two Micron All Sky Survey.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/2MASS",
+                        "title": "The Serpent Star-Forming Cloud Spawns Stars",
+                        "description": "Studied by astronomers, Serpens Cloud Core is one of the youngest collections of stars ever seen in our galaxy. This infrared image combines data from NASA Spitzer with shorter-wavelength observations from the Two Micron All Sky Survey.",
+                        "date_created": "2014-05-28T22:00:29Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18014",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11447/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11447/PIA11447~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept based on data from NASA Spitzer shows the dimmest star-like bodies currently known -- twin brown dwarfs referred to as 2M 0939. The twins, which are about the same size, are drawn as if they were viewed close to one of the bodies. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Not-So-Bright Bulbs  Artist Concept",
+                        "description": "This artist concept based on data from NASA Spitzer shows the dimmest star-like bodies currently known -- twin brown dwarfs referred to as 2M 0939. The twins, which are about the same size, are drawn as if they were viewed close to one of the bodies. ",
+                        "date_created": "2008-12-10T16:44:38Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA11447",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18456/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18456/PIA18456~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Illustrated in this artist concept are two possible structures for asteroid 2011 MD. NASA Spitzer infrared camera helped reveal that this asteroid consists of about two-thirds empty space.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "The Spacious Structure of Asteroid 2011 MD Artist Concept",
+                        "description": "Illustrated in this artist concept are two possible structures for asteroid 2011 MD. NASA Spitzer infrared camera helped reveal that this asteroid consists of about two-thirds empty space.",
+                        "date_created": "2014-06-19T21:03:06Z",
+                        "keywords": [
+                            "Asteroid",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18456",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA13168/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA13168/PIA13168~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows a galaxy with a supermassive black hole at its core. The black hole is shooting out jets of radio waves.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Backward Black Hole Shoots Powerful Jets Artist Concept",
+                        "description": "This artist concept shows a galaxy with a supermassive black hole at its core. The black hole is shooting out jets of radio waves.",
+                        "date_created": "2010-06-01T17:59:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA13168",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14099/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14099/PIA14099~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This graphic illustrates a stellar fountain of crystal rain, beginning with a NASA Spitzer picture of the star in question, and ending with an artist concept of what the crystal rain might look like.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/University of Toledo",
+                        "title": "Finding Forsterite Around a Developing Star  Artist Concept",
+                        "description": "This graphic illustrates a stellar fountain of crystal rain, beginning with a NASA Spitzer picture of the star in question, and ending with an artist concept of what the crystal rain might look like.",
+                        "date_created": "2011-05-26T15:55:08Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA14099",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14107/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14107/PIA14107~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows how a normal spiral galaxy around our local universe left might have looked back in the distant universe, when astronomers think galaxies would have been filled with larger populations of hot, bright stars right.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/STScI",
+                        "title": "Galaxies Near and Far Artist Concept",
+                        "description": "This artist concept shows how a normal spiral galaxy around our local universe left might have looked back in the distant universe, when astronomers think galaxies would have been filled with larger populations of hot, bright stars right.",
+                        "date_created": "2011-06-30T19:59:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA14107",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA13638/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA13638/PIA13638~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This diagram shows findings of results of observations made primarily by NASA Spitzer Telescopes and the Very Large Array radio telescope and illuminates new details about a celestial andbar connecting two massive islands of galaxies.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Bent Galactic Jets",
+                        "description": "This diagram shows findings of results of observations made primarily by NASA Spitzer Telescopes and the Very Large Array radio telescope and illuminates new details about a celestial andbar connecting two massive islands of galaxies.",
+                        "date_created": "2010-11-24T17:59:46Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA13638",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA02107/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA02107/PIA02107~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist animation depicts one of the most widely accepted theories pertaining to the origin of comets. This image is courtesy of NASA Spitzer Science Center at the California Institute of Technology, Pasadena, Calif. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Genesis of a Comet Artist Concept",
+                        "description": "This artist animation depicts one of the most widely accepted theories pertaining to the origin of comets. This image is courtesy of NASA Spitzer Science Center at the California Institute of Technology, Pasadena, Calif. ",
+                        "date_created": "2005-07-01T17:23:27Z",
+                        "keywords": [
+                            "Comet",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA02107",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03543/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03543/PIA03543~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "The Tadpole galaxy is the result of a recent galactic interaction in the local universe. These spectacular images were taken by NASA Spitzer Wide-area Infrared Extragalactic SWIRE Legacy project.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech ",
+                        "title": "A SWIRE Picture is Worth Billions of Years",
+                        "description": "The Tadpole galaxy is the result of a recent galactic interaction in the local universe. These spectacular images were taken by NASA Spitzer Wide-area Infrared Extragalactic SWIRE Legacy project.",
+                        "date_created": "2005-10-27T22:27:40Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA03543",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA16212/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA16212/PIA16212~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This illustration shows three possible scenarios for the evolution of asteroid belts. At the top, a Jupiter-size planet migrates through the asteroid belt, scattering material and inhibiting the formation of life on planets.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/ESA/STScI",
+                        "title": "Scenarios for the Evolution of Asteroid Belts",
+                        "description": "This illustration shows three possible scenarios for the evolution of asteroid belts. At the top, a Jupiter-size planet migrates through the asteroid belt, scattering material and inhibiting the formation of life on planets.",
+                        "date_created": "2012-11-01T17:00:20Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA16212",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA17008/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA17008/PIA17008~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "In this image, an artistic version of a hot Jupiter inspired by computer simulations has been inserted into a photo showing a Spitzer researcher, Heather Knutson, in a laboratory.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech ",
+                        "title": "An Astronomer Fantasy: Planets in the Lab",
+                        "description": "In this image, an artistic version of a hot Jupiter inspired by computer simulations has been inserted into a photo showing a Spitzer researcher, Heather Knutson, in a laboratory.",
+                        "date_created": "2013-05-06T18:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA17008",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18469/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18469/PIA18469~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows the immediate aftermath of a large asteroid impact around NGC 2547-ID8, a 35-million-year-old sun-like star thought to be forming rocky planets.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Building Planets Through Collisions Artist Concept",
+                        "description": "This artist concept shows the immediate aftermath of a large asteroid impact around NGC 2547-ID8, a 35-million-year-old sun-like star thought to be forming rocky planets.",
+                        "date_created": "2014-08-28T17:56:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18469",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA20917/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA20917/PIA20917~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "These nebulae seen by NASA's Spitzer Space Telescope, display two regions of star formation that are hidden behind a haze of dust when viewed in visible light, known officially y their catalog numbers, IRAS 19340+2016 and IRAS19343+2026.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Enterprising Nebulae",
+                        "description": "Just in time for the 50th anniversary of the TV series \"Star Trek,\" which first aired September 8th,1966, this infrared image from NASA's Spitzer Space Telescope may remind fans of the historic show. Just as one might see the shapes of animals or other objects in clouds -- a phenomenon called pareidolia -- iconic starships from the series may seem to emerge in these nebulae./  With a little scrutiny (see Figure 1), you may see hints of the saucer and hull of the original USS Enterprise, captained by James T. Kirk, as if it were emerging from a dark nebula. To the left, its \"Next Generation\" successor, Jean-Luc Picard's Enterprise-D, flies off in the opposite direction.  Astronomically speaking, the region pictured here falls within the disk of our Milky Way galaxy, and displays two regions of star formation that are hidden behind a haze of dust when viewed in visible light. Spitzer's ability to peer deeper into dust clouds has revealed a myriad of stellar birthplaces like these, which are officially known only by their catalog numbers, IRAS 19340+2016 and IRAS19343+2026.  Trekkies, however, may prefer using the more familiar designations NCC-1701 and NCC-1701-D.  This image was assembled using data from Spitzer's biggest surveys of the Milky Way, called GLIMPSE and MIPSGAL. Light with a wavelength of 3.5 microns is shown in blue, 8.0 microns is green, and 24 microns in red. The green colors highlight organic molecules in the dust clouds, illuminated by starlight. Red colors are related to thermal radiation emitted from the very hottest areas of dust.  http://photojournal.jpl.nasa.gov/catalog/PIA20917",
+                        "date_created": "2016-09-08T16:19:25Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "IRAS 19340+2016",
+                            "IRAS19343+2026"
+                        ],
+                        "nasa_id": "PIA20917",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/0700064/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/0700064/0700064~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "center": "MSFC",
+                        "title": "History of Hubble Space Telescope (HST)",
+                        "description": "The razor sharp eye of the Hubble Space Telescope (HST) easily resolves the Sombrero galaxy, Messier 104 (M104). 50,000 light-years across, the galaxy is located 28 million light-years from Earth at the southern edge of the rich Virgo cluster of galaxies. Equivalent to 800 billion suns, Sombrero is one of the most massive objects in that group. The hallmark of Sombrero is a brilliant white, bulbous core encircled by the thick dust lanes comprising the spiral structure of the galaxy. As seen from Earth, the galaxy is tilted nearly edge-on. We view it from just six degrees north of its equatorial plane. This rich system of globular clusters is estimated to be nearly 2,000 in number which is 10 times as many as in our Milky Way galaxy. Similar to the clusters in the Milky Way, the ages range from 10-13 billion years old. Embedded in the bright core of M104 is a smaller disk, which is tilted relative to the large disk. The HST paired with the Spitzer infrared telescope, offers this striking composite capturing the magnificence of the Sombrero galaxy. In the Hubble view, the galaxy resembles a broad-rimmed Mexican hat, whereas in the Spitzer striking infrared view, the galaxy looks more like a bulls eye. The full view provided by Spitzer shows the disk is warped, which is often the result of a gravitational encounter with another galaxy, and clumpy areas spotted in the far edges of the ring indicate young star forming regions. Spitzer detected infrared emission not only from the ring, but from the center of the galaxy as well, where there is a huge black hole believed to be a billion times more massive than our Sun. The Marshall Space Flight Center (MSFC) had responsibility for design, development, and construction of the HST.",
+                        "date_created": "2003-06-09T00:00:00Z",
+                        "keywords": [
+                            "Sombrero Galaxy",
+                            "Messier 104",
+                            "Hubble Space Telescope",
+                            "HST",
+                            "Spitzer",
+                            "Infrared"
+                        ],
+                        "nasa_id": "0700064",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22095/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22095/PIA22095~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This graph presents known properties of the seven TRAPPIST-1 exoplanets (labeled b through h), showing how they stack up to the inner rocky worlds in our own solar system.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Comparing TRAPPIST-1 to the Solar System",
+                        "description": "This graph presents known properties of the seven TRAPPIST-1 exoplanets (labeled b through h), showing how they stack up to the inner rocky worlds in our own solar system.  The horizontal axis shows the level of illumination that each planet receives from its host star. TRAPPIST-1 is a mere 9 percent the mass of our Sun, and its temperature is much cooler. But because the TRAPPIST-1 planets orbit so closely to their star, they receive comparable levels of light and heat to Earth and its neighboring planets.  The vertical axis shows the densities of the planets. Density, calculated based on a planet's mass and volume, is the first important step in understanding a planet's composition. The plot shows that the TRAPPIST-1 planet densities range from being similar to Earth and Venus at the upper end, down to values comparable to Mars at the lower end.  The relative sizes of the planets are indicated by the circles.  The masses and densities of the TRAPPIST-1 planets were determined by careful measurements of slight variations in the timings of their orbits using extensive observations made by NASA's Spitzer and Kepler space telescopes, in combination with data from Hubble and a number of ground-based telescopes. These measurements are the most precise to date for any system of exoplanets.  By comparing these measurements with theoretical models of how planets form and evolve, researchers have determined that they are all rocky in overall composition. Estimates suggest the lower-density planets could have large quantities of water -- as much as 5 percent by mass for TRAPPIST-1d. Earth, in comparison, has only about 0.02 percent of its mass in the form of water.   https://photojournal.jpl.nasa.gov/catalog/PIA22095",
+                        "date_created": "2018-02-05T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "TRAPPIST-1",
+                            "exoplanet"
+                        ],
+                        "nasa_id": "PIA22095",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA17837/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA17837/PIA17837~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image of the galaxy cluster Abell 2744 was obtained with NASA Hubble Space Telescope. The zoomed image shows the region around the galaxy Abell2744_Y1, one of the most distant galaxy candidates known.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/ESA/STScI/IAC",
+                        "title": "Pushing the Limits of the Observable Universe",
+                        "description": "This image of the galaxy cluster Abell 2744 was obtained with NASA Hubble Space Telescope. The zoomed image shows the region around the galaxy Abell2744_Y1, one of the most distant galaxy candidates known.",
+                        "date_created": "2014-02-07T18:00:26Z",
+                        "keywords": [
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA17837",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15251/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15251/PIA15251~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image from NASA Hubble telescope shows one of the most distant galaxies known, called GN-108036, dating back to 750 million years after the Big Bang that created our universe. The galaxy light took 12.9 billion years to reach us.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/STScI/University of Tokyo",
+                        "title": "Distant Galaxy Bursts with Stars",
+                        "description": "This image from NASA Hubble telescope shows one of the most distant galaxies known, called GN-108036, dating back to 750 million years after the Big Bang that created our universe. The galaxy light took 12.9 billion years to reach us.",
+                        "date_created": "2011-12-21T18:00:28Z",
+                        "keywords": [
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA15251",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA08097/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA08097/PIA08097~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "NASA Hubble and Spitzer telescopes combined to make these shape-shifting galaxies taking on the form of a giant mask. The icy blue eyes are actually the cores of two merging galaxies, called NGC 2207 and IC 2163, and the mask is their spiral arms.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/STScI/Vassar",
+                        "title": "Eyes in the Sky",
+                        "description": "NASA Hubble and Spitzer telescopes combined to make these shape-shifting galaxies taking on the form of a giant mask. The icy blue eyes are actually the cores of two merging galaxies, called NGC 2207 and IC 2163, and the mask is their spiral arms.",
+                        "date_created": "2006-04-26T16:50:00Z",
+                        "keywords": [
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA08097",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18839/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18839/PIA18839~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "A plot of the transmission spectrum for exoplanet HAT-P-11b, with data from NASA Kepler, Hubble and Spitzer observatories combined. The results show a robust detection of water absorption in the Hubble data.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/ESA/STScI",
+                        "title": "Transmission Spectrum of HAT-P-11b",
+                        "description": "A plot of the transmission spectrum for exoplanet HAT-P-11b, with data from NASA Kepler, Hubble and Spitzer observatories combined. The results show a robust detection of water absorption in the Hubble data.",
+                        "date_created": "2014-09-24T17:00:03Z",
+                        "keywords": [
+                            "Hubble Space Telescope,Kepler,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18839",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18851/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18851/PIA18851~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Our sky is filled with a diffuse background glow, known as the cosmic infrared background. Much of the light is from galaxies we know about, but previous Spitzer measurements have shown an extra component of unknown origin.",
+                        "center": "JPL",
+                        "secondary_creator": "Left: Adolf Schaller for STScI; Right: Hubble Legacy Archive, NASA, ESA; Processing: Judy Schmidt",
+                        "title": "First Stars or Stray Stars? A Cosmic Infrared Mystery",
+                        "description": "Our sky is filled with a diffuse background glow, known as the cosmic infrared background. Much of the light is from galaxies we know about, but previous Spitzer measurements have shown an extra component of unknown origin.",
+                        "date_created": "2014-11-06T19:00:03Z",
+                        "keywords": [
+                            "CIBER,Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18851",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03519/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03519/PIA03519~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This false-color image from three of NASA Great Observatories provides one example of a star that died in a fiery supernova blast. Called Cassiopeia A, this supernova remnant is located 10,000 light-years away in the constellation Cassiopeia.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/STScI/CXC/SAO<br /> Animation: NASA/JPL-Caltech/Univ. of Ariz./STScI/CXC/SAO ",
+                        "title": "Cassiopeia A: Death Becomes Her",
+                        "description": "This false-color image from three of NASA Great Observatories provides one example of a star that died in a fiery supernova blast. Called Cassiopeia A, this supernova remnant is located 10,000 light-years away in the constellation Cassiopeia.",
+                        "date_created": "2005-06-10T16:50:44Z",
+                        "keywords": [
+                            "Cassiopeia A",
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA03519",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18837/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18837/PIA18837~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "A Neptune-size planet with a clear atmosphere is shown crossing in front of its star in this artist depiction. Such crossings, or transits, are observed by telescopes like NASA Hubble and Spitzer to glean information about planets atmospheres.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Seeing Starlight Through a Planet Rim Artist Concept",
+                        "description": "A Neptune-size planet with a clear atmosphere is shown crossing in front of its star in this artist depiction. Such crossings, or transits, are observed by telescopes like NASA Hubble and Spitzer to glean information about planets atmospheres.",
+                        "date_created": "2014-09-24T17:00:01Z",
+                        "keywords": [
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18837",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18471/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18471/PIA18471~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Artist impression of a firestorm of star birth deep inside core of young, growing elliptical galaxy.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/Space Telescope Science Institute",
+                        "title": "A Cauldron of Star Birth in the Center of a Young Galaxy Artist Concept",
+                        "description": "Artist impression of a firestorm of star birth deep inside core of young, growing elliptical galaxy.",
+                        "date_created": "2014-08-27T16:53:14Z",
+                        "keywords": [
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18471",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA21076/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA21076/PIA21076~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This illustration depicts a brown dwarf. NASA's Spitzer and Swift missions observed a microlensing event as the star passed between Earth and a much more distant star in our galaxy.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Brown Dwarf Microlensing (Illustration)",
+                        "description": "This illustration depicts a newly discovered brown dwarf, an object that weighs in somewhere between our solar system's most massive planet (Jupiter) and the least-massive-known star. This brown dwarf, dubbed OGLE-2015-BLG-1319, interests astronomers because it may fall in the \"desert\" of brown dwarfs. Scientists have found that, for stars roughly the mass of our sun, less than 1 percent have a brown dwarf orbiting within 3 AU (1 AU is the distance between Earth and the sun).  This brown dwarf was discovered when it and its star passed between Earth and a much more distant star in our galaxy. This created a microlensing event, where the gravity of the system amplified the light of the background star over the course of several weeks.  This microlensing was observed by ground-based telescopes looking for these uncommon events, and was the first to be seen by two space-based telescopes: NASA's Spitzer and Swift missions.  http://photojournal.jpl.nasa.gov/catalog/PIA21076",
+                        "date_created": "2016-11-10T16:52:42Z",
+                        "keywords": [
+                            "OGLE-2015-BLG-1319",
+                            "Spitzer Space Telescope,SWIFT",
+                            "microlensing"
+                        ],
+                        "nasa_id": "PIA21076",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11998/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11998/PIA11998~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "NASA Galaxy Evolution Explorer Mission celebrates its sixth anniversary studying galaxies beyond our Milky Way through its sensitive ultraviolet telescope, the only such far-ultraviolet detector in space. Pictured here, the galaxy NGC598 known as M33.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "NASA Galaxy Mission Celebrates Sixth Anniversary",
+                        "description": "NASA Galaxy Evolution Explorer Mission celebrates its sixth anniversary studying galaxies beyond our Milky Way through its sensitive ultraviolet telescope, the only such far-ultraviolet detector in space. Pictured here, the galaxy NGC598 known as M33.  The mission studies the shape, brightness, size and distance of distant galaxies across 10 billion years of cosmic history, giving scientists a wealth of data to help us better understand the origins of the universe. One such object is pictured here, the galaxy NGC598, more commonly known as M33.  This image is a blend of the Galaxy Evolution Explorer's M33 image and another taken by NASA's Spitzer Space Telescope. M33, one of our closest galactic neighbors, is about 2.9 million light-years away in the constellation Triangulum, part of what's known as our Local Group of galaxies.  Together, the Galaxy Evolution Explorer and Spitzer can see a broad spectrum of sky. Spitzer, for example, can detect mid-infrared radiation from dust that has absorbed young stars' ultraviolet light. That's something the Galaxy Evolution Explorer cannot see. This combined image shows in amazing detail the beautiful and complicated interlacing of the heated dust and young stars. In some regions of M33, dust gathers where there is very little far-ultraviolet light, suggesting that the young stars are obscured or that stars farther away are heating the dust. In some of the outer regions of the galaxy, just the opposite is true: There are plenty of young stars and very little dust.  Far-ultraviolet light from young stars glimmers blue, near-ultraviolet light from intermediate age stars glows green, and dust rich in organic molecules burns red. This image is a 3-band composite including far infrared as red.   http://photojournal.jpl.nasa.gov/catalog/PIA11998",
+                        "date_created": "2009-04-28T20:35:36Z",
+                        "keywords": [
+                            "M33",
+                            "Galaxy Evolution Explorer GALEX,Spitzer Space Telescope",
+                            "Milky Way"
+                        ],
+                        "nasa_id": "PIA11998",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11999/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11999/PIA11999~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "NASA Galaxy Evolution Explorer Mission celebrates its sixth anniversary studying galaxies beyond our Milky Way through its sensitive ultraviolet telescope, the only such far-ultraviolet detector in space. Pictured here, the galaxy NGC598 known as M33.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "NASA Galaxy Mission Celebrates Sixth Anniversary",
+                        "description": "NASA Galaxy Evolution Explorer Mission celebrates its sixth anniversary studying galaxies beyond our Milky Way through its sensitive ultraviolet telescope, the only such far-ultraviolet detector in space.  The mission studies the shape, brightness, size and distance of distant galaxies across 10 billion years of cosmic history, giving scientists a wealth of data to help us better understand the origins of the universe. One such object is pictured here, the galaxy NGC598, more commonly known as M33.  This image is a blend of the Galaxy Evolution Explorer's M33 image and another taken by NASA's Spitzer Space Telescope. M33, one of our closest galactic neighbors, is about 2.9 million light-years away in the constellation Triangulum, part of what's known as our Local Group of galaxies.  Together, the Galaxy Evolution Explorer and Spitzer can see a broad spectrum of sky. Spitzer, for example, can detect mid-infrared radiation from dust that has absorbed young stars' ultraviolet light. That's something the Galaxy Evolution Explorer cannot see. This combined image shows in amazing detail the beautiful and complicated interlacing of the heated dust and young stars. In some regions of M33, dust gathers where there is very little far-ultraviolet light, suggesting that the young stars are obscured or that stars further away are heating the dust. In some of the outer regions of the galaxy, just the opposite is true: There are plenty of young stars and very little dust.  Far-ultraviolet light from young stars glimmers blue, near-ultraviolet light from intermediate age stars glows green, near-infrared light from old stars burns yellow and orange, and dust rich in organic molecules burns red. The small blue flecks outside the spiral disk of M33 are most likely distant background galaxies. This image is a four-band composite that, in addition to the two ultraviolet bands, includes near infrared as yellow/orange and far infrared as red.   http://photojournal.jpl.nasa.gov/catalog/PIA11999",
+                        "date_created": "2009-04-28T20:35:37Z",
+                        "keywords": [
+                            "M33",
+                            "Galaxy Evolution Explorer GALEX,Spitzer Space Telescope",
+                            "Milky Way"
+                        ],
+                        "nasa_id": "PIA11999",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA21474/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA21474/PIA21474~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image of the Crab Nebula combines data from five different telescopes. It is know as the expanding gaseous remnant from a star that self-detonated as a supernova, briefly shining as brightly as 400 million suns.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA, ESA, G. Dubner IAFE, CONICET-University of Buenos Aires et al.; A. Loll et al.; T. Temim et al.; F. Seward et al.; VLA/NRAO/AUI/NSF; Chandra/CXC; Spitzer/JPL-Caltech; XMM-Newton/ESA; and Hubble/STScI",
+                        "title": "Crab Nebula from Five Observatories",
+                        "description": "In the summer of the year 1054 AD, Chinese astronomers saw a new \"guest star,\" that appeared six times brighter than Venus. So bright in fact, it could be seen during the daytime for several months.  This \"guest star\" was forgotten about until 700 years later with the advent of telescopes. Astronomers saw a tentacle-like nebula in the place of the vanished star and called it the Crab Nebula. Today we know it as the expanding gaseous remnant from a star that self-detonated as a supernova, briefly shining as brightly as 400 million suns. The explosion took place 6,500 light-years away. If the blast had instead happened 50 light-years away it would have irradiated Earth, wiping out most life forms.  In the late 1960s astronomers discovered the crushed heart of the doomed star, an ultra-dense neutron star that is a dynamo of intense magnetic field and radiation energizing the nebula. Astronomers therefore need to study the Crab Nebula across a broad range of electromagnetic radiation, from X-rays to radio waves.  This image combines data from five different telescopes: the VLA (radio) in red; Spitzer Space Telescope (infrared) in yellow; Hubble Space Telescope (visible) in green; XMM-Newton (ultraviolet) in blue; and Chandra X-ray Observatory (X-ray) in purple.  More images and an animation are available at https://photojournal.jpl.nasa.gov/catalog/PIA21474",
+                        "date_created": "2017-05-10T16:51:16Z",
+                        "keywords": [
+                            "Hubble Space Telescope",
+                            "XXM-Newton",
+                            "Spitzer Space Telescope",
+                            "Very Large Array (VLA)",
+                            "Chandra X-ray Obervatory"
+                        ],
+                        "nasa_id": "PIA21474",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12348/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12348/PIA12348~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "In celebration of the International Year of Astronomy 2009, NASA's Great Observatories -- Hubble Space Telescope, Spitzer Space Telescope, and Chandra X-ray Observatory -- have produced a matched trio of images of the central region of our Milky Way.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/ESA/CXC/STScI",
+                        "title": "Great Observatories Unique Views of the Milky Way",
+                        "description": "In celebration of the International Year of Astronomy 2009, NASA's Great Observatories -- the Hubble Space Telescope, the Spitzer Space Telescope, and the Chandra X-ray Observatory -- have produced a matched trio of images of the central region of our Milky Way galaxy. Each image shows the telescope's different wavelength view of the galactic center region, illustrating the unique science each observatory conducts.  In this spectacular image, observations using infrared light and X-ray light see through the obscuring dust and reveal the intense activity near the galactic core. Note that the center of the galaxy is located within the bright white region to the right of and just below the middle of the image. The entire image width covers about one-half a degree, about the same angular width as the full moon.  Spitzer's infrared-light observations provide a detailed and spectacular view of the galactic center region [Figure 1 (top frame of poster)]. The swirling core of our galaxy harbors hundreds of thousands of stars that cannot be seen in visible light. These stars heat the nearby gas and dust. These dusty clouds glow in infrared light and reveal their often dramatic shapes. Some of these clouds harbor stellar nurseries that are forming new generations of stars. Like the downtown of a large city, the center of our galaxy is a crowded, active, and vibrant place.  Although best known for its visible-light images, Hubble also observes over a limited range of infrared light [Figure 2 (middle frame of poster)]. The galactic center is marked by the bright patch in the lower right. Along the left side are large arcs of warm gas that have been heated by clusters of bright massive stars. In addition, Hubble uncovered many more massive stars across the region. Winds and radiation from these stars create the complex structures seen in the gas throughout the image.This sweeping panorama is one of the sharpest infrared pictures ever made of the galactic center region.  X-rays detected by Chandra expose a wealth of exotic objects and high-energy features [Figure 3 (bottom frame of poster)]. In this image, pink represents lower energy X-rays and blue indicates higher energy. Hundreds of small dots show emission from material around black holes and other dense stellar objects. A supermassive black hole -- some four million times more massive than the Sun -- resides within the bright region in the lower right. The diffuse X-ray light comes from gas heated to millions of degrees by outflows from the supermassive black hole, winds from giant stars, and stellar explosions. This central region is the most energetic place in our galaxy.   http://photojournal.jpl.nasa.gov/catalog/PIA12348",
+                        "date_created": "2009-11-10T17:55:16Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Hubble Space Telescope,Spitzer Space T",
+                            "milky way"
+                        ],
+                        "nasa_id": "PIA12348",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA09956/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA09956/PIA09956~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows what the night sky might look like from a hypothetical planet around a star tossed out of an ongoing four-way collision between big galaxies.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/Harvard-Smithsonian CfA",
+                        "title": "Fantastic Four Galaxies with Planet Artist Concept",
+                        "description": "This artist concept shows what the night sky might look like from a hypothetical planet around a star tossed out of an ongoing four-way collision between big galaxies.",
+                        "date_created": "2007-08-06T17:12:39Z",
+                        "keywords": [
+                            "CL0958+4702",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA09956",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA10748/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA10748/PIA10748~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept illustrates the new view of the Milky Way. The galaxy two major arms can be seen attached to the ends of a thick central bar, while the two now-demoted minor arms are less distinct and located between the major arms.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Our Milky Way Gets a Makeover  Artist Concept",
+                        "description": "This artist concept illustrates the new view of the Milky Way. The galaxy two major arms can be seen attached to the ends of a thick central bar, while the two now-demoted minor arms are less distinct and located between the major arms.",
+                        "date_created": "2008-06-03T16:53:14Z",
+                        "keywords": [
+                            "Milky Way",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA10748",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12166/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12166/PIA12166~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows a celestial body about the size of our moon slamming at great speed into a body the size of Mercury. NASA Spitzer found evidence that a high-speed collision of this sort occurred a few thousand years ago around a young star. ",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Planetary Demolition Derby  Artist Concept",
+                        "description": "This artist concept shows a celestial body about the size of our moon slamming at great speed into a body the size of Mercury. NASA Spitzer found evidence that a high-speed collision of this sort occurred a few thousand years ago around a young star. ",
+                        "date_created": "2009-08-10T17:00:53Z",
+                        "keywords": [
+                            "HD 172555",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA12166",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03294/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03294/PIA03294~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "The Helix nebula exhibits complex structure on the smallest visible scales. It is composed of gaseous shells and disks puffed out by a dying sun-like star.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA / JPL-Caltech /Harvard-Smithsonian CfA",
+                        "title": "The Infrared Helix",
+                        "description": "The Helix nebula exhibits complex structure on the smallest visible scales. It is composed of gaseous shells and disks puffed out by a dying sun-like star.",
+                        "date_created": "2006-01-09T17:29:48Z",
+                        "keywords": [
+                            "Helix Nebula",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA03294",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12073/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12073/PIA12073~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Here we see two different views of the spiral galaxy, Messier 81. On the left is an image taken in blue light, while on the right is a specially-processed version of an image taken with NASA Spitzer infrared array camera at 4.5 microns.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/University of Witwatersrand",
+                        "title": "Missing",
+                        "description": "Here we see two different views of the spiral galaxy, Messier 81. On the left is an image taken in blue light, while on the right is a specially-processed version of an image taken with NASA Spitzer infrared array camera at 4.5 microns.",
+                        "date_created": "2009-04-30T20:15:15Z",
+                        "keywords": [
+                            "Messier 81",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA12073",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03243/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03243/PIA03243~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept illustrates a solar system that is a much younger version of our own. Dusty disks, like the one shown here circling the star, are thought to be the breeding grounds of planets, including rocky ones like Earth.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Portrait of Our Dusty Past  Artist Concept",
+                        "description": "This artist concept illustrates a solar system that is a much younger version of our own. Dusty disks, like the one shown here circling the star, are thought to be the breeding grounds of planets, including rocky ones like Earth.",
+                        "date_created": "2005-12-20T18:00:56Z",
+                        "keywords": [
+                            "IRS 46",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA03243",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA09378/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA09378/PIA09378~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept illustrates the hottest planet yet observed in the universe. The scorching ball of gas, a hot Jupiter called HD 149026b, is about 3 times hotter than the rocky surface of Venus, the hottest planet in our solar system.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Blacker than Black Artist Concept",
+                        "description": "This artist concept illustrates the hottest planet yet observed in the universe. The scorching ball of gas, a hot Jupiter called HD 149026b, is about 3 times hotter than the rocky surface of Venus, the hottest planet in our solar system.",
+                        "date_created": "2007-05-09T17:00:08Z",
+                        "keywords": [
+                            "HD 149026b",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA09378",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA07853/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA07853/PIA07853~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows what the night sky might look like from a hypothetical alien planet in a star system with an asteroid belt 25 times as massive as the one in our own solar system.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Alien Asteroid Belt Compared to our Own  Artist Concept",
+                        "description": "This artist concept shows what the night sky might look like from a hypothetical alien planet in a star system with an asteroid belt 25 times as massive as the one in our own solar system.",
+                        "date_created": "2005-04-20T16:56:50Z",
+                        "keywords": [
+                            "HD 69830",
+                            "Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA07853",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA19833/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA19833/PIA19833~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist rendition shows one possible appearance for the planet HD 219134b, the nearest confirmed rocky exoplanet found to date outside our solar system.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Hot, Rocky World Artist Concept",
+                        "description": "This artist's rendition shows one possible appearance for the planet HD 219134b, the nearest confirmed rocky exoplanet found to date outside our solar system. The planet is 1.6 times the size of Earth, and whips around its star in just three days. Scientists predict that the scorching-hot planet -- known to be rocky through measurements of its mass and size -- would have a rocky, partially molten surface with geological activity, including possibly volcanoes.  http://photojournal.jpl.nasa.gov/catalog/PIA19833",
+                        "date_created": "2015-07-30T17:49:12Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "artist concept"
+                        ],
+                        "nasa_id": "PIA19833",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA17558/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA17558/PIA17558~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "The big blob-like structure shown here, named Himiko after the legendary ancient queen of Japan, turns out to be three galaxies thought to be in the process of merging into one.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/STScI/NAOJ/Subaru",
+                        "title": "Three-headed Galactic Blob",
+                        "description": "The big blob-like structure shown here, named Himiko after the legendary ancient queen of Japan, turns out to be three galaxies thought to be in the process of merging into one.",
+                        "date_created": "2013-11-21T18:11:47Z",
+                        "keywords": [
+                            "Spitzer Space Telescope,Hubble Space Telescope,Subaru Telescope"
+                        ],
+                        "nasa_id": "PIA17558",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12869/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12869/PIA12869~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "New thermal images from powerful ground-based telescopes show swirls of warmer air and cooler regions never seen before within Jupiter Great Red Spot.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL/ESO and NASA/ESA/GSFC",
+                        "title": "Jupiter Storms: Temperatures and Cloud Colors",
+                        "description": "New thermal images from powerful ground-based telescopes show swirls of warmer air and cooler regions never seen before within Jupiter Great Red Spot.",
+                        "date_created": "2010-03-16T22:38:46Z",
+                        "keywords": [
+                            "Jupiter",
+                            "Hubble Space Telescope,Spitzer Space Telescope,Very Large Space "
+                        ],
+                        "nasa_id": "PIA12869",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14407/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14407/PIA14407~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This graphic illustrates where astronomers at last found oxygen molecules in space -- near the star-forming core of the Orion nebula. The squiggly lines, or spectra, reveal the signatures of oxygen molecules, detected by ESA Hershel Space Observatory.",
+                        "center": "JPL",
+                        "secondary_creator": "ESA/NASA/JPL-Caltech",
+                        "title": "Oxygen in Orion",
+                        "description": "This graphic illustrates where astronomers at last found oxygen molecules in space -- near the star-forming core of the Orion nebula. The squiggly lines, or spectra, reveal the signatures of oxygen molecules, detected by ESA Hershel Space Observatory.",
+                        "date_created": "2011-08-01T15:00:01Z",
+                        "keywords": [
+                            "Herschel Space Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA14407",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15255/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15255/PIA15255~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "In combined data from ESA Herschel and NASA Spitzer telescopes, irregular distribution of dust in the Small Magellanic Cloud becomes clear. A stream of dust extends to left, known as the galaxy wing, and a bar of star formation appears to right.",
+                        "center": "JPL",
+                        "secondary_creator": "ESA/NASA/JPL-Caltech/STScI",
+                        "title": "A Dwarf Galaxy Star Bar and Dusty Wing",
+                        "description": "In combined data from ESA Herschel and NASA Spitzer telescopes, irregular distribution of dust in the Small Magellanic Cloud becomes clear. A stream of dust extends to left, known as the galaxy wing, and a bar of star formation appears to right.",
+                        "date_created": "2012-01-10T21:30:03Z",
+                        "keywords": [
+                            "Herschel Space Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA15255",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14406/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14406/PIA14406~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "ESA Herschel Space Observatory found oxygen molecules in a dense patch of gas and dust adjacent to star-forming regions in the Orion nebula.",
+                        "center": "JPL",
+                        "secondary_creator": "ESA/NASA/JPL-Caltech",
+                        "title": "Oxygen No Longer Lost in Space",
+                        "description": "ESA Herschel Space Observatory found oxygen molecules in a dense patch of gas and dust adjacent to star-forming regions in the Orion nebula.",
+                        "date_created": "2011-08-01T15:00:00Z",
+                        "keywords": [
+                            "Herschel Space Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA14406",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA10237/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA10237/PIA10237~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "A massive cluster of yellowish galaxies is seemingly caught in a spider web of eerily distorted background galaxies in the left-hand image, taken with the Advanced Camera for Surveys ACS aboard NASA Hubble Space Telescope.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/ESA/JPL-Caltech/STScI",
+                        "title": "Astronomers Uncover One of the Youngest and Brightest Galaxies in the Early Universe",
+                        "description": "A massive cluster of yellowish galaxies is seemingly caught in a spider web of eerily distorted background galaxies in the left-hand image, taken with the Advanced Camera for Surveys ACS aboard NASA Hubble Space Telescope.",
+                        "date_created": "2008-02-12T13:51:15Z",
+                        "keywords": [
+                            "Abell 1689",
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA10237",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA08093/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA08093/PIA08093~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "NASA Spitzer, Hubble and Chandra space observatories teamed up to create this multi-wavelength, false-colored view of the M82 galaxy. The lively portrait celebrates Hubble weet sixteen birthday.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/STScI/CXC/UofA/ESA/AURA/JHU",
+                        "title": "Great Observatories Present Rainbow of a Galaxy",
+                        "description": "NASA Spitzer, Hubble and Chandra space observatories teamed up to create this multi-wavelength, false-colored view of the M82 galaxy. The lively   portrait celebrates Hubble weet sixteen birthday.",
+                        "date_created": "2006-04-24T13:55:09Z",
+                        "keywords": [
+                            "M82 Galaxy",
+                            "Hubble Space Telescope,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA08093",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22084/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22084/PIA22084~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist's concept shows an exoplanet and debris disk orbiting a polluted white dwarf. White dwarfs are dim, dense remnants of stars similar to the Sun that have exhausted their nuclear fuel and blown off their outer layers.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Polluted White Dwarf (Artist's Concept)",
+                        "description": "This artist's concept shows an exoplanet and debris disk orbiting a polluted white dwarf.  White dwarfs are dim, dense remnants of stars similar to the Sun that have exhausted their nuclear fuel and blown off their outer layers. By \"pollution,\" astronomers mean heavy elements invading the photospheres -- the outer atmospheres -- of these stars.  The leading explanation is that exoplanets could push small rocky bodies toward the star, whose powerful gravity would pulverize them into dust. That dust, containing heavy elements from the torn-apart body, would then fall on the star.  NASA's Spitzer Space Telescope has been instrumental in expanding the field of polluted white dwarfs orbited by hot, dusty disks. Since launch in 2004, Spitzer has confirmed about 40 of these special stars. Another space telescope, NASA's Wide-field Infrared Survey Explorer (WISE), also detected a handful, bringing the total up to about four dozen known today. Because these objects are so faint, infrared light is crucial to identifying them.  https://photojournal.jpl.nasa.gov/catalog/PIA22084",
+                        "date_created": "2017-11-01T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "Wide-field Infrared Survey Explorer (WISE)",
+                            "artist concept",
+                            "white dwarf"
+                        ],
+                        "nasa_id": "PIA22084",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA20700/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA20700/PIA20700~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows an unusual celestial object called CX330 was first detected as a source of X-ray light in 2009. It has been launching jets of material into the gas and dust around it.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "The Loneliest Young Star (Artist Concept)",
+                        "description": "This artist's concept shows an unusual celestial object called CX330 was first detected as a source of X-ray light in 2009 by NASA's Chandra X-Ray Observatory while it was surveying the bulge in the central region of the Milky Way. A 2016 study in the Monthly Notices of the Royal Astronomical Society found that CX330 is the most isolated young star that has been discovered. Researchers compared NASA's Wide-field Infrared Survey Explorer (WISE) data from 2010 with NASA's Spitzer Space Telescope data from 2007 to come to this conclusion.  CX330 is not near any star-forming region. As of the most recent observation, which was August 2015, this object was outbursting, meaning it was launching \"jets\" of material that slam into the gas and dust around it. Astronomers plan to continue studying the object, including with future telescopes that could view CX330 in other wavelengths of light.   http://photojournal.jpl.nasa.gov/catalog/PIA20700",
+                        "date_created": "2016-07-27T15:52:00Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Spitzer Space Telescope,Wide-field Inf",
+                            "artist concept"
+                        ],
+                        "nasa_id": "PIA20700",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22098/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22098/PIA22098~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This is a frame from a video which shows illustrations of the seven Earth-size planets of TRAPPIST-1, an exoplanet system about 40 light-years away, based on data current as of February 2018.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "TRAPPIST-1 Planet Animations",
+                        "description": "This still from a video shows illustrations of the seven Earth-size planets of TRAPPIST-1, an exoplanet system about 40 light-years away, based on data current as of February 2018. Each planet is shown in sequence, starting with the innermost TRAPPIST-1b and ending with the outermost TRAPPIST-1h. The video presents the planets' relative sizes as well as the relative scale of the central star as seen from each planet. The art highlights possibilities for how the surfaces of these intriguing worlds might look based on their newly calculated properties.  The seven planets of TRAPPIST-1 are all Earth-sized and terrestrial. TRAPPIST-1 is an ultra-cool dwarf star in the constellation Aquarius, and its planets orbit very close to it.  In the background, slightly distorted versions our familiar constellations, including Orion and Taurus, are shown as they would appear from the location of TRAPPIST-1 (backdrop image courtesy California Academy of Sciences/Dan Tell).  An animation is available at https://photojournal.jpl.nasa.gov/catalog/PIA22098",
+                        "date_created": "2018-02-05T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "TRAPPIST-1",
+                            "exoplanet"
+                        ],
+                        "nasa_id": "PIA22098",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA23004/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA23004/PIA23004~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist's illustration shows the newfound planet K2-288Bb is slightly smaller than Neptune.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA's Goddard Space Flight Center/Francis Reddy",
+                        "title": "K2-288Bb (Artist's Illustration)",
+                        "description": "The newfound planet K2-288Bb, illustrated here, is slightly smaller than Neptune. Located about 226 light-years away, it orbits the fainter member of a pair of cool M-type stars every 31.3 days.  https://photojournal.jpl.nasa.gov/catalog/PIA23004",
+                        "date_created": "2019-01-07T00:00:00Z",
+                        "keywords": [
+                            "Kepler",
+                            "Spitzer Space Telescope",
+                            "artist concept"
+                        ],
+                        "nasa_id": "PIA23004",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22096/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22096/PIA22096~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "All seven planets discovered in orbit around the red dwarf star TRAPPIST-1 could easily fit inside the orbit of Mercury, the innermost planet of our solar system. In fact, they would have room to spare.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "TRAPPIST-1 Compared to Jovian Moons and Inner Solar System - Updated Feb. 2018",
+                        "description": "All seven planets discovered in orbit around the red dwarf star TRAPPIST-1 could easily fit inside the orbit of Mercury, the innermost planet of our solar system. In fact, they would have room to spare. TRAPPIST-1 also is only a fraction of the size of our Sun; it isn't much larger than Jupiter. So, the TRAPPIST-1 system's proportions look more like Jupiter and its moons than those of our solar system.  The seven planets of TRAPPIST-1 are all Earth-sized and terrestrial. TRAPPIST-1 is an ultra-cool dwarf star in the constellation Aquarius, and its planets orbit very close to it.  https://photojournal.jpl.nasa.gov/catalog/PIA22096",
+                        "date_created": "2018-02-05T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "TRAPPIST-1",
+                            "exoplanet"
+                        ],
+                        "nasa_id": "PIA22096",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA19832/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA19832/PIA19832~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This sky map shows the location of the star HD 219134 circle, host to the nearest confirmed rocky planet found to date outside of our solar system. The star lies just off the W shape of the constellation Cassiopeia.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/DSS",
+                        "title": "Location of Nearest Rocky Exoplanet Known",
+                        "description": "This sky map shows the location of the star HD 219134 (circle), host to the nearest confirmed rocky planet found to date outside of our solar system. The star lies just off the \"W\" shape of the constellation Cassiopeia and can be seen with the naked eye in dark skies. It actually has multiple planets, none of which are habitable.  http://photojournal.jpl.nasa.gov/catalog/PIA19832",
+                        "date_created": "2015-07-30T17:49:11Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "Cassiopeia",
+                            "HD 219134"
+                        ],
+                        "nasa_id": "PIA19832",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22081/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22081/PIA22081~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This illustration depicts a hypothetical uneven ring of dust orbiting KIC 8462852, also known as Boyajian's Star or Tabby's Star.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Tabby's Star (Illustration)",
+                        "description": "This illustration depicts a hypothetical uneven ring of dust orbiting KIC 8462852, also known as Boyajian's Star or Tabby's Star. Astronomers have found the dimming of the star over long periods appears to be weaker at longer infrared wavelengths of light and stronger at shorter ultraviolet wavelengths. Such reddening is characteristic of dust particles and inconsistent with more fanciful \"alien megastructure\" concepts, which would evenly dim all wavelengths of light.  By studying observations from NASA's Spitzer and Swift telescopes, as well as the Belgian AstroLAB IRIS observatory, the researchers have been able to better constrain the size of the dust particles. This places them within the range found in dust disks orbiting stars, and larger than the particles typically found in interstellar dust.  The system is portrayed with a couple of comets, consistent with previous studies that have found evidence for cometary activity within the system.  https://photojournal.jpl.nasa.gov/catalog/PIA22081",
+                        "date_created": "2017-10-04T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "KIC 8462852",
+                            "Boyajian's Star"
+                        ],
+                        "nasa_id": "PIA22081",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA22097/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA22097/PIA22097~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This illustration shows the seven Earth-size planets of TRAPPIST-1. The image does not show the planets' orbits to scale, but highlights possibilities for how the surfaces of these intriguing worlds might look.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "Illustration of TRAPPIST-1 Planets as of Feb. 2018",
+                        "description": "This illustration shows the seven Earth-size planets of TRAPPIST-1, an exoplanet system about 40 light-years away, based on data current as of February 2018. The image shows the planets' relative sizes but does not represent their orbits to scale. The art highlights possibilities for how the surfaces of these intriguing worlds might look based on their newly calculated properties.  The seven planets of TRAPPIST-1 are all Earth-sized and terrestrial. TRAPPIST-1 is an ultra-cool dwarf star in the constellation Aquarius, and its planets orbit very close to it.  In the background, slightly distorted versions the familiar constellations of Orion and Taurus are shown as they would appear from the location of TRAPPIST-1 (courtesy of California Academy of Sciences/Dan Tell).  https://photojournal.jpl.nasa.gov/catalog/PIA22097",
+                        "date_created": "2018-02-05T00:00:00Z",
+                        "keywords": [
+                            "Spitzer Space Telescope",
+                            "TRAPPIST-1",
+                            "exoplanet"
+                        ],
+                        "nasa_id": "PIA22097",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18249/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18249/PIA18249~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This composite image shows one of the clusters, NGC 2024, which is found in the center of the so-called Flame Nebula about 1,400 light years from Earth. Astronomers have studied two star clusters using NASA Chandra and infrared telescopes.",
+                        "center": "JPL",
+                        "secondary_creator": "X-ray: NASA/CXC/PSU/K.Getman, E.Feigelson, M.Kuhn and the MYStIX team; Infrared: NASA/JPL-Caltech",
+                        "title": "Inside the Flame Nebula",
+                        "description": "This composite image shows one of the clusters, NGC 2024, which is found in the center of the so-called Flame Nebula about 1,400 light years from Earth. Astronomers have studied two star clusters using NASA Chandra and infrared telescopes.",
+                        "date_created": "2014-05-07T16:45:54Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA18249",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15419/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15419/PIA15419~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "Time is running out for the galaxy NGC 3801, seen in this composite image from NASA Galaxy Evolution Explorer and other instruments combining light from across the spectrum, ranging from ultraviolet to radio.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/SDSS/NRAO/GMRT",
+                        "title": "The Beginning of the End of Star Formation",
+                        "description": "Time is running out for the galaxy NGC 3801, seen in this composite image from NASA Galaxy Evolution Explorer and other instruments combining light from across the spectrum, ranging from ultraviolet to radio.",
+                        "date_created": "2012-04-03T20:15:32Z",
+                        "keywords": [
+                            "Galaxy Evolution Explorer GALEX,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA15419",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15817/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15817/PIA15817~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image from NASA Spitzer and GALEX shows the Helix nebula, a dying star throwing a cosmic tantrum. In death, the star dusty outer layers are unraveling into space, glowing from the intense UV radiation being pumped out by the hot stellar core.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "The Helix Nebula: Unraveling at the Seams",
+                        "description": "This image from NASA Spitzer and GALEX shows the Helix nebula, a dying star throwing a cosmic tantrum. In death, the star dusty outer layers are unraveling into space, glowing from the intense UV radiation being pumped out by the hot stellar core.",
+                        "date_created": "2012-10-03T21:30:49Z",
+                        "keywords": [
+                            "Galaxy Evolution Explorer GALEX,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA15817",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA15806/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA15806/PIA15806~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "The spiral galaxy NGC 3627, located about 30 million light years from Earth as seen by four NASA telescopes; inset shows the central region, which contains a bright X-ray source that is likely powered by material falling onto a supermassive black hole.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/CXC/Ohio State Univ./C.Grier et al.; Optical: NASA/STScI, ESO/WFI; Infrared: NASA/JPL-Caltech",
+                        "title": "NGC 3627: Revealing Hidden Black Holes",
+                        "description": "The spiral galaxy NGC 3627, located about 30 million light years from Earth as seen by four NASA telescopes; inset shows the central region, which contains a bright X-ray source that is likely powered by material falling onto a supermassive black hole.",
+                        "date_created": "2012-12-13T23:43:43Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Hubble Space Telescope,Spitzer Space T"
+                        ],
+                        "nasa_id": "PIA15806",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14415/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14415/PIA14415~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This composite of 30 Doradus, the Tarantula Nebula, contains data from Chandra blue, Hubble green, and Spitzer red. Located in the Large Magellanic Cloud, the Tarantula Nebula is one of the largest star-forming regions close to the Milky Way.",
+                        "center": "JPL",
+                        "secondary_creator": "X-ray: NASA/CXC/PSU/L.Townsley et al.; Optical: NASA/STScI; Infrared: NASA/JPL/PSU/L.Townsley et al.",
+                        "title": "A New View of the Tarantula Nebula",
+                        "description": "This composite of 30 Doradus, the Tarantula Nebula, contains data from Chandra blue, Hubble green, and Spitzer red. Located in the Large Magellanic Cloud, the Tarantula Nebula is one of the largest star-forming regions close to the Milky Way.",
+                        "date_created": "2012-04-17T15:30:22Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Hubble Space Telescope,Spitzer Space T"
+                        ],
+                        "nasa_id": "PIA14415",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA16884/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA16884/PIA16884~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "The tip of the wing of the Small Magellanic Cloud galaxy is dazzling in this new view from NASA Great Observatories. The SMC, is a small galaxy about 200,000 light-years way that orbits our own Milky Way spiral galaxy.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/CXC/JPL-Caltech/STScI",
+                        "title": "Taken Under the Wing of the Small Magellanic Cloud",
+                        "description": "The tip of the wing of the Small Magellanic Cloud galaxy is dazzling in this new view from NASA Great Observatories. The SMC, is a small galaxy about 200,000 light-years way that orbits our own Milky Way spiral galaxy.",
+                        "date_created": "2013-04-03T17:21:12Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Hubble Space Telescope,Spitzer Space T"
+                        ],
+                        "nasa_id": "PIA16884",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA03296/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA03296/PIA03296~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This false-color composite image shows the Cartwheel galaxy as seen by NASA Galaxy Evolution Explorer, where the first ripple appears as an ultraviolet-bright blue outer ring.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "A Stellar Ripple",
+                        "description": "This false-color composite image shows the Cartwheel galaxy as seen by NASA Galaxy Evolution Explorer, where the first ripple appears as an ultraviolet-bright blue outer ring.",
+                        "date_created": "2006-01-11T13:45:54Z",
+                        "keywords": [
+                            "Cartwheel Galaxy",
+                            "Galaxy Evolution Explorer GALEX,Hubble Space Telescope,Spitzer"
+                        ],
+                        "nasa_id": "PIA03296",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18003/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18003/PIA18003~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This diagram illustrates the locations of the star systems closest to the sun. The year when the distance to each system was determined is listed after the system name.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/Penn State University",
+                        "title": "Welcome to the Sun Neighborhood",
+                        "description": "This diagram illustrates the locations of the star systems closest to the sun. The year when the distance to each system was determined is listed after the system name.",
+                        "date_created": "2014-04-25T17:00:03Z",
+                        "keywords": [
+                            "Spitzer Space Telescope,Wide-field Infrared Survey Explorer WIS"
+                        ],
+                        "nasa_id": "PIA18003",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14872/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14872/PIA14872~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This image combines data from four different space telescopes to create a multi-wavelength view of all that remains of the oldest documented example of a supernova, called RCW 86.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/ESA/JPL-Caltech/UCLA/CXC/SAO",
+                        "title": "All Eyes on Oldest Recorded Supernova",
+                        "description": "This image combines data from four different space telescopes to create a multi-wavelength view of all that remains of the oldest documented example of a supernova, called RCW 86.",
+                        "date_created": "2011-10-24T16:58:46Z",
+                        "keywords": [
+                            "Chandra X-Ray Observatory,Spitzer Space Telescope,Wide-field Inf"
+                        ],
+                        "nasa_id": "PIA14872",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA17556/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA17556/PIA17556~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "New detailed radio data from the NRAO Jansky Very Large Array VLA revealed that the large perpendicular extension of UGC 10288 halo blue is really a distant background galaxy with radio jets.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/NRAO/SDSS/NOAO/University of Manitoba",
+                        "title": "Two Galaxies Masquerading as One",
+                        "description": "New detailed radio data from the NRAO Jansky Very Large Array VLA revealed that the large perpendicular extension of UGC 10288 halo blue is really a distant background galaxy with radio jets.",
+                        "date_created": "2013-11-14T16:45:20Z",
+                        "keywords": [
+                            "Spitzer Space Telescope,Wide-field Infrared Survey Explorer WIS"
+                        ],
+                        "nasa_id": "PIA17556",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA10200/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA10200/PIA10200~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "A composite image of M51, also known as the Whirlpool Galaxy, shows the majesty of its structure in a dramatic new way through several of NASA orbiting observatories",
+                        "center": "JPL",
+                        "secondary_creator": "X-ray: NASA/CXC; UV: NASA/JPL-Caltech; Optical: NASA/ESA/STScI/AURA; IR: NASA/JPL-Caltech/ Univ. of Ariz.",
+                        "title": "A Classic Beauty",
+                        "description": "A composite image of M51, also known as the Whirlpool Galaxy, shows the majesty of its structure in a dramatic new way through several of NASA orbiting observatories",
+                        "date_created": "2007-12-13T17:24:57Z",
+                        "keywords": [
+                            "M51",
+                            "Galaxy Evolution Explorer GALEX,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA10200",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11226/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11226/PIA11226~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "RCW 108 is a region where stars are actively forming within the Milky Way galaxy about 4,000 light years from Earth. This image is part of a large collection of images of merging galaxies taken by NASA Hubble Space Telescope.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/CXO/CfA",
+                        "title": "RCW 108: Massive Young Stars Trigger Stellar Birth",
+                        "description": "RCW 108 is a region where stars are actively forming within the Milky Way galaxy about 4,000 light years from Earth. This image is part of a large collection of images of merging galaxies taken by NASA Hubble Space Telescope.",
+                        "date_created": "2008-10-06T20:55:31Z",
+                        "keywords": [
+                            "NGC 6193",
+                            "Chandra X-ray Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA11226",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA14731/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA14731/PIA14731~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This composite image of the star cluster NGC 28 contains X-ray data from Chandra, in purple, with infrared observations from Spitzer, in red, green, blue. NGC 281 is known informally as the Pacman Nebula because of its appearance in optical images.",
+                        "center": "JPL",
+                        "secondary_creator": "X-ray: NASA/CXC/CfA/S.Wolk; IR: NASA/JPL/CfA/S.Wolk",
+                        "title": "The Pacman Nebula",
+                        "description": "This composite image of the star cluster NGC 28 contains X-ray data from Chandra, in purple, with infrared observations from Spitzer, in red, green, blue. NGC 281 is known informally as the Pacman Nebula because of its appearance in optical images.",
+                        "date_created": "2011-09-28T16:51:59Z",
+                        "keywords": [
+                            "NGC 281",
+                            "Chandra X-ray Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA14731",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA18002/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA18002/PIA18002~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This frame from an animation shows the coldest brown dwarf yet seen, and the fourth closest system to our sun. Called WISE J085510.83-071442.5, this dim object was discovered through its rapid motion across the sky.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech/Penn State University",
+                        "title": "Cold and Quick: a Fast-Moving Brown Dwarf",
+                        "description": "This frame from an animation shows the coldest brown dwarf yet seen, and the fourth closest system to our sun. Called WISE J085510.83-071442.5, this dim object was discovered through its rapid motion across the sky.",
+                        "date_created": "2014-04-25T17:00:02Z",
+                        "keywords": [
+                            "Spitzer Space Telescope,Wide-field Infrared Survey Explorer WIS"
+                        ],
+                        "nasa_id": "PIA18002",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA12000/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA12000/PIA12000~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "NASA Galaxy Evolution Explorer Mission celebrates its sixth anniversary studying galaxies beyond our Milky Way through its sensitive ultraviolet telescope, the only such far-ultraviolet detector in space.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/JPL-Caltech",
+                        "title": "NASA Galaxy Mission Celebrates Sixth Anniversary",
+                        "description": "NASA Galaxy Evolution Explorer Mission celebrates its sixth anniversary studying galaxies beyond our Milky Way through its sensitive ultraviolet telescope, the only such far-ultraviolet detector in space.  The mission studies the shape, brightness, size and distance of distant galaxies across 10 billion years of cosmic history, giving scientists a wealth of data to help us better understand the origins of the universe. One such object is pictured here, the galaxy NGC598, more commonly known as M33.  The image shows a map of the recent star formation history of M33. The bright blue and white areas are where star formation has been extremely active over the past few million years. The patches of yellow and gold are regions where star formation was more active 100 million years ago.  In addition, the ultraviolet image shows the most massive young stars in M33. These stars burn their large supply of hydrogen fuel quickly, burning hot and bright while emitting most of their energy at ultraviolet wavelengths. Compared with low-mass stars like our sun, which live for billions of years, these massive stars never reach old age, having a lifespan as short as a few million years.  http://photojournal.jpl.nasa.gov/catalog/PIA12000",
+                        "date_created": "2009-04-28T20:35:38Z",
+                        "keywords": [
+                            "M33",
+                            "Galaxy Evolution Explorer GALEX,Spitzer Space Telescope",
+                            "Milky Way"
+                        ],
+                        "nasa_id": "PIA12000",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA13217/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA13217/PIA13217~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "This artist concept shows hundreds of brown dwarfs deep red, expected to be added to the population of known stars in our solar neighborhood. Our sun and other known stars appear white, yellow or red.",
+                        "center": "JPL",
+                        "secondary_creator": "AMNH/UCB/NASA/JPL-Caltech",
+                        "title": "Coolest Orbs on the Block Artist Concept",
+                        "description": "This artist concept shows hundreds of brown dwarfs deep red, expected to be added to the population of known stars in our solar neighborhood. Our sun and other known stars appear white, yellow or red.",
+                        "date_created": "2010-06-24T20:00:02Z",
+                        "keywords": [
+                            "Spitzer Space Telescope,Wide-field Infrared Survey Explorer WIS"
+                        ],
+                        "nasa_id": "PIA13217",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA16438/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA16438/PIA16438~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "The Milky Way and other galaxies in the universe harbor many young star clusters and associations that each contain hundreds to thousands of hot, massive, young stars known as O and B stars.",
+                        "center": "JPL",
+                        "secondary_creator": "X-ray: NASA/CXC/SAO/J.Drake et al., Optical: Univ. of Hertfordshire/INT/IPHAS, Infrared: NASA/JPL-Caltech",
+                        "title": "A Nearby Stellar Cradle",
+                        "description": "The Milky Way and other galaxies in the universe harbor many young star clusters and associations that each contain hundreds to thousands of hot, massive, young stars known as O and B stars.",
+                        "date_created": "2012-11-07T19:26:28Z",
+                        "keywords": [
+                            "Chandra X-ray Observatory,Isaac Newton Telescope,Spitzer Space T"
+                        ],
+                        "nasa_id": "PIA16438",
+                        "media_type": "image"
+                    }
+                ]
+            },
+            {
+                "href": "https://images-assets.nasa.gov/image/PIA11748/collection.json",
+                "links": [
+                    {
+                        "rel": "preview",
+                        "href": "https://images-assets.nasa.gov/image/PIA11748/PIA11748~thumb.jpg",
+                        "render": "image"
+                    }
+                ],
+                "data": [
+                    {
+                        "description_508": "For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, the result of an explosion approximately 330 years ago, uses data from several NASA telescopes.",
+                        "center": "JPL",
+                        "secondary_creator": "NASA/CXC/JPL-Caltech/MIT",
+                        "title": "Supernova Remnant in 3-D",
+                        "description": "For the first time, a multiwavelength three-dimensional reconstruction of a supernova remnant has been created. This visualization of Cassiopeia A, or Cas A, the result of an explosion approximately 330 years ago, uses data from several NASA telescopes.",
+                        "date_created": "2009-01-06T21:01:41Z",
+                        "keywords": [
+                            "Cassiopeia A",
+                            "Chandra X-ray Observatory,Spitzer Space Telescope"
+                        ],
+                        "nasa_id": "PIA11748",
+                        "media_type": "image"
+                    }
+                ]
+            }
+        ]
+    }
+}
