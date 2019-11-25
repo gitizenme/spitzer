@@ -34,7 +34,6 @@ namespace Spitzer.UITests
             Assert.IsTrue(app.Query(itemName).Length > 0);
         }
 
-        [Ignore]
         [Test]
         public void Repl()
         {
