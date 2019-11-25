@@ -24,8 +24,6 @@
 	<string>11.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>Spitzer</string>
-	<key>CFBundleIdentifier</key>
-	<string>io.cssllc.spitzer</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>CFBundleName</key>
@@ -36,5 +34,7 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>CFBundleIdentifier</key>
+	<string>ws.chavez.spitzer</string>
 </dict>
 </plist>
