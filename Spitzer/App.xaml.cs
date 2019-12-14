@@ -18,9 +18,13 @@ namespace Spitzer
             MainPage = new MainPage();
         }
 
-        protected override void OnStart()
+        protected override async void OnStart()
         {
-            // Handle when your app starts
+            base.OnStart();
+
+            Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
+
+            SetTheme(theme);
         }
 
         protected override void OnSleep()
@@ -28,9 +32,18 @@ namespace Spitzer
             // Handle when your app sleeps
         }
 
-        protected override void OnResume()
+        protected override async void OnResume()
         {
-            // Handle when your app resumes
+            base.OnResume();
+
+            Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
+
+            SetTheme(theme);
+        }
+
+        void SetTheme(Theme theme)
+        {
+            // TODO handle light & dark theme
         }
     }
 }
