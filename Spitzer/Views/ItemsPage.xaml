@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Spitzer.Controls"
              mc:Ignorable="d"
              x:Class="Spitzer.Views.ItemsPage"
              Title="{Binding Title}"
@@ -11,12 +12,40 @@
     <ContentPage.ToolbarItems>
     </ContentPage.ToolbarItems>
 
+    <ContentPage.Resources>
+        <DataTemplate x:Key="TextOnlyTemplate">
+            <StackLayout Padding="10">
+                <Label Text="{Binding Title}" 
+                    d:Text="{Binding .}"
+                    LineBreakMode="NoWrap" 
+                    Style="{DynamicResource ListItemTextStyle}" 
+                    FontSize="16" />
+                <Label Text="{Binding Description}" 
+                    d:Text="{Binding .}"
+                    LineBreakMode="NoWrap"
+                    Style="{DynamicResource ListItemDetailTextStyle}"
+                    FontSize="13" />
+            </StackLayout>
+        </DataTemplate>
+
+        <controls:ItemsPageDataTemplateSelector x:Key="ItemsPageSelector"
+                                             TextOnlyTemplate="{StaticResource TextOnlyTemplate}" />
+    </ContentPage.Resources>
 <!--
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
 -->
 
+    <StackLayout>
+        <CollectionView x:Name="ItemsCollectionView"
+            ItemsSource="{Binding Items}"
+            ItemTemplate="{StaticResource ItemsPageSelector}"
+            SelectionChanged="OnItemSelected"
+            SelectionMode="Single">
+        </CollectionView>
+    </StackLayout>
 
+<!--
     <StackLayout>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
@@ -50,5 +79,7 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+-->
+
 
 </ContentPage>
