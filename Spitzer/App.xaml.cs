@@ -43,7 +43,19 @@ namespace Spitzer
 
         void SetTheme(Theme theme)
         {
-            // TODO handle light & dark theme
+            if(MainPage != null)
+            {
+                if (theme == Theme.Light)
+                {
+                    ((TabbedPage)MainPage).BarBackgroundColor = Color.White;
+                    ((TabbedPage)MainPage).BarTextColor = Color.Black;
+                }
+                else if (theme == Theme.Dark)
+                {
+                    ((TabbedPage)MainPage).BarBackgroundColor = Color.Black;
+                    ((TabbedPage)MainPage).BarTextColor = Color.White;
+                }
+            }
         }
     }
 }
