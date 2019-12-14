@@ -12,8 +12,6 @@ namespace Spitzer.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
-
         public IMediaLibrary<MediaItem> NasaMediaLibrary => DependencyService.Get<IMediaLibrary<MediaItem>>() ?? new NasaMediaLibraryDataStore();
 
         bool isBusy = false;

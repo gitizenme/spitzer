@@ -13,7 +13,6 @@ namespace Spitzer
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
             DependencyService.Register<NasaMediaLibraryDataStore>();
             MainPage = new MainPage();
         }
