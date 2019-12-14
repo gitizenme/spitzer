@@ -17,7 +17,7 @@ namespace Spitzer.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Gallery";
+            Title = "Spitzer Gallery";
             Items = new ObservableCollection<MediaItem>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }
