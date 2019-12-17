@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.ObjectModel;
+using Spitzer.Models;
 using Xamarin.Forms;
 
 namespace Spitzer.Controls
@@ -10,8 +12,8 @@ namespace Spitzer.Controls
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            string query = (string)item;
-            return query.ToLower().Equals("spitzer") ? AdvancedTemplate : BasicTemplate;
+            ObservableCollection<MediaItem> query = (ObservableCollection<MediaItem>)item;
+            return query.Count == 0 ? AdvancedTemplate : BasicTemplate;
         }
     }
 }

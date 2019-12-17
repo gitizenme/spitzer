@@ -47,5 +47,10 @@ namespace Spitzer.Views
                 viewModel.LoadItemsCommand.Execute(null);
             }            
         }
+
+        void OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            viewModel.FilterCommand.Execute(e.NewTextValue);
+        }
     }
 }

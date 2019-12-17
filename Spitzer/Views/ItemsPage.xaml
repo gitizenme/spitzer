@@ -69,13 +69,14 @@
 
     <StackLayout>
         <SearchBar x:Name="searchBar"
-               SearchCommand="{Binding FilterCommand}"
-               SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
-               Placeholder="Filter" />
+            SearchCommand="{Binding FilterCommand}"
+            SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
+            TextChanged="OnTextChanged"                
+            Placeholder="Filter" />
         <CollectionView x:Name="ItemsCollectionView"
             ItemsSource="{Binding Items}"
             ItemTemplate="{StaticResource ItemsPageSelector}"
-            EmptyView="Scheduling an observation for new content..."
+            EmptyView="{Binding Source={x:Reference ItemsCollectionView}, Path=ItemsSource}"
             EmptyViewTemplate="{StaticResource SearchSelector}"
             SelectionChanged="OnItemSelected"
             SelectionMode="Single">
