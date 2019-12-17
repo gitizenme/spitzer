@@ -14,22 +14,87 @@
 
     <ContentPage.Resources>
         <DataTemplate x:Key="TextOnlyTemplate">
-            <StackLayout Padding="10">
+            <StackLayout Padding="10" HeightRequest="150" Spacing="10">
                 <Label Text="{Binding Title}" 
                     d:Text="{Binding .}"
-                    LineBreakMode="NoWrap" 
+                    LineBreakMode="TailTruncation"
+                    MaxLines="2"
                     Style="{DynamicResource ListItemTextStyle}" 
                     FontSize="16" />
                 <Label Text="{Binding Description}" 
                     d:Text="{Binding .}"
-                    LineBreakMode="NoWrap"
+                    LineBreakMode="TailTruncation"
+                    MaxLines="6"
                     Style="{DynamicResource ListItemDetailTextStyle}"
                     FontSize="13" />
+                 <BoxView HeightRequest="3" />
+            </StackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ImageLeftTemplate">
+            <StackLayout HeightRequest="150" Spacing="10">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10" HorizontalOptions="Start">
+                        <Image Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="Center"
+                               Aspect="AspectFill"/>
+                    </StackLayout>
+                    <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
+                        <Label Text="{Binding Title}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="2"
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Description}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="6"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView HeightRequest="3" BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ImageRightTemplate">
+            <StackLayout HeightRequest="150" Spacing="10">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
+                        <Label Text="{Binding Title}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="2"
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Description}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="6"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                    </StackLayout>
+                    <StackLayout Spacing="10" HorizontalOptions="End">
+                        <Image Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="Center"
+                               Aspect="AspectFill"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView HeightRequest="3" BackgroundColor="Black" />
+                </StackLayout>
             </StackLayout>
         </DataTemplate>
 
         <controls:ItemsPageDataTemplateSelector x:Key="ItemsPageSelector"
-                                             TextOnlyTemplate="{StaticResource TextOnlyTemplate}" />
+                                             TextOnlyTemplate="{StaticResource TextOnlyTemplate}"
+                                             ImageLeftTemplate="{StaticResource ImageLeftTemplate}"
+                                             ImageRightTemplate="{StaticResource ImageRightTemplate}" />
 
         <DataTemplate x:Key="BasicTemplate">
             <StackLayout>
@@ -80,6 +145,10 @@
             EmptyViewTemplate="{StaticResource SearchSelector}"
             SelectionChanged="OnItemSelected"
             SelectionMode="Single">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                                   ItemSpacing="20" />
+            </CollectionView.ItemsLayout>
         </CollectionView>
     </StackLayout>
 
