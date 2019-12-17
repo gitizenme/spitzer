@@ -7,13 +7,15 @@ using Xamarin.Forms;
 
 using Spitzer.Models;
 using Spitzer.Views;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Spitzer.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<MediaItem> Items { get; set; }
-        public Command LoadItemsCommand { get; set; }
+        public ObservableCollection<MediaItem> Items { get; private set; }
+        public Command LoadItemsCommand { get; }
 
         public ItemsViewModel()
         {
@@ -37,6 +39,7 @@ namespace Spitzer.ViewModels
                 {
                     Items.Add(item);
                 }
+                Debug.WriteLine($"Items.Count: {Items.Count}");
             }
             catch (Exception ex)
             {

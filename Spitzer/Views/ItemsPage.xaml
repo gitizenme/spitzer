@@ -30,6 +30,37 @@
 
         <controls:ItemsPageDataTemplateSelector x:Key="ItemsPageSelector"
                                              TextOnlyTemplate="{StaticResource TextOnlyTemplate}" />
+
+        <DataTemplate x:Key="BasicTemplate">
+            <StackLayout>
+                <Label Text="Scheduling an observation for new content..."
+                       Margin="10,25,10,10"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </DataTemplate>
+        <DataTemplate x:Key="AdvancedTemplate">
+            <StackLayout>
+                <Label Text="No results matched your filter."
+                       Margin="10,25,10,10"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="Try a broader filter?"
+                       FontAttributes="Italic"
+                       FontSize="12"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </DataTemplate>
+
+        <controls:SearchTermDataTemplateSelector x:Key="SearchSelector"
+                                                 BasicTemplate="{StaticResource BasicTemplate}"
+                                                 AdvancedTemplate="{StaticResource AdvancedTemplate}" />
+
     </ContentPage.Resources>
 <!--
                 IsPullToRefreshEnabled="True"
@@ -37,9 +68,15 @@
 -->
 
     <StackLayout>
+        <SearchBar x:Name="searchBar"
+               SearchCommand="{Binding FilterCommand}"
+               SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
+               Placeholder="Filter" />
         <CollectionView x:Name="ItemsCollectionView"
             ItemsSource="{Binding Items}"
             ItemTemplate="{StaticResource ItemsPageSelector}"
+            EmptyView="Scheduling an observation for new content..."
+            EmptyViewTemplate="{StaticResource SearchSelector}"
             SelectionChanged="OnItemSelected"
             SelectionMode="Single">
         </CollectionView>
