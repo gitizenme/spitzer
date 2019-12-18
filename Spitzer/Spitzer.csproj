@@ -17,5 +17,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controls\" />
+    <Folder Include="Models\Images\" />
+    <Folder Include="Models\Metadata\" />
   </ItemGroup>
 </Project>

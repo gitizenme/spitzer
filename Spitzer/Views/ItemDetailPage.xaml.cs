@@ -6,6 +6,7 @@ using Xamarin.Forms.Xaml;
 using Spitzer.Models;
 using Spitzer.ViewModels;
 using System.Collections.Generic;
+using Spitzer.Models.ImageMetadata;
 
 namespace Spitzer.Views
 {
@@ -21,6 +22,8 @@ namespace Spitzer.Views
             InitializeComponent();
 
             BindingContext = this.viewModel = viewModel;
+
+            AddImagesAndMetatdata();
         }
 
         public ItemDetailPage()
@@ -38,6 +41,37 @@ namespace Spitzer.Views
 
             viewModel = new ItemDetailViewModel(item);
             BindingContext = viewModel;
+        }
+
+        private void AddImagesAndMetatdata()
+        {
+            var divider = new BoxView {BackgroundColor = Color.Black, HeightRequest = 3};
+
+            foreach (var image in viewModel.Images)
+            {
+                if (image.ToString().EndsWith(".jpg", StringComparison.Ordinal))
+                {
+                    Images.Children.Add(divider);
+                    var imageView = new Image
+                        {Source = image, HeightRequest = 50, WidthRequest = 50, HorizontalOptions = LayoutOptions.Start};
+                    Images.Children.Add(imageView);
+                }
+            //     else if (image.ToString().EndsWith(".json", StringComparison.Ordinal))
+            //     {
+            //         Images.Children.Add(divider);
+            //         var metadata = viewModel.Metadata;
+            //         if (metadata != null)
+            //         {
+            //             var kvp = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(metadata.ToJson());
+            //             foreach(var item in kvp)
+            //             {
+            //                 Console.WriteLine($"Key: {item.Key} Value: {item.Value}");
+            //                 Metadata.Children.Add(new Label {Text = $"{item.Key}: {item.Value}"});
+            //             }
+            //             // var formattedText = metadata.ToJson();
+            //         }
+            //     }
+            }
         }
     }
 }
