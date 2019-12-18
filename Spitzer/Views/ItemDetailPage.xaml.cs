@@ -54,23 +54,46 @@ namespace Spitzer.Views
                     Images.Children.Add(divider);
                     var imageView = new Image
                         {Source = image, HeightRequest = 50, WidthRequest = 50, HorizontalOptions = LayoutOptions.Start};
-                    Images.Children.Add(imageView);
+
+                    var imageWithLabelLayout = new StackLayout {Orientation = StackOrientation.Horizontal};
+                    var labelText = "Default";
+                    if (image.PathAndQuery.Contains("~orig"))
+                    {
+                        labelText = $"Original Resolution";
+                    }
+                    else if (image.PathAndQuery.Contains("~large"))
+                    {
+                        labelText = "Large";
+                    }
+                    else if (image.PathAndQuery.Contains("~medium"))
+                    {
+                        labelText = "Medium";
+                    }
+                    else if (image.PathAndQuery.Contains("~small"))
+                    {
+                        labelText = "Small";
+                    }
+                    else if (image.PathAndQuery.Contains("~thumb"))
+                    {
+                        labelText = "Thumbnail";
+                    }
+
+                    var imageLabel = new Label {Text = $"{labelText} ({imageView.Width}x{imageView.Height})"};
+                    imageWithLabelLayout.Children.Add(imageView);
+                    imageWithLabelLayout.Children.Add(imageLabel);
+                    
+                    Images.Children.Add(imageWithLabelLayout);
                 }
-            //     else if (image.ToString().EndsWith(".json", StringComparison.Ordinal))
-            //     {
-            //         Images.Children.Add(divider);
-            //         var metadata = viewModel.Metadata;
-            //         if (metadata != null)
-            //         {
-            //             var kvp = Newtonsoft.Json.JsonConvert.DeserializeObject<Dictionary<string, string>>(metadata.ToJson());
-            //             foreach(var item in kvp)
-            //             {
-            //                 Console.WriteLine($"Key: {item.Key} Value: {item.Value}");
-            //                 Metadata.Children.Add(new Label {Text = $"{item.Key}: {item.Value}"});
-            //             }
-            //             // var formattedText = metadata.ToJson();
-            //         }
-            //     }
+            }
+            var metadata = viewModel.Metadata;
+            if (metadata != null)
+            {
+                Images.Children.Add(divider);
+                foreach(var prop in metadata.GetType().GetProperties()) {
+                    var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
+                    Console.WriteLine(metadataLine);
+                    Metadata.Children.Add(new Label {Text = metadataLine});
+                }
             }
         }
     }
