@@ -27,25 +27,31 @@ namespace Spitzer.Views
             BindingContext = viewModel = new ItemsViewModel();
         }
 
-        async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
+        async void OnItemSelected(object sender, SelectionChangedEventArgs args)
         {
-            var item = args.SelectedItem as MediaItem;
+            var item = (args.CurrentSelection.FirstOrDefault() as MediaItem);
             if (item == null)
                 return;
 
             await Navigation.PushAsync(new ItemDetailPage(new ItemDetailViewModel(item)));
 
             // Manually deselect item.
-            ItemsListView.SelectedItem = null;
+            ItemsCollectionView.SelectedItem = null;
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            if (viewModel.Items.Count == 0) {
+            if (viewModel.Items.Count == 0)
+            {
                 viewModel.LoadItemsCommand.Execute(null);
             }
+        }
+
+        void OnTextChanged(object sender, TextChangedEventArgs e)
+        {
+            viewModel.FilterCommand.Execute(e.NewTextValue);
         }
     }
 }

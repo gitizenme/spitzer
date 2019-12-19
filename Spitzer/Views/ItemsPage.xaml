@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:Spitzer.Controls"
              mc:Ignorable="d"
              x:Class="Spitzer.Views.ItemsPage"
              Title="{Binding Title}"
@@ -11,12 +12,147 @@
     <ContentPage.ToolbarItems>
     </ContentPage.ToolbarItems>
 
+    <ContentPage.Resources>
+        <DataTemplate x:Key="TextOnlyTemplate">
+            <StackLayout Padding="10" HeightRequest="150" Spacing="10">
+                <Label Text="{Binding Title}" 
+                    d:Text="{Binding .}"
+                    LineBreakMode="TailTruncation"
+                    MaxLines="2"
+                    Style="{DynamicResource ListItemTextStyle}" 
+                    FontSize="16" />
+                <Label Text="{Binding Description}" 
+                    d:Text="{Binding .}"
+                    LineBreakMode="TailTruncation"
+                    MaxLines="6"
+                    Style="{DynamicResource ListItemDetailTextStyle}"
+                    FontSize="13" />
+                 <BoxView HeightRequest="3" />
+            </StackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ImageLeftTemplate">
+            <StackLayout HeightRequest="150" Spacing="10">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10" HorizontalOptions="Start">
+                        <Image Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="Center"
+                               Aspect="AspectFill"/>
+                    </StackLayout>
+                    <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
+                        <Label Text="{Binding Title}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="2"
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Description}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="6"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView HeightRequest="3" BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="ImageRightTemplate">
+            <StackLayout HeightRequest="150" Spacing="10">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
+                        <Label Text="{Binding Title}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="2"
+                            Style="{DynamicResource ListItemTextStyle}" 
+                            FontSize="16" />
+                        <Label Text="{Binding Description}" 
+                            d:Text="{Binding .}"
+                            LineBreakMode="TailTruncation"
+                            MaxLines="6"
+                            Style="{DynamicResource ListItemDetailTextStyle}"
+                            FontSize="13" />
+                    </StackLayout>
+                    <StackLayout Spacing="10" HorizontalOptions="End">
+                        <Image Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                               HorizontalOptions="StartAndExpand"
+                               VerticalOptions="Center"
+                               Aspect="AspectFill"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView HeightRequest="3" BackgroundColor="Black" />
+                </StackLayout>
+            </StackLayout>
+        </DataTemplate>
+
+        <controls:ItemsPageDataTemplateSelector x:Key="ItemsPageSelector"
+                                             TextOnlyTemplate="{StaticResource TextOnlyTemplate}"
+                                             ImageLeftTemplate="{StaticResource ImageLeftTemplate}"
+                                             ImageRightTemplate="{StaticResource ImageRightTemplate}" />
+
+        <DataTemplate x:Key="BasicTemplate">
+            <StackLayout>
+                <Label Text="Scheduling an observation for new content..."
+                       Margin="10,25,10,10"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </DataTemplate>
+        <DataTemplate x:Key="AdvancedTemplate">
+            <StackLayout>
+                <Label Text="No results matched your filter."
+                       Margin="10,25,10,10"
+                       FontAttributes="Bold"
+                       FontSize="18"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="Try a broader filter?"
+                       FontAttributes="Italic"
+                       FontSize="12"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </DataTemplate>
+
+        <controls:SearchTermDataTemplateSelector x:Key="SearchSelector"
+                                                 BasicTemplate="{StaticResource BasicTemplate}"
+                                                 AdvancedTemplate="{StaticResource AdvancedTemplate}" />
+
+    </ContentPage.Resources>
 <!--
                 IsPullToRefreshEnabled="True"
                 IsRefreshing="{Binding IsBusy, Mode=OneWay}"
 -->
 
+    <StackLayout>
+        <SearchBar x:Name="searchBar"
+            SearchCommand="{Binding FilterCommand}"
+            SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
+            TextChanged="OnTextChanged"                
+            Placeholder="Filter" />
+        <CollectionView x:Name="ItemsCollectionView"
+            ItemsSource="{Binding Items}"
+            ItemTemplate="{StaticResource ItemsPageSelector}"
+            EmptyView="{Binding Source={x:Reference ItemsCollectionView}, Path=ItemsSource}"
+            EmptyViewTemplate="{StaticResource SearchSelector}"
+            SelectionChanged="OnItemSelected"
+            SelectionMode="Single">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                                   ItemSpacing="20" />
+            </CollectionView.ItemsLayout>
+        </CollectionView>
+    </StackLayout>
 
+<!--
     <StackLayout>
         <ListView x:Name="ItemsListView"
                 ItemsSource="{Binding Items}"
@@ -50,5 +186,7 @@
             </ListView.ItemTemplate>
         </ListView>
     </StackLayout>
+-->
+
 
 </ContentPage>

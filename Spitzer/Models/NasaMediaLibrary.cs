@@ -134,6 +134,7 @@ namespace Spitzer.Models
         {
             MetadataPropertyHandling = MetadataPropertyHandling.Ignore,
             DateParseHandling = DateParseHandling.None,
+            Formatting = Formatting.Indented,
             Converters =
             {
                 CenterConverter.Singleton,

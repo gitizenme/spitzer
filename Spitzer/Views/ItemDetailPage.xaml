@@ -7,11 +7,19 @@
              x:Class="Spitzer.Views.ItemDetailPage"
              Title="{Binding Title}">
 
-    <StackLayout Spacing="20" Padding="15">
-        <Label Text="Text:" FontSize="Medium" />
-        <Label Text="{Binding Item.Title}" d:Text="Title" FontSize="Small"/>
-        <Label Text="Description:" FontSize="Medium" />
-        <Label Text="{Binding Item.Description}" d:Text="Description" FontSize="Small"/>
-    </StackLayout>
+    <ScrollView>
+        <StackLayout Spacing="20">
+            <Label Text="{Binding Item.Title}" d:Text="Title" FontSize="Small"/>
+            <Image Source="{Binding Item.ImagePreview}"
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="Center"
+                    Aspect="AspectFill"/>
+            <Label Text="{Binding Item.Description}" d:Text="Description" FontSize="Small"/>
+            <StackLayout x:Name="Images">
+            </StackLayout>
+            <StackLayout x:Name="Metadata">
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
     
 </ContentPage>
