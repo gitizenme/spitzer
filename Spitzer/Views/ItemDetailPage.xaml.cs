@@ -114,17 +114,17 @@ namespace Spitzer.Views
                     imageWithLabelLayout.Children.Add(imageLabel);
                     Images.Children.Add(imageWithLabelLayout);
 
-                    var metadata = viewModel.Metadata;
-                    if (metadata != null)
-                    {
-                        Images.Children.Add(divider);
-                        foreach (var prop in metadata.GetType().GetProperties())
-                        {
-                            var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
-                            Debug.WriteLine(metadataLine);
-                            Metadata.Children.Add(new Label {Text = metadataLine});
-                        }
-                    }
+                }
+            }
+            var metadata = viewModel.Metadata;
+            if (metadata != null)
+            {
+                Images.Children.Add(divider);
+                foreach (var prop in metadata.GetType().GetProperties())
+                {
+                    var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
+                    Debug.WriteLine(metadataLine);
+                    Metadata.Children.Add(new Label {Text = metadataLine});
                 }
             }
         }
