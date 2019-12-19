@@ -57,7 +57,8 @@ namespace Spitzer.Models.ImageMetadata
 
         [JsonProperty("EXIF:ExifVersion")] public string ExifExifVersion { get; set; }
 
-        [JsonProperty("AVAIL:Keywords")] public List<string> AvailKeywords { get; set; }
+        // [JsonProperty("AVAIL:Keywords")] public List<string> AvailKeywords { get; set; }
+        [JsonProperty("AVAIL:Keywords")] public string[] AvailKeywords { get; set; }
 
         [JsonProperty("File:FileAccessDate")] public string FileFileAccessDate { get; set; }
 
@@ -127,7 +128,10 @@ namespace Spitzer.Models.ImageMetadata
 
         [JsonProperty("AVAIL:Location")] public string AvailLocation { get; set; }
 
-        [JsonProperty("IPTC:Keywords")] public List<string> IptcKeywords { get; set; }
+        // Ignoring this as the the type is not consistent - array if there are multiple keywords
+        // string is there is a single keyword
+        // Use AvailKeywords
+        // [JsonProperty("IPTC:Keywords")] public List<string> IptcKeywords { get; set; }
 
         [JsonProperty("File:FileModifyDate")] public string FileFileModifyDate { get; set; }
 

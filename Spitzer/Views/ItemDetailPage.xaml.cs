@@ -6,6 +6,7 @@ using Spitzer.Models;
 using Spitzer.ViewModels;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 using System.Threading.Tasks;
 using FFImageLoading.Forms;
 using FFImageLoading.Mock;
@@ -122,9 +123,22 @@ namespace Spitzer.Views
                 Images.Children.Add(divider);
                 foreach (var prop in metadata.GetType().GetProperties())
                 {
-                    var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
-                    Debug.WriteLine(metadataLine);
-                    Metadata.Children.Add(new Label {Text = metadataLine});
+                    if (prop.PropertyType.IsArray)
+                    {
+                        if(prop.GetValue(metadata, null) is string[] data)
+                        {
+                            var values = string.Join(", ", data.Select(item => item));
+                            var metadataLine = $"{prop.Name}: {values}";
+                            Debug.WriteLine(metadataLine);
+                            Metadata.Children.Add(new Label {Text = metadataLine});
+                        }
+                    }
+                    else
+                    {
+                        var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
+                        Debug.WriteLine(metadataLine);
+                        Metadata.Children.Add(new Label {Text = metadataLine});
+                    }
                 }
             }
         }
