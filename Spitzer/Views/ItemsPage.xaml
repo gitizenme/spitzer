@@ -17,15 +17,15 @@
             <StackLayout Padding="10" HeightRequest="150" Spacing="10">
                 <Label Text="{Binding Title}" 
                     d:Text="{Binding .}"
+                    TextColor="{DynamicResource textColor}"
                     LineBreakMode="TailTruncation"
                     MaxLines="2"
-                    Style="{DynamicResource ListItemTextStyle}" 
                     FontSize="16" />
                 <Label Text="{Binding Description}" 
                     d:Text="{Binding .}"
+                    TextColor="{DynamicResource textColor}"
                     LineBreakMode="TailTruncation"
                     MaxLines="6"
-                    Style="{DynamicResource ListItemDetailTextStyle}"
                     FontSize="13" />
                  <BoxView HeightRequest="3" />
             </StackLayout>
@@ -43,15 +43,15 @@
                     <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
                         <Label Text="{Binding Title}" 
                             d:Text="{Binding .}"
+                            TextColor="{DynamicResource textColor}"
                             LineBreakMode="TailTruncation"
                             MaxLines="2"
-                            Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Label Text="{Binding Description}" 
                             d:Text="{Binding .}"
+                            TextColor="{DynamicResource textColor}"
                             LineBreakMode="TailTruncation"
                             MaxLines="6"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="13" />
                     </StackLayout>
                 </StackLayout>
@@ -67,15 +67,15 @@
                     <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
                         <Label Text="{Binding Title}" 
                             d:Text="{Binding .}"
+                            TextColor="{DynamicResource textColor}"
                             LineBreakMode="TailTruncation"
                             MaxLines="2"
-                            Style="{DynamicResource ListItemTextStyle}" 
                             FontSize="16" />
                         <Label Text="{Binding Description}" 
                             d:Text="{Binding .}"
+                            TextColor="{DynamicResource textColor}"
                             LineBreakMode="TailTruncation"
                             MaxLines="6"
-                            Style="{DynamicResource ListItemDetailTextStyle}"
                             FontSize="13" />
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="End">
@@ -100,6 +100,7 @@
             <StackLayout>
                 <Label Text="Scheduling an observation for new content..."
                        Margin="10,25,10,10"
+                       TextColor="{DynamicResource textColor}"
                        FontAttributes="Bold"
                        FontSize="18"
                        HorizontalOptions="Fill"
@@ -110,11 +111,13 @@
             <StackLayout>
                 <Label Text="No results matched your filter."
                        Margin="10,25,10,10"
+                       TextColor="{DynamicResource textColor}"
                        FontAttributes="Bold"
                        FontSize="18"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center" />
                 <Label Text="Try a broader filter?"
+                       TextColor="{DynamicResource textColor}"
                        FontAttributes="Italic"
                        FontSize="12"
                        HorizontalOptions="Fill"
@@ -151,42 +154,4 @@
             </CollectionView.ItemsLayout>
         </CollectionView>
     </StackLayout>
-
-<!--
-    <StackLayout>
-        <ListView x:Name="ItemsListView"
-                ItemsSource="{Binding Items}"
-                VerticalOptions="FillAndExpand"
-                HasUnevenRows="true"
-                RefreshCommand="{Binding LoadItemsCommand}"
-                CachingStrategy="RecycleElement"
-                ItemSelected="OnItemSelected">
-            <d:ListView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>Scheduling and observation for new content...</x:String>
-                </x:Array>
-            </d:ListView.ItemsSource>
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding Title}" 
-                                d:Text="{Binding .}"
-                                LineBreakMode="NoWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
-                                FontSize="16" />
-                            <Label Text="{Binding Description}" 
-                                d:Text="{Binding .}"
-                                LineBreakMode="NoWrap"
-                                Style="{DynamicResource ListItemDetailTextStyle}"
-                                FontSize="13" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </StackLayout>
--->
-
-
 </ContentPage>

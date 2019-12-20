@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
 using Spitzer.Views;
+using Spitzer.Styles;
 
 namespace Spitzer
 {
@@ -46,13 +47,11 @@ namespace Spitzer
             {
                 if (theme == Theme.Light)
                 {
-                    ((TabbedPage)MainPage).BarBackgroundColor = Color.White;
-                    ((TabbedPage)MainPage).BarTextColor = Color.Black;
+                    Current.Resources = new LightTheme();
                 }
                 else if (theme == Theme.Dark)
                 {
-                    ((TabbedPage)MainPage).BarBackgroundColor = Color.Black;
-                    ((TabbedPage)MainPage).BarTextColor = Color.White;
+                    Current.Resources = new DarkTheme(); // needs using DarkMode.Styles;
                 }
             }
         }

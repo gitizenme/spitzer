@@ -7,12 +7,32 @@
              x:Class="Spitzer.App">
 
     <Application.Resources>
+        <ResourceDictionary Source="/Styles/LightTheme.xaml"/>
         <ResourceDictionary>
             <!--Global Styles-->
-            <Color x:Key="NavigationPrimary">White</Color>
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="{StaticResource NavigationPrimary}" />
-                <Setter Property="BarTextColor" Value="Black" />
+                <Setter Property="BarBackgroundColor" Value="{DynamicResource background}" />
+                <Setter Property="BarTextColor" Value="{DynamicResource textColor}" />
+            </Style>
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="{DynamicResource background}" />
+            </Style>
+            <Style TargetType="StackLayout">
+                <Setter Property="BackgroundColor" Value="{DynamicResource background}" />
+            </Style>
+            <Style TargetType="CollectionView">
+                <Setter Property="BackgroundColor" Value="{DynamicResource background}" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="BackgroundColor" Value="{DynamicResource background}" />
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
+            </Style>
+            <Style TargetType="Image">
+                <Setter Property="BackgroundColor" Value="{DynamicResource background}" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{DynamicResource background}" />
+                <Setter Property="TextColor" Value="{DynamicResource textColor}" />
             </Style>
         </ResourceDictionary>
     </Application.Resources>
