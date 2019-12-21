@@ -5,16 +5,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="Spitzer.Views.ItemDetailPage"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"             
              Title="{Binding Title}">
 
     <ScrollView>
         <StackLayout Spacing="20">
-            <Label Text="{Binding Item.Title}" d:Text="Title" FontSize="Small"/>
             <Image Source="{Binding Item.ImagePreview}"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="Center"
-                    Aspect="AspectFill"/>
-            <Label Text="{Binding Item.Description}" d:Text="Description" FontSize="Small"/>
+                    Aspect="AspectFill" />
+            <Label Text="{Binding Item.Description}" d:Text="Description"
+                   Style="{StaticResource MediumLabelStyle}" />
             <StackLayout x:Name="Images">
             </StackLayout>
             <StackLayout x:Name="Metadata">

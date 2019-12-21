@@ -22,5 +22,6 @@
     <Folder Include="Controls\" />
     <Folder Include="Models\Images\" />
     <Folder Include="Models\Metadata\" />
+    <Folder Include="Themes\" />
   </ItemGroup>
 </Project>

@@ -82,7 +82,8 @@ namespace Spitzer.Views
                     var imageLabel = new Label
                     {
                         Text = $"{labelText}", VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Start
+                        HorizontalOptions = LayoutOptions.Start,
+                        Style = App.Current.Resources["MediumLabelStyle"] as Style
                     };
                     var imageView = new CachedImage
                     {
@@ -97,14 +98,16 @@ namespace Spitzer.Views
                         var imageDimensionsLabel = new Label
                         {
                             Text = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})",
-                            VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start
+                            VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start,
+                            Style = App.Current.Resources["SmallLabelStyle"] as Style
                         };
                         if (viewModel.ImageLayout.TryGetValue(e.ImageInformation.Path, out var layout))
                         {
-                            MainThread.BeginInvokeOnMainThread ( () => {
+                            MainThread.BeginInvokeOnMainThread(() =>
+                            {
                                 layout.Children.Add(imageDimensionsLabel);
                                 layout.ForceLayout();
-                            });                            
+                            });
                         }
                     };
 
@@ -114,9 +117,9 @@ namespace Spitzer.Views
                     imageWithLabelLayout.Children.Add(imageView);
                     imageWithLabelLayout.Children.Add(imageLabel);
                     Images.Children.Add(imageWithLabelLayout);
-
                 }
             }
+
             var metadata = viewModel.Metadata;
             if (metadata != null)
             {
@@ -125,19 +128,23 @@ namespace Spitzer.Views
                 {
                     if (prop.PropertyType.IsArray)
                     {
-                        if(prop.GetValue(metadata, null) is string[] data)
+                        if (prop.GetValue(metadata, null) is string[] data)
                         {
                             var values = string.Join(", ", data.Select(item => item));
                             var metadataLine = $"{prop.Name}: {values}";
                             Debug.WriteLine(metadataLine);
-                            Metadata.Children.Add(new Label {Text = metadataLine});
+                            Metadata.Children.Add(new Label
+                            {
+                                Text = metadataLine, Style = App.Current.Resources["SmallLabelStyle"] as Style
+                            });
                         }
                     }
                     else
                     {
                         var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
                         Debug.WriteLine(metadataLine);
-                        Metadata.Children.Add(new Label {Text = metadataLine});
+                        Metadata.Children.Add(new Label
+                            {Text = metadataLine, Style =  App.Current.Resources["SmallLabelStyle"] as Style});
                     }
                 }
             }

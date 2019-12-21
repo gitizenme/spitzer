@@ -1,8 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
 using Spitzer.Views;
+using Spitzer.Styles;
 
 namespace Spitzer
 {
@@ -12,7 +14,7 @@ namespace Spitzer
         public App()
         {
             InitializeComponent();
-
+            SetTheme(Theme.Light);
             DependencyService.Register<NasaMediaLibraryDataStore>();
             MainPage = new MainPage();
         }
@@ -44,15 +46,21 @@ namespace Spitzer
         {
             if(MainPage != null)
             {
-                if (theme == Theme.Light)
+                ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+                if (mergedDictionaries != null)
                 {
-                    ((TabbedPage)MainPage).BarBackgroundColor = Color.White;
-                    ((TabbedPage)MainPage).BarTextColor = Color.Black;
-                }
-                else if (theme == Theme.Dark)
-                {
-                    ((TabbedPage)MainPage).BarBackgroundColor = Color.Black;
-                    ((TabbedPage)MainPage).BarTextColor = Color.White;
+                    mergedDictionaries.Clear();
+
+                    switch (theme)
+                    {
+                        case Theme.Dark:
+                            mergedDictionaries.Add(new DarkTheme());
+                            break;
+                        case Theme.Light:
+                        default:
+                            mergedDictionaries.Add(new LightTheme());
+                            break;
+                    }
                 }
             }
         }
