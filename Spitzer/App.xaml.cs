@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
@@ -13,7 +14,7 @@ namespace Spitzer
         public App()
         {
             InitializeComponent();
-
+            SetTheme(Theme.Light);
             DependencyService.Register<NasaMediaLibraryDataStore>();
             MainPage = new MainPage();
         }
@@ -45,13 +46,21 @@ namespace Spitzer
         {
             if(MainPage != null)
             {
-                if (theme == Theme.Light)
+                ICollection<ResourceDictionary> mergedDictionaries = Application.Current.Resources.MergedDictionaries;
+                if (mergedDictionaries != null)
                 {
-                    Current.Resources = new LightTheme();
-                }
-                else if (theme == Theme.Dark)
-                {
-                    Current.Resources = new DarkTheme(); // needs using DarkMode.Styles;
+                    mergedDictionaries.Clear();
+
+                    switch (theme)
+                    {
+                        case Theme.Dark:
+                            mergedDictionaries.Add(new DarkTheme());
+                            break;
+                        case Theme.Light:
+                        default:
+                            mergedDictionaries.Add(new LightTheme());
+                            break;
+                    }
                 }
             }
         }

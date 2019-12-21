@@ -20,9 +20,11 @@ namespace Spitzer.ViewModels
         public ObservableCollection<MediaItem> Items { get; private set; }
         public ICommand LoadItemsCommand { get; }
         public ICommand FilterCommand => new Command<string>(FilterItems);
+        public bool IsFirstLoad { get; private set; }
 
         public ItemsViewModel()
         {
+            IsFirstLoad = true;
             Title = "Spitzer Gallery";
             source = new List<MediaItem>();
             Items = new ObservableCollection<MediaItem>();
@@ -55,6 +57,10 @@ namespace Spitzer.ViewModels
             finally
             {
                 IsBusy = false;
+                if (IsFirstLoad)
+                {
+                    IsFirstLoad = false;
+                }
             }
         }
 

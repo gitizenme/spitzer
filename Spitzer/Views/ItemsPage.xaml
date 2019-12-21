@@ -7,6 +7,7 @@
              mc:Ignorable="d"
              x:Class="Spitzer.Views.ItemsPage"
              Title="{Binding Title}"
+             BackgroundColor="{DynamicResource PageBackgroundColor}"             
              x:Name="BrowseItemsPage">
 
     <ContentPage.ToolbarItems>
@@ -17,13 +18,13 @@
             <StackLayout Padding="10" HeightRequest="150" Spacing="10">
                 <Label Text="{Binding Title}" 
                     d:Text="{Binding .}"
-                    TextColor="{DynamicResource textColor}"
+                    Style="{StaticResource LargeLabelStyle}"
                     LineBreakMode="TailTruncation"
                     MaxLines="2"
                     FontSize="16" />
                 <Label Text="{Binding Description}" 
                     d:Text="{Binding .}"
-                    TextColor="{DynamicResource textColor}"
+                    Style="{StaticResource MediumLabelStyle}"
                     LineBreakMode="TailTruncation"
                     MaxLines="6"
                     FontSize="13" />
@@ -43,13 +44,13 @@
                     <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
                         <Label Text="{Binding Title}" 
                             d:Text="{Binding .}"
-                            TextColor="{DynamicResource textColor}"
+                            Style="{StaticResource LargeLabelStyle}"
                             LineBreakMode="TailTruncation"
                             MaxLines="2"
                             FontSize="16" />
                         <Label Text="{Binding Description}" 
                             d:Text="{Binding .}"
-                            TextColor="{DynamicResource textColor}"
+                            Style="{StaticResource MediumLabelStyle}"
                             LineBreakMode="TailTruncation"
                             MaxLines="6"
                             FontSize="13" />
@@ -67,13 +68,13 @@
                     <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
                         <Label Text="{Binding Title}" 
                             d:Text="{Binding .}"
-                            TextColor="{DynamicResource textColor}"
+                            Style="{StaticResource LargeLabelStyle}"
                             LineBreakMode="TailTruncation"
                             MaxLines="2"
                             FontSize="16" />
                         <Label Text="{Binding Description}" 
                             d:Text="{Binding .}"
-                            TextColor="{DynamicResource textColor}"
+                            Style="{StaticResource MediumLabelStyle}"
                             LineBreakMode="TailTruncation"
                             MaxLines="6"
                             FontSize="13" />
@@ -100,8 +101,9 @@
             <StackLayout>
                 <Label Text="Scheduling an observation for new content..."
                        Margin="10,25,10,10"
-                       TextColor="{DynamicResource textColor}"
+                       Style="{StaticResource LargeLabelStyle}"
                        FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
                        FontSize="18"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center" />
@@ -111,14 +113,16 @@
             <StackLayout>
                 <Label Text="No results matched your filter."
                        Margin="10,25,10,10"
-                       TextColor="{DynamicResource textColor}"
+                       Style="{StaticResource LargeLabelStyle}"
                        FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
                        FontSize="18"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center" />
                 <Label Text="Try a broader filter?"
-                       TextColor="{DynamicResource textColor}"
+                       Style="{StaticResource MediumLabelStyle}"
                        FontAttributes="Italic"
+                       LineBreakMode="WordWrap"
                        FontSize="12"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center" />
@@ -139,12 +143,13 @@
         <SearchBar x:Name="searchBar"
             SearchCommand="{Binding FilterCommand}"
             SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
-            TextChanged="OnTextChanged"                
+            TextChanged="OnTextChanged"
+            TextColor="{DynamicResource PrimaryColor}"
             Placeholder="Filter" />
         <CollectionView x:Name="ItemsCollectionView"
             ItemsSource="{Binding Items}"
             ItemTemplate="{StaticResource ItemsPageSelector}"
-            EmptyView="{Binding Source={x:Reference ItemsCollectionView}, Path=ItemsSource}"
+            EmptyView="{Binding Source={x:Reference searchBar}, Path=Text}"
             EmptyViewTemplate="{StaticResource SearchSelector}"
             SelectionChanged="OnItemSelected"
             SelectionMode="Single">

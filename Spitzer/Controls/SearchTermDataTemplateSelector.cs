@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using Spitzer.Models;
+using Spitzer.ViewModels;
 using Xamarin.Forms;
 
 namespace Spitzer.Controls
@@ -12,8 +14,13 @@ namespace Spitzer.Controls
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            ObservableCollection<MediaItem> query = (ObservableCollection<MediaItem>)item;
-            return query.Count == 0 ? AdvancedTemplate : BasicTemplate;
+            var viewModel = (ItemsViewModel)container.BindingContext;
+            if (viewModel.IsFirstLoad)
+            {
+                return BasicTemplate;
+            }
+            Debug.WriteLine($"viewModel.Items.Count: {viewModel.Items.Count}");
+            return viewModel.Items.Count == 0 ? AdvancedTemplate : BasicTemplate;
         }
     }
 }
