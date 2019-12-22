@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Spitzer.Controls;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,6 +26,7 @@ namespace Spitzer.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
+            // ItemsCollectionView.EmptyViewTemplate = Resources["BasicTemplate"] as DataTemplate;
         }
 
         async void OnItemSelected(object sender, SelectionChangedEventArgs args)
@@ -52,6 +54,10 @@ namespace Spitzer.Views
         void OnTextChanged(object sender, TextChangedEventArgs e)
         {
             viewModel.FilterCommand.Execute(e.NewTextValue);
+            // if (viewModel.Items.Count == 0)
+            // {
+            //     ItemsCollectionView.EmptyViewTemplate = Resources["AdvancedTemplate"] as DataTemplate;
+            // }
         }
     }
 }

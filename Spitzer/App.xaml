@@ -31,6 +31,40 @@
                 <Setter Property="FontSize"
                         Value="15" />
             </Style>            
+
+            <Style x:Key="LargeImageOverlayLabelStyle"
+                   TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="White" />
+                <Setter Property="FontSize"
+                        Value="30" />
+            </Style>
+
+            <Style x:Key="MediumImageOverlayLabelStyle"
+                   TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="White" />
+                <Setter Property="FontSize"
+                        Value="25" />
+            </Style>
+
+            <Style x:Key="SmallImageOverlayLabelStyle"
+                   TargetType="Label">
+                <Setter Property="TextColor"
+                        Value="White" />
+                <Setter Property="FontSize"
+                        Value="15" />
+            </Style>            
+            
+            
+            <Style x:Key="BoxViewStyle"
+                   TargetType="BoxView">
+                <Setter Property="BackgroundColor"
+                        Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="HeightRequest"
+                        Value="3"/>
+            </Style>            
+            
             <!--Global Styles-->
             <!--
             <Style TargetType="NavigationPage">

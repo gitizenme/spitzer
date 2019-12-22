@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FFImageLoading.Forms;
 using FFImageLoading.Mock;
+using FFImageLoading.Transformations;
 using FFImageLoading.Work;
 using Spitzer.Models.ImageMetadata;
 using Xamarin.Essentials;
@@ -29,7 +30,7 @@ namespace Spitzer.Views
 
             BindingContext = this.viewModel = viewModel;
 
-            AddImagesAndMetatdata();
+            BackgroundPreviewImage.Source = viewModel.Item.ImagePreview;
         }
 
         public ItemDetailPage()
@@ -49,105 +50,9 @@ namespace Spitzer.Views
             BindingContext = viewModel;
         }
 
-        private void AddImagesAndMetatdata()
+        private void OnItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            var divider = new BoxView {BackgroundColor = Color.Black, HeightRequest = 3};
-
-            foreach (var imageUri in viewModel.ImageUriList)
-            {
-                if (imageUri.ToString().EndsWith(".jpg", StringComparison.Ordinal))
-                {
-                    var labelText = "Default";
-                    if (imageUri.PathAndQuery.Contains("~orig"))
-                    {
-                        labelText = $"Original Resolution";
-                    }
-                    else if (imageUri.PathAndQuery.Contains("~large"))
-                    {
-                        labelText = "Large";
-                    }
-                    else if (imageUri.PathAndQuery.Contains("~medium"))
-                    {
-                        labelText = "Medium";
-                    }
-                    else if (imageUri.PathAndQuery.Contains("~small"))
-                    {
-                        labelText = "Small";
-                    }
-                    else if (imageUri.PathAndQuery.Contains("~thumb"))
-                    {
-                        labelText = "Thumbnail";
-                    }
-
-                    var imageLabel = new Label
-                    {
-                        Text = $"{labelText}", VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Start,
-                        Style = App.Current.Resources["MediumLabelStyle"] as Style
-                    };
-                    var imageView = new CachedImage
-                    {
-                        Source = imageUri, HeightRequest = 50, WidthRequest = 50,
-                        VerticalOptions = LayoutOptions.Center,
-                        HorizontalOptions = LayoutOptions.Start
-                    };
-
-                    var imageWithLabelLayout = new StackLayout {Orientation = StackOrientation.Horizontal};
-                    imageView.Success += (sender, e) =>
-                    {
-                        var imageDimensionsLabel = new Label
-                        {
-                            Text = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})",
-                            VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start,
-                            Style = App.Current.Resources["SmallLabelStyle"] as Style
-                        };
-                        if (viewModel.ImageLayout.TryGetValue(e.ImageInformation.Path, out var layout))
-                        {
-                            MainThread.BeginInvokeOnMainThread(() =>
-                            {
-                                layout.Children.Add(imageDimensionsLabel);
-                                layout.ForceLayout();
-                            });
-                        }
-                    };
-
-                    viewModel.ImageLayout[imageUri.ToString()] = imageWithLabelLayout;
-
-                    Images.Children.Add(divider);
-                    imageWithLabelLayout.Children.Add(imageView);
-                    imageWithLabelLayout.Children.Add(imageLabel);
-                    Images.Children.Add(imageWithLabelLayout);
-                }
-            }
-
-            var metadata = viewModel.Metadata;
-            if (metadata != null)
-            {
-                Images.Children.Add(divider);
-                foreach (var prop in metadata.GetType().GetProperties())
-                {
-                    if (prop.PropertyType.IsArray)
-                    {
-                        if (prop.GetValue(metadata, null) is string[] data)
-                        {
-                            var values = string.Join(", ", data.Select(item => item));
-                            var metadataLine = $"{prop.Name}: {values}";
-                            Debug.WriteLine(metadataLine);
-                            Metadata.Children.Add(new Label
-                            {
-                                Text = metadataLine, Style = App.Current.Resources["SmallLabelStyle"] as Style
-                            });
-                        }
-                    }
-                    else
-                    {
-                        var metadataLine = $"{prop.Name}: {prop.GetValue(metadata, null)}";
-                        Debug.WriteLine(metadataLine);
-                        Metadata.Children.Add(new Label
-                            {Text = metadataLine, Style =  App.Current.Resources["SmallLabelStyle"] as Style});
-                    }
-                }
-            }
+            throw new NotImplementedException();
         }
     }
 }
