@@ -1,19 +1,8 @@
-﻿using System;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 using Spitzer.Models;
 using Spitzer.ViewModels;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using FFImageLoading.Forms;
-using FFImageLoading.Mock;
-using FFImageLoading.Transformations;
-using FFImageLoading.Work;
-using Spitzer.Models.ImageMetadata;
-using Xamarin.Essentials;
 
 namespace Spitzer.Views
 {
@@ -52,7 +41,11 @@ namespace Spitzer.Views
 
         private void OnItemSelected(object sender, SelectionChangedEventArgs e)
         {
-            throw new NotImplementedException();
+            if (BindingContext is ItemDetailViewModel viewModel)
+            {
+                var itemImagePreview = e.CurrentSelection[0] as ItemImagePreview;
+                // TODO load the image ... 
+            }
         }
     }
 }

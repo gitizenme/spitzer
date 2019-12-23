@@ -24,4 +24,7 @@
     <Folder Include="Models\Metadata\" />
     <Folder Include="Themes\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Annotations.cs" />
+  </ItemGroup>
 </Project>

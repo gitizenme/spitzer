@@ -2557,7 +2557,6 @@ namespace Spitzer.Services
 }
              */
             var client = new RestClient("https://images-api.nasa.gov");
-            // client.Authenticator = new HttpBasicAuthenticator(username, password);
 
             var request = new RestRequest("search", Method.GET);
             request.AddParameter("q", "spitzer space telescope"); // adds to POST or URL querystring based on Method
@@ -2572,9 +2571,9 @@ namespace Spitzer.Services
                 var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
                 Debug.WriteLine($"pages: {pages}");
                 request.AddParameter("page", 0);
-                for (int page = 2; page < pages; page++)
+                for (int page = 2; page <= pages; page++)
                 {
-                    Debug.WriteLine($"Loading page: {page} of {pages-1}");
+                    Debug.WriteLine($"Loading page: {page} of {pages}");
                     request.Parameters[2].Value = page;
                     var pageResponse = client.Execute<NasaMediaLibrary>(request);
                     if (pageResponse.Data != null)

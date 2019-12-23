@@ -1,16 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Diagnostics;
 using System.Linq;
 using System.Runtime.CompilerServices;
-using System.Windows.Input;
-using FFImageLoading.Forms;
-using Spitzer.Annotations;
 using Spitzer.Models;
-using Spitzer.Models.ImageMetadata;
-using Xamarin.Essentials;
-using Xamarin.Forms;
 
 namespace Spitzer.ViewModels
 {
