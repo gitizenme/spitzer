@@ -4,6 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:controls="clr-namespace:Spitzer.Controls"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              mc:Ignorable="d"
              x:Class="Spitzer.Views.ItemsPage"
              Title="{Binding Title}"
@@ -28,7 +29,7 @@
                     LineBreakMode="TailTruncation"
                     MaxLines="6"
                     FontSize="13" />
-                 <BoxView HeightRequest="3" />
+                <BoxView Style="{StaticResource BoxViewStyle}" />
             </StackLayout>
         </DataTemplate>
 
@@ -36,10 +37,10 @@
             <StackLayout HeightRequest="150" Spacing="10">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Spacing="10" HorizontalOptions="Start">
-                        <Image Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
-                               HorizontalOptions="StartAndExpand"
-                               VerticalOptions="Center"
-                               Aspect="AspectFill"/>
+                        <forms:CachedImage Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                                           HorizontalOptions="StartAndExpand"
+                                           VerticalOptions="Center"
+                                           Aspect="AspectFill"/>
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
                         <Label Text="{Binding Title}" 
@@ -57,7 +58,7 @@
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
-                    <BoxView HeightRequest="3" BackgroundColor="Black" />
+                    <BoxView Style="{StaticResource BoxViewStyle}" />
                 </StackLayout>
             </StackLayout>
         </DataTemplate>
@@ -80,14 +81,14 @@
                             FontSize="13" />
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="End">
-                        <Image Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
-                               HorizontalOptions="StartAndExpand"
-                               VerticalOptions="Center"
-                               Aspect="AspectFill"/>
+                        <forms:CachedImage Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                                           HorizontalOptions="StartAndExpand"
+                                           VerticalOptions="Center"
+                                           Aspect="AspectFill"/>
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
-                    <BoxView HeightRequest="3" BackgroundColor="Black" />
+                    <BoxView Style="{StaticResource BoxViewStyle}" />
                 </StackLayout>
             </StackLayout>
         </DataTemplate>
