@@ -64,6 +64,15 @@
                 <Setter Property="HeightRequest"
                         Value="3"/>
             </Style>            
+
+            <Style x:Key="FrameStyle"
+                   TargetType="Frame">
+                <Setter Property="BackgroundColor"
+                        Value="{DynamicResource TransparentColor}" />
+                <Setter Property="BorderColor" 
+                        Value="{DynamicResource SecondaryColor}"/>
+            </Style>            
+            
             
             <!--Global Styles-->
             <!--

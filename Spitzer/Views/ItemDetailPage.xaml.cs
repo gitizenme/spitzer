@@ -3,6 +3,8 @@ using Xamarin.Forms;
 using Spitzer.Models;
 using Spitzer.ViewModels;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 
 namespace Spitzer.Views
 {
@@ -11,7 +13,7 @@ namespace Spitzer.Views
     [DesignTimeVisible(false)]
     public partial class ItemDetailPage : ContentPage
     {
-        ItemDetailViewModel viewModel;
+        readonly ItemDetailViewModel viewModel;
 
         public ItemDetailPage(ItemDetailViewModel viewModel)
         {
@@ -39,13 +41,24 @@ namespace Spitzer.Views
             BindingContext = viewModel;
         }
 
-        private void OnItemSelected(object sender, SelectionChangedEventArgs e)
+        private async void OnItemSelected(object sender, SelectionChangedEventArgs args)
         {
-            if (BindingContext is ItemDetailViewModel viewModel)
+            var item = (args.CurrentSelection.FirstOrDefault() as ItemImagePreview);
+            if (item == null)
             {
-                var itemImagePreview = e.CurrentSelection[0] as ItemImagePreview;
-                // TODO load the image ... 
+                ItemDetailView.SelectedItem = null;
+                return;
             }
+
+            var action = await DisplayActionSheet ("View, Save or Share?", "Cancel", null, "View", "Save", "Share");
+
+            if (action == "View")
+            {
+                await Navigation.PushAsync(new ItemImagePage(new ItemImageViewModel(item)));
+            }
+
+            // Manually deselect item.
+            ItemDetailView.SelectedItem = null;
         }
     }
 }
