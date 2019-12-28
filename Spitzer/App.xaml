@@ -73,7 +73,6 @@
                         Value="{DynamicResource SecondaryColor}"/>
             </Style>            
             
-            
             <!--Global Styles-->
             <!--
             <Style TargetType="NavigationPage">
