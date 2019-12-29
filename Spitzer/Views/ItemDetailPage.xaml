@@ -38,17 +38,17 @@
                                            VerticalOptions="Center"
                                            Aspect="AspectFill">
                             <forms:CachedImage.Behaviors>
-                                <behaviors:CachedImageDimensionsBehavior/>
+                                <behaviors:CachedImageDimensionsBehavior />
                             </forms:CachedImage.Behaviors>
                         </forms:CachedImage>
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
                         <Label Text="{Binding Title}"
                                d:Text="{Binding .}"
-                               Style="{StaticResource MediumImageOverlayLabelStyle}"/>
+                               Style="{StaticResource MediumImageOverlayLabelStyle}" />
                         <Label Text="{Binding Description}"
                                d:Text="{Binding .}"
-                               Style="{StaticResource SmallImageOverlayLabelStyle}"/>
+                               Style="{StaticResource SmallImageOverlayLabelStyle}" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
@@ -58,9 +58,9 @@
         </DataTemplate>
 
         <DataTemplate x:Key="ImageMetadataItemTemplate">
-            <Frame BorderColor="Gray"
+            <Frame Style="{StaticResource FrameStyle}"
                    CornerRadius="5"
-                   Padding="8" BackgroundColor="Transparent">
+                   Padding="8">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
@@ -97,7 +97,8 @@
                     <transformations:TintTransformation HexColor="#50212121" />
                 </forms:CachedImage.Transformations>
             </forms:CachedImage>
-            <CollectionView ItemsSource="{Binding Detail}"
+            <CollectionView x:Name="ItemDetailView"
+                            ItemsSource="{Binding Detail}"
                             ItemTemplate="{StaticResource ItemsPageSelector}"
                             SelectionChanged="OnItemSelected"
                             SelectionMode="Single">

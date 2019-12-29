@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
+using System.Windows.Input;
 using Spitzer.Models;
+using Xamarin.Forms;
 
 namespace Spitzer.ViewModels
 {
@@ -96,12 +98,18 @@ public class ItemDetailHeader : IItemDetailEntry
     public string Description { get; set; }
 }
 
-internal class ItemImagePreview : INotifyPropertyChanged
+public class ItemImagePreview : INotifyPropertyChanged
 {
     private string description;
     public Uri ImagePreview { get; set; }
     public string Title { get; set; }
 
+    public IEnumerable<string> Controls = new [] { "resource1", "resource2" };
+    public ICommand ControlSelected = new Command(() =>
+    {
+        
+    } );
+    
     public string Description
     {
         get => description;

@@ -19,7 +19,7 @@ namespace Spitzer.Views
     [DesignTimeVisible(false)]
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel viewModel;
+        readonly ItemsViewModel viewModel;
 
         public ItemsPage()
         {
@@ -29,7 +29,7 @@ namespace Spitzer.Views
             // ItemsCollectionView.EmptyViewTemplate = Resources["BasicTemplate"] as DataTemplate;
         }
 
-        async void OnItemSelected(object sender, SelectionChangedEventArgs args)
+        private async void OnItemSelected(object sender, SelectionChangedEventArgs args)
         {
             var item = (args.CurrentSelection.FirstOrDefault() as MediaItem);
             if (item == null)
@@ -51,7 +51,7 @@ namespace Spitzer.Views
             }
         }
 
-        void OnTextChanged(object sender, TextChangedEventArgs e)
+        private void OnTextChanged(object sender, TextChangedEventArgs e)
         {
             viewModel.FilterCommand.Execute(e.NewTextValue);
             // if (viewModel.Items.Count == 0)
