@@ -1,9 +1,11 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using Xamarin.Forms;
 using Spitzer.Models;
 using Spitzer.ViewModels;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using Xamarin.Essentials;
 
@@ -51,22 +53,58 @@ namespace Spitzer.Views
                 return;
             }
 
-            var action = await DisplayActionSheet("View, Save or Share?", "Cancel", null, "View", "Save", "Share");
+            var viewButton = "View";
+            var shareImage = "Share - image";
+            var shareWebLink = "Share - Web link";
+            var action = await DisplayActionSheet("View or Share?", "Cancel", null, viewButton, shareImage, shareWebLink);
 
-            if (action == "View")
+            if (action == viewButton)
             {
                 await Navigation.PushAsync(new ItemImagePage(new ItemImageViewModel(item)));
             }
-            else if (action == "Save")
+            else if (action == "shareImage")
             {
-            }
-            else if (action == "Share")
-            {
-                await Share.RequestAsync(new ShareTextRequest
+                try
                 {
-                    Uri = item.ImagePreview.ToString(),
-                    Title = item.ImageTitle
-                });
+                    var destDirectory = FileSystem.CacheDirectory + Path.DirectorySeparatorChar + "images";
+                    var destFile = FileSystem.CacheDirectory + Path.DirectorySeparatorChar + "images" +
+                                   Path.DirectorySeparatorChar + item.ImageTitle + "." +
+                                   item.ImageInformation.Type.ToString().ToLower();
+                    if (item.ImageInformation.FilePath != null)
+                    {
+                        if (!Directory.Exists(destDirectory))
+                        {
+                            Directory.CreateDirectory(destDirectory);
+                        }
+                        File.Copy(item.ImageInformation.FilePath, destFile, true);
+                        await Share.RequestAsync(new ShareFileRequest()
+                        {
+                            File = new ShareFile(destFile),
+                            Title = item.ImageTitle
+                        });                    
+                    }
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
+            }
+            else if (action == shareWebLink)
+            {
+                try
+                {
+                    await Share.RequestAsync(new ShareTextRequest
+                    {
+                        Uri = item.ImagePreview.ToString(),
+                        Title = item.ImageTitle
+                    });
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine(e);
+                    throw;
+                }
             }
 
             // Manually deselect item.

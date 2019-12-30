@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Input;
 using Acr.UserDialogs;
+using FFImageLoading.Work;
 using Spitzer.Views;
 using Xamarin.Forms;
 
@@ -34,5 +35,6 @@ namespace Spitzer.ViewModels
         public string ImageDescription { get; set; }
         public string ImageSize { get; set; }
         public ICommand ShowPinchZoomToast { get; }
+        public ImageInformation ImageInformation { get; set; }
     }
 }
