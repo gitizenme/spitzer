@@ -12,7 +12,6 @@ namespace Spitzer.ViewModels
         public Uri ImagePreview { get; set; }
         public ItemImagePreviewViewModel()
         {
-            
             this.ShowPinchZoomToast = new Command((args) =>
             {
                 if (args is PreviewToastMessage toastMessage)

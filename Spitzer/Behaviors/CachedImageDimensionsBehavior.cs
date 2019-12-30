@@ -27,6 +27,7 @@ namespace Spitzer.Behaviors
             {
                 if (cachedImage.BindingContext is ItemImagePreviewViewModel itemImagePreview)
                 {
+                    var filePath = e.ImageInformation.FilePath;
                     itemImagePreview.ImageDimensions = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})";
                 }
             }

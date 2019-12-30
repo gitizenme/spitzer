@@ -5,6 +5,7 @@ using Spitzer.ViewModels;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Xamarin.Essentials;
 
 namespace Spitzer.Views
 {
@@ -50,11 +51,22 @@ namespace Spitzer.Views
                 return;
             }
 
-            var action = await DisplayActionSheet ("View, Save or Share?", "Cancel", null, "View", "Save", "Share");
+            var action = await DisplayActionSheet("View, Save or Share?", "Cancel", null, "View", "Save", "Share");
 
             if (action == "View")
             {
                 await Navigation.PushAsync(new ItemImagePage(new ItemImageViewModel(item)));
+            }
+            else if (action == "Save")
+            {
+            }
+            else if (action == "Share")
+            {
+                await Share.RequestAsync(new ShareTextRequest
+                {
+                    Uri = item.ImagePreview.ToString(),
+                    Title = item.ImageTitle
+                });
             }
 
             // Manually deselect item.
