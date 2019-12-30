@@ -7,11 +7,19 @@
              x:Class="Spitzer.Views.ItemImagePage"
              BackgroundColor="Black">
     <ContentPage.Content>
-        <controls:PinchToZoomContainer>
-            <forms:CachedImage Source="{Binding Item.ImagePreview}"
-                               VerticalOptions="FillAndExpand"
-                               HorizontalOptions="FillAndExpand"
-                               Aspect="AspectFit" />
-        </controls:PinchToZoomContainer>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <controls:PinchToZoomContainer
+                AbsoluteLayout.LayoutBounds=".5,.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                <forms:CachedImage Source="{Binding Item.ImagePreview}"
+                                   VerticalOptions="FillAndExpand"
+                                   HorizontalOptions="FillAndExpand"
+                                   Aspect="AspectFit" />
+            </controls:PinchToZoomContainer>
+            <Label Text="{Binding Item.ImageTitle}"
+                   Style="{StaticResource MediumImageOverlayLabelStyle}"
+                   BackgroundColor="Transparent"
+                   AbsoluteLayout.LayoutBounds=".1,1,1,.1" AbsoluteLayout.LayoutFlags="All"
+                   LineBreakMode="WordWrap" />
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

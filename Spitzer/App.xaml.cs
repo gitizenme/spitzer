@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Acr.UserDialogs;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
@@ -15,6 +16,13 @@ namespace Spitzer
         {
             InitializeComponent();
             SetTheme(Theme.Light);
+
+            ToastConfig.DefaultBackgroundColor = System.Drawing.Color.Gray;
+            ToastConfig.DefaultMessageTextColor = System.Drawing.Color.Navy;
+            ToastConfig.DefaultActionTextColor = System.Drawing.Color.DarkRed;
+            ToastConfig.DefaultDuration = new TimeSpan(0, 0, 5);
+            ToastConfig.DefaultPosition = ToastPosition.Bottom;
+            
             DependencyService.Register<NasaMediaLibraryDataStore>();
             MainPage = new MainPage();
         }

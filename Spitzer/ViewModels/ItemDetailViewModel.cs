@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Windows.Input;
 using Spitzer.Models;
-using Xamarin.Forms;
 
 namespace Spitzer.ViewModels
 {
@@ -76,75 +72,13 @@ namespace Spitzer.ViewModels
                         labelText = "Thumbnail";
                     }
 
-                    Detail.Add(new ItemImagePreview
+                    Detail.Add(new ItemImagePreviewViewModel
                     {
-                        ImagePreview = imageUri, Title = labelText, Description = "..."
+                        ImagePreview = imageUri, ImageDimensions = "(calculating dimensions)", ImageSize = labelText,
+                        ImageTitle = Item.Title, ImageDescription = Item.Description
                     });
                 }
             }
         }
     }
-}
-
-public interface IItemDetailEntry
-{
-    string Title { get; set; }
-    string Description { get; set; }
-}
-
-public class ItemDetailHeader : IItemDetailEntry
-{
-    public string Title { get; set; }
-    public string Description { get; set; }
-}
-
-public class ItemImagePreview : INotifyPropertyChanged
-{
-    private string description;
-    public Uri ImagePreview { get; set; }
-    public string Title { get; set; }
-
-    public IEnumerable<string> Controls = new [] { "resource1", "resource2" };
-    public ICommand ControlSelected = new Command(() =>
-    {
-        
-    } );
-    
-    public string Description
-    {
-        get => description;
-        set => SetProperty(ref description, value);
-    }
-
-    protected bool SetProperty<T>(ref T backingStore, T value,
-        [CallerMemberName]string propertyName = "",
-        Action onChanged = null)
-    {
-        if (EqualityComparer<T>.Default.Equals(backingStore, value))
-            return false;
-
-        backingStore = value;
-        onChanged?.Invoke();
-        OnPropertyChanged(propertyName);
-        return true;
-    }
-
-    #region INotifyPropertyChanged
-    public event PropertyChangedEventHandler PropertyChanged;
-    protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
-    {
-        var changed = PropertyChanged;
-        if (changed == null)
-            return;
-
-        changed.Invoke(this, new PropertyChangedEventArgs(propertyName));
-    }
-    #endregion    
-}
-
-internal class ItemMetadata  : IItemDetailEntry
-{
-    public string Title { get; set; }
-    public string Description { get; set; }
-
 }

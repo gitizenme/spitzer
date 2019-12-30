@@ -43,7 +43,7 @@ namespace Spitzer.Views
 
         private async void OnItemSelected(object sender, SelectionChangedEventArgs args)
         {
-            var item = (args.CurrentSelection.FirstOrDefault() as ItemImagePreview);
+            var item = (args.CurrentSelection.FirstOrDefault() as ItemImagePreviewViewModel);
             if (item == null)
             {
                 ItemDetailView.SelectedItem = null;
