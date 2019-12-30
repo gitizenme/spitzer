@@ -1,4 +1,5 @@
 using FFImageLoading.Forms;
+using Spitzer.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -24,9 +25,9 @@ namespace Spitzer.Behaviors
         {
             if (sender is CachedImage cachedImage)
             {
-                if (cachedImage.BindingContext is ItemImagePreview itemImagePreview)
+                if (cachedImage.BindingContext is ItemImagePreviewViewModel itemImagePreview)
                 {
-                    itemImagePreview.Description = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})";
+                    itemImagePreview.ImageDimensions = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})";
                 }
             }
         }

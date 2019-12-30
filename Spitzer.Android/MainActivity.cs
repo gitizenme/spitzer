@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Acr.UserDialogs;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -27,6 +27,7 @@ namespace Spitzer.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
             CachedImageRenderer.InitImageViewHandler();
+            UserDialogs.Init(this);
             
             LoadApplication(new App());
         }

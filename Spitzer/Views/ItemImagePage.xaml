@@ -3,14 +3,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             x:Class="Spitzer.Views.ItemImagePage">
+             xmlns:controls="clr-namespace:Spitzer.Controls;assembly=Spitzer"
+             x:Class="Spitzer.Views.ItemImagePage"
+             BackgroundColor="Black">
     <ContentPage.Content>
-        <StackLayout>
-            <forms:CachedImage Source="{Binding Item.ImagePreview}" HeightRequest="150" WidthRequest="150"
-                               HorizontalOptions="StartAndExpand"
-                               VerticalOptions="Center"
-                               Aspect="AspectFill">
-            </forms:CachedImage>
-        </StackLayout>
+        <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <controls:PinchToZoomContainer
+                AbsoluteLayout.LayoutBounds=".5,.5,1,1" AbsoluteLayout.LayoutFlags="All">
+                <forms:CachedImage Source="{Binding Item.ImagePreview}"
+                                   VerticalOptions="FillAndExpand"
+                                   HorizontalOptions="FillAndExpand"
+                                   Aspect="AspectFit" />
+            </controls:PinchToZoomContainer>
+            <Label Text="{Binding Item.ImageTitle}"
+                   Style="{StaticResource MediumImageOverlayLabelStyle}"
+                   BackgroundColor="Transparent"
+                   AbsoluteLayout.LayoutBounds=".1,1,1,.1" AbsoluteLayout.LayoutFlags="All"
+                   LineBreakMode="WordWrap" />
+        </AbsoluteLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -2,9 +2,7 @@
 using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-
 using Spitzer.Models;
 using Spitzer.Views;
 using System.Collections.Generic;
@@ -20,7 +18,14 @@ namespace Spitzer.ViewModels
         public ObservableCollection<MediaItem> Items { get; private set; }
         public ICommand LoadItemsCommand { get; }
         public ICommand FilterCommand => new Command<string>(FilterItems);
-        public bool IsFirstLoad { get; private set; }
+
+        private bool isFirstLoad;
+
+        public bool IsFirstLoad
+        {
+            get => isFirstLoad;
+            private set => SetProperty(ref isFirstLoad, value);
+        }
 
         public ItemsViewModel()
         {
@@ -66,7 +71,7 @@ namespace Spitzer.ViewModels
 
         void FilterItems(string filter)
         {
-            if(!String.IsNullOrEmpty(filter))
+            if (!String.IsNullOrEmpty(filter))
             {
                 Debug.WriteLine($"filter = {filter}");
                 var filteredItems = source.Where(item => item.Title.ToLower().Contains(filter.ToLower())).ToList();

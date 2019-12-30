@@ -21,38 +21,12 @@ namespace Spitzer.Controls
             {
                 return ImageMetadataItemTemplate;
             }
-            else if (item is ItemImagePreview)
+            else if (item is ItemImagePreviewViewModel)
             {
                 return ImageLeftTitleResolutionTemplate;
             }
             
             return ItemHeadingTemplate;
-        }
-
-        private string UpdateImageDescription(object item)
-        {
-                                
-            // imageView.Success += (sender, e) =>
-            // {
-            //     imageView.Success += (sender, e) =>
-            //     {
-            //         var imageDimensionsLabel = new Label
-            //         {
-            //             Text = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})",
-            //             VerticalOptions = LayoutOptions.Center, HorizontalOptions = LayoutOptions.Start,
-            //             Style = App.Current.Resources["SmallImageOverlayLabelStyle"] as Style
-            //         };
-            //         if (ImageLayout.TryGetValue(e.ImageInformation.Path, out var layout))
-            //         {
-            //             MainThread.BeginInvokeOnMainThread(() =>
-            //             {
-            //                 layout.Children.Add(imageDimensionsLabel);
-            //                 layout.ForceLayout();
-            //             });
-            //         }
-            //     };                    
-            // };
-            return "";
         }
     }
 }

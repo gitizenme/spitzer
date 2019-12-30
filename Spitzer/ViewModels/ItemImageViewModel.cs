@@ -2,9 +2,9 @@ namespace Spitzer.ViewModels
 {
     public class ItemImageViewModel : BaseViewModel
     {
-        public ItemImagePreview Item { get; }
+        public ItemImagePreviewViewModel Item { get; }
 
-        public ItemImageViewModel(ItemImagePreview item)
+        public ItemImageViewModel(ItemImagePreviewViewModel item)
         {
             Item = item;
         }
