@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AppCenter.Analytics;
 using Spitzer.Controls;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -26,7 +28,7 @@ namespace Spitzer.Views
             InitializeComponent();
 
             BindingContext = viewModel = new ItemsViewModel();
-            // ItemsCollectionView.EmptyViewTemplate = Resources["BasicTemplate"] as DataTemplate;
+            Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         private async void OnItemSelected(object sender, SelectionChangedEventArgs args)

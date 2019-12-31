@@ -27,6 +27,8 @@ namespace Spitzer.Behaviors
             {
                 if (cachedImage.BindingContext is ItemImagePreviewViewModel itemImagePreview)
                 {
+                    var viewModel = cachedImage.BindingContext as ItemImagePreviewViewModel;
+                    viewModel.ImageInformation = e.ImageInformation;
                     itemImagePreview.ImageDimensions = $"({e.ImageInformation.OriginalHeight}x{e.ImageInformation.OriginalHeight})";
                 }
             }

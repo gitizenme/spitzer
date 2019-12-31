@@ -35,7 +35,11 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Save Spitzer images to your photo library</string>
 	<key>CFBundleIdentifier</key>
 	<string>ws.chavez.spitzer</string>
+	<key>CFBundleExecutable</key>
+	<string></string>
 </dict>
 </plist>

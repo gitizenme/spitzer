@@ -7,6 +7,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using FFImageLoading.Forms.Platform;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 namespace Spitzer.Droid
 {
@@ -18,6 +21,9 @@ namespace Spitzer.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            AppCenter.Start("1c653577-b657-45f2-a67e-52381bc1c294",
+                typeof(Analytics), typeof(Crashes));
+            
             base.SetTheme(Resource.Style.MainTheme);
             base.OnCreate(savedInstanceState);
 
