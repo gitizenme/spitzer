@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Acr.UserDialogs;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
@@ -25,6 +28,7 @@ namespace Spitzer
             
             DependencyService.Register<NasaMediaLibraryDataStore>();
             MainPage = new MainPage();
+            Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         protected override async void OnStart()
@@ -34,11 +38,12 @@ namespace Spitzer
             Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
 
             SetTheme(theme);
+            Analytics.TrackEvent($"Called: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         protected override void OnSleep()
         {
-            // Handle when your app sleeps
+            Analytics.TrackEvent("OnSleep");
         }
 
         protected override async void OnResume()
@@ -48,6 +53,7 @@ namespace Spitzer
             Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
 
             SetTheme(theme);
+            Analytics.TrackEvent($"Called: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         void SetTheme(Theme theme)
@@ -71,6 +77,7 @@ namespace Spitzer
                     }
                 }
             }
+            Analytics.TrackEvent($"Called: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
     }
 }

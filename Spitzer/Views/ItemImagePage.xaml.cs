@@ -1,8 +1,10 @@
 using System;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Acr.UserDialogs;
+using Microsoft.AppCenter.Analytics;
 using Spitzer.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -28,6 +30,8 @@ namespace Spitzer.Views
             doubleTapToastCancelTokenSource = new CancellationTokenSource();
             panToastCancelTokenSource = new CancellationTokenSource();
             BindingContext = viewModel = itemImageViewModel;
+
+            Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
             
         }
 

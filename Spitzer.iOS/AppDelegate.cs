@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using FFImageLoading.Forms.Platform;
 using Foundation;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using UIKit;
 
 namespace Spitzer.iOS
@@ -22,6 +25,9 @@ namespace Spitzer.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            AppCenter.Start("b35173bd-3ad1-453f-844e-761dbf03645b",
+                typeof(Analytics), typeof(Crashes));
+            
             Xamarin.Calabash.Start();
 
             CachedImageRenderer.Init();           

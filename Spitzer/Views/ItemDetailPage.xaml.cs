@@ -7,6 +7,10 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection;
+using Acr.UserDialogs;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 using Xamarin.Essentials;
 
 namespace Spitzer.Views
@@ -25,6 +29,7 @@ namespace Spitzer.Views
             BindingContext = this.viewModel = viewModel;
 
             BackgroundPreviewImage.Source = viewModel.Item.ImagePreview;
+            Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         public ItemDetailPage()
@@ -58,11 +63,13 @@ namespace Spitzer.Views
             var shareWebLink = "Share - Web link";
             var action = await DisplayActionSheet("View or Share?", "Cancel", null, viewButton, shareImage, shareWebLink);
 
+            Analytics.TrackEvent($"{action} for image: {item.ImageTitle}");
+
             if (action == viewButton)
             {
                 await Navigation.PushAsync(new ItemImagePage(new ItemImageViewModel(item)));
             }
-            else if (action == "shareImage")
+            else if (action == shareImage)
             {
                 try
                 {
@@ -77,17 +84,28 @@ namespace Spitzer.Views
                             Directory.CreateDirectory(destDirectory);
                         }
                         File.Copy(item.ImageInformation.FilePath, destFile, true);
-                        await Share.RequestAsync(new ShareFileRequest()
+                        if (File.Exists(destFile))
                         {
-                            File = new ShareFile(destFile),
-                            Title = item.ImageTitle
-                        });                    
+                            await Share.RequestAsync(new ShareFileRequest()
+                            {
+                                File = new ShareFile(destFile),
+                                Title = item.ImageTitle
+                            });                    
+                        }
+                        else
+                        {
+                            await UserDialogs.Instance.AlertAsync("There was a problem sharing the image, please try again later.", "Unable to Share", "Okay");
+                        }
+                    }
+                    else
+                    {
+                        await UserDialogs.Instance.AlertAsync("There was a problem sharing the image, please try again later.", "Unable to Share", "Okay");
                     }
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
-                    throw;
+                    Crashes.TrackError(e);
+                    await UserDialogs.Instance.AlertAsync("There was a problem sharing the image, please try again later.", "Unable to Share", "Okay");
                 }
             }
             else if (action == shareWebLink)
@@ -102,8 +120,8 @@ namespace Spitzer.Views
                 }
                 catch (Exception e)
                 {
-                    Console.WriteLine(e);
-                    throw;
+                    Crashes.TrackError(e);
+                    await UserDialogs.Instance.AlertAsync("There was a problem sharing the link, please try again later.", "Unable to Share", "Okay");
                 }
             }
 
