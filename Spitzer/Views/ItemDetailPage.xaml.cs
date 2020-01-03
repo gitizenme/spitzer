@@ -4,7 +4,6 @@ using Xamarin.Forms;
 using Spitzer.Models;
 using Spitzer.ViewModels;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -12,6 +11,7 @@ using Acr.UserDialogs;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Xamarin.Essentials;
+using FFImageLoading.Forms;
 
 namespace Spitzer.Views
 {
@@ -22,6 +22,7 @@ namespace Spitzer.Views
     {
         readonly ItemDetailViewModel viewModel;
 
+        
         public ItemDetailPage(ItemDetailViewModel viewModel)
         {
             InitializeComponent();
@@ -77,13 +78,13 @@ namespace Spitzer.Views
                     var destFile = FileSystem.CacheDirectory + Path.DirectorySeparatorChar + "images" +
                                    Path.DirectorySeparatorChar + item.ImageTitle + "." +
                                    item.ImageInformation.Type.ToString().ToLower();
-                    if (item.ImageInformation.FilePath != null)
+                    if (item.FileWriteInfo.FilePath != null)
                     {
                         if (!Directory.Exists(destDirectory))
                         {
                             Directory.CreateDirectory(destDirectory);
                         }
-                        File.Copy(item.ImageInformation.FilePath, destFile, true);
+                        File.Copy(item.FileWriteInfo.FilePath, destFile, true);
                         if (File.Exists(destFile))
                         {
                             await Share.RequestAsync(new ShareFileRequest()
@@ -127,6 +128,19 @@ namespace Spitzer.Views
 
             // Manually deselect item.
             ItemDetailView.SelectedItem = null;
+        }
+
+        private void CachedImage_OnFileWriteFinished(object sender, CachedImageEvents.FileWriteFinishedEventArgs e)
+        {
+            Console.WriteLine($"CachedImage_OnFileWriteFinished : {e.FileWriteInfo.FilePath}");
+            if (sender is CachedImage cachedImage)
+            {
+                if (cachedImage.BindingContext is ItemImagePreviewViewModel itemImagePreview)
+                {
+                    itemImagePreview.FileWriteInfo = e.FileWriteInfo;
+                }
+            }
+            
         }
     }
 }

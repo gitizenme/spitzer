@@ -6,10 +6,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using FFImageLoading;
 using FFImageLoading.Forms.Platform;
 using Microsoft.AppCenter;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using Environment = System.Environment;
 
 namespace Spitzer.Droid
 {
@@ -27,12 +29,22 @@ namespace Spitzer.Droid
             base.SetTheme(Resource.Style.MainTheme);
             base.OnCreate(savedInstanceState);
 
-            CachedImageRenderer.Init(enableFastRenderer: true);           
             
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-
+            
+            CachedImageRenderer.Init(enableFastRenderer: true);           
             CachedImageRenderer.InitImageViewHandler();
+            var config = new FFImageLoading.Config.Configuration()
+            {
+                VerboseLogging = true,
+                VerbosePerformanceLogging = true,
+                VerboseMemoryCacheLogging = true,
+                VerboseLoadingCancelledLogging = true,
+                ExecuteCallbacksOnUIThread = true,
+                Logger = new CustomLogger(),
+            };
+            ImageService.Instance.Initialize(config);  
             UserDialogs.Init(this);
             
             LoadApplication(new App());
@@ -44,4 +56,21 @@ namespace Spitzer.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
+    public class CustomLogger : FFImageLoading.Helpers.IMiniLogger
+    {
+        public void Debug(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        public void Error(string errorMessage)
+        {
+            Console.WriteLine(errorMessage);
+        }
+
+        public void Error(string errorMessage, Exception ex)
+        {
+            Error(errorMessage + Environment.NewLine + ex);
+        }
+    }    
 }

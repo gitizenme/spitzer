@@ -10,7 +10,10 @@
         <AbsoluteLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <controls:PinchToZoomContainer
                 AbsoluteLayout.LayoutBounds=".5,.5,1,1" AbsoluteLayout.LayoutFlags="All">
-                <forms:CachedImage Source="{Binding Item.ImagePreview}"
+                <forms:CachedImage Source="{Binding Item.ImagePreview}" LoadingPlaceholder="AppIcon.png" 
+                                   RetryCount="3"
+                                   RetryDelay="5000"
+                                   DownsampleToViewSize="true"
                                    VerticalOptions="FillAndExpand"
                                    HorizontalOptions="FillAndExpand"
                                    Aspect="AspectFit" />

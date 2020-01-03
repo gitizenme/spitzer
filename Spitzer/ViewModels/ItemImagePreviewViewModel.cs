@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Input;
 using Acr.UserDialogs;
+using FFImageLoading;
 using FFImageLoading.Work;
 using Spitzer.Views;
 using Xamarin.Forms;
@@ -10,6 +11,8 @@ namespace Spitzer.ViewModels
     public class ItemImagePreviewViewModel : BaseViewModel
     {
         private string imageDimensions = string.Empty;
+        private ImageInformation imageInformation;
+        private FileWriteInfo fileWriteInfo;
         public Uri ImagePreview { get; set; }
         public ItemImagePreviewViewModel()
         {
@@ -35,6 +38,17 @@ namespace Spitzer.ViewModels
         public string ImageDescription { get; set; }
         public string ImageSize { get; set; }
         public ICommand ShowPinchZoomToast { get; }
-        public ImageInformation ImageInformation { get; set; }
+
+        public ImageInformation ImageInformation
+        {
+            get => imageInformation;
+            set => SetProperty(ref imageInformation, value);
+        }
+
+        public FileWriteInfo FileWriteInfo
+        {
+            get => fileWriteInfo;
+            set => SetProperty(ref fileWriteInfo, value);
+        }
     }
 }

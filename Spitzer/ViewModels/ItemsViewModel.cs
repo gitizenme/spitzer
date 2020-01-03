@@ -4,10 +4,11 @@ using System.Diagnostics;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Spitzer.Models;
-using Spitzer.Views;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
+using FFImageLoading.Cache;
+using FFImageLoading.Forms;
 
 namespace Spitzer.ViewModels
 {
@@ -50,7 +51,11 @@ namespace Spitzer.ViewModels
                 foreach (var item in items)
                 {
                     source.Add(item);
-                    Items.Add(item);
+                }
+
+                for(int idx = 0; idx < 50; idx++)
+                {
+                    Items.Add(source[idx]);
                 }
 
                 Debug.WriteLine($"Items.Count: {Items.Count}");
