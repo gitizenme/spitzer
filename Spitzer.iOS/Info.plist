@@ -33,13 +33,15 @@
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleVersion</key>
-	<string>1</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Save Spitzer images to your photo library</string>
 	<key>CFBundleIdentifier</key>
 	<string>ws.chavez.spitzer</string>
 	<key>CFBundleExecutable</key>
 	<string></string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en-US</string>
+	<key>CFBundleVersion</key>
+	<string>3</string>
 </dict>
 </plist>
