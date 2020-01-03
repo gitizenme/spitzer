@@ -28,8 +28,10 @@ namespace Spitzer.iOS
         {
             AppCenter.Start("b35173bd-3ad1-453f-844e-761dbf03645b",
                 typeof(Analytics), typeof(Crashes));
-            
+
+            #if DEBUG
             Xamarin.Calabash.Start();
+            #endif
 
             Xamarin.Forms.Forms.Init();
             CachedImageRenderer.Init();           
