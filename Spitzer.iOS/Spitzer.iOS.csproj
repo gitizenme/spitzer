@@ -129,32 +129,32 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Common\FFImageLoading.csproj">
-      <Project>{51ca3be2-df00-4f49-8054-e5c776992b61}</Project>
+      <Project>{51CA3BE2-DF00-4F49-8054-E5C776992B61}</Project>
       <Name>FFImageLoading</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj">
-      <Project>{3d6c1f12-68d7-44c2-a7de-8e7942627a01}</Project>
+      <Project>{3D6C1F12-68D7-44C2-A7DE-8E7942627A01}</Project>
       <Name>FFImageLoading.Forms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj">
-      <Project>{1597f7d4-432c-4f26-b508-0f6faf0b9711}</Project>
-      <Name>FFImageLoading.Touch</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj">
-      <Project>{e68fd3bb-5851-45cc-9b33-de6ab28b9984}</Project>
+      <Project>{E68FD3BB-5851-45CC-9B33-DE6AB28B9984}</Project>
       <Name>FFImageLoading.Transformations</Name>
     </ProjectReference>
     <ProjectReference Include="..\Spitzer\Spitzer.csproj">
       <Project>{3644CEC3-ED3D-4BA5-A921-7F6475C496AC}</Project>
       <Name>Spitzer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Transformations.Touch\FFImageLoading.Transformations.Touch.csproj">
-      <Project>{A19942AA-BE22-4CF5-9173-4A78D6B0EB06}</Project>
-      <Name>FFImageLoading.Transformations.Touch</Name>
+    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj">
+      <Project>{1597F7D4-432C-4F26-B508-0F6FAF0B9711}</Project>
+      <Name>FFImageLoading.Touch</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Forms.Touch\FFImageLoading.Forms.Touch.csproj">
       <Project>{1E70A5AF-AAFA-4247-8AFE-39CDA73EBCEC}</Project>
       <Name>FFImageLoading.Forms.Touch</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Transformations.Touch\FFImageLoading.Transformations.Touch.csproj">
+      <Project>{A19942AA-BE22-4CF5-9173-4A78D6B0EB06}</Project>
+      <Name>FFImageLoading.Transformations.Touch</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
