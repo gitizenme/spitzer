@@ -64,6 +64,7 @@
     <CodesignKey>iPhone Developer: Jose Chavez (C2F29Z47FY)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
+    <MtouchExtraArgs>--linksdkonly</MtouchExtraArgs>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
@@ -129,19 +130,19 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Common\FFImageLoading.csproj">
-      <Project>{51CA3BE2-DF00-4F49-8054-E5C776992B61}</Project>
+      <Project>{F64A9281-44CF-47A3-BC05-7E8DB7BE0DAC}</Project>
       <Name>FFImageLoading</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj">
-      <Project>{3D6C1F12-68D7-44C2-A7DE-8E7942627A01}</Project>
+      <Project>{B2088991-B68B-40C4-B7D0-64AD9DB28D2F}</Project>
       <Name>FFImageLoading.Forms</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj">
-      <Project>{E68FD3BB-5851-45CC-9B33-DE6AB28B9984}</Project>
+      <Project>{13BDF72E-54BE-4CF7-B280-CEE6DF9E3BE6}</Project>
       <Name>FFImageLoading.Transformations</Name>
     </ProjectReference>
     <ProjectReference Include="..\Spitzer\Spitzer.csproj">
-      <Project>{3644CEC3-ED3D-4BA5-A921-7F6475C496AC}</Project>
+      <Project>{B0E4B4B2-4FCD-468F-9B10-BC6F2232FB61}</Project>
       <Name>Spitzer</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj">
