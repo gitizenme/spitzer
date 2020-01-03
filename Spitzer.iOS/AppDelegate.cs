@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using FFImageLoading;
 using FFImageLoading.Forms.Platform;
 using Foundation;
 using Microsoft.AppCenter;
@@ -27,18 +28,49 @@ namespace Spitzer.iOS
         {
             AppCenter.Start("b35173bd-3ad1-453f-844e-761dbf03645b",
                 typeof(Analytics), typeof(Crashes));
-            
+
+            #if DEBUG
             Xamarin.Calabash.Start();
+            #endif
 
+            Xamarin.Forms.Forms.Init();
             CachedImageRenderer.Init();           
-
-            global::Xamarin.Forms.Forms.Init();
-
-            // CachedImageRenderer.InitImageSourceHandler();
+            CachedImageRenderer.InitImageSourceHandler();
                 
+            var config = new FFImageLoading.Config.Configuration()
+            {
+                VerboseLogging = true,
+                VerbosePerformanceLogging = true,
+                VerboseMemoryCacheLogging = true,
+                VerboseLoadingCancelledLogging = true,
+                ExecuteCallbacksOnUIThread = true,
+                HttpHeadersTimeout = 5,
+                HttpReadTimeout = 5,
+                Logger = new CustomLogger(),
+            };
+            ImageService.Instance.Initialize(config);            
+            
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+    }
+    
+    public class CustomLogger : FFImageLoading.Helpers.IMiniLogger
+    {
+        public void Debug(string message)
+        {
+            Console.WriteLine(message);
+        }
+
+        public void Error(string errorMessage)
+        {
+            Console.WriteLine(errorMessage);
+        }
+
+        public void Error(string errorMessage, Exception ex)
+        {
+            Error(errorMessage + Environment.NewLine + ex);
         }
     }
 }

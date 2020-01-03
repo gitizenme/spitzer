@@ -55,11 +55,11 @@ namespace Spitzer.Views
 
         private void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            viewModel.FilterCommand.Execute(e.NewTextValue);
-            // if (viewModel.Items.Count == 0)
-            // {
-            //     ItemsCollectionView.EmptyViewTemplate = Resources["AdvancedTemplate"] as DataTemplate;
-            // }
+            if (e.NewTextValue.Length > 3)
+            {
+                viewModel.FilterCommand.Execute(e.NewTextValue);
+            }
         }
+        
     }
 }

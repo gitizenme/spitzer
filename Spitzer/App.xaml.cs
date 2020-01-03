@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Reflection;
 using Acr.UserDialogs;
+using FFImageLoading;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
 using Xamarin.Forms;
@@ -44,11 +45,13 @@ namespace Spitzer
         protected override void OnSleep()
         {
             Analytics.TrackEvent("OnSleep");
+            ImageService.Instance.SetExitTasksEarly(true);
         }
 
         protected override async void OnResume()
         {
             base.OnResume();
+            ImageService.Instance.SetExitTasksEarly(false);
 
             Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
 

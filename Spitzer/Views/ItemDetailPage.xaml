@@ -4,10 +4,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              xmlns:controls="clr-namespace:Spitzer.Controls;assembly=Spitzer"
-             xmlns:behaviors="clr-namespace:Spitzer.Behaviors;assembly=Spitzer"
+             xmlns:ffimageloadingforms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
              mc:Ignorable="d"
              x:Class="Spitzer.Views.ItemDetailPage"
              BackgroundColor="{DynamicResource PageBackgroundColor}"
@@ -28,19 +27,26 @@
                 <BoxView Style="{StaticResource BoxViewStyle}" />
             </StackLayout>
         </DataTemplate>
-
+        
         <DataTemplate x:Key="ImageLeftTitleResolutionTemplate">
             <StackLayout Spacing="10">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Spacing="10" HorizontalOptions="Start">
-                        <forms:CachedImage Source="{Binding ImagePreview}" HeightRequest="150" WidthRequest="150"
+                        <ffimageloadingforms:CachedImage Source="{Binding ImagePreview}" LoadingPlaceholder="AppIcon.png"
+                                           HeightRequest="150" WidthRequest="150"
+                                           RetryCount="2"
+                                           RetryDelay="5000"
+                                           DownsampleToViewSize="true"
                                            HorizontalOptions="StartAndExpand"
                                            VerticalOptions="Center"
                                            Aspect="AspectFill">
-                            <forms:CachedImage.Behaviors>
+                            <!--
+                            <ffimageloadingforms:CachedImage.Behaviors>
                                 <behaviors:CachedImageDimensionsBehavior />
-                            </forms:CachedImage.Behaviors>
-                        </forms:CachedImage>
+                            </ffimageloadingforms:CachedImage.Behaviors>
+                                           FileWriteFinished="CachedImage_OnFileWriteFinished"
+                        -->
+                        </ffimageloadingforms:CachedImage>
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
                         <Label Text="{Binding ImageSize}"
@@ -91,12 +97,12 @@
 
     <ContentPage.Content>
         <Grid>
-            <forms:CachedImage x:Name="BackgroundPreviewImage"
+            <ffimageloadingforms:CachedImage x:Name="BackgroundPreviewImage"
                                Aspect="AspectFill">
-                <forms:CachedImage.Transformations>
+                <ffimageloadingforms:CachedImage.Transformations>
                     <transformations:TintTransformation HexColor="#50212121" />
-                </forms:CachedImage.Transformations>
-            </forms:CachedImage>
+                </ffimageloadingforms:CachedImage.Transformations>
+            </ffimageloadingforms:CachedImage>
             <CollectionView x:Name="ItemDetailView"
                             ItemsSource="{Binding Detail}"
                             ItemTemplate="{StaticResource ItemsPageSelector}"
