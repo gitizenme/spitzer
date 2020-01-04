@@ -51,11 +51,7 @@ namespace Spitzer.ViewModels
                 foreach (var item in items)
                 {
                     source.Add(item);
-                }
-
-                for(int idx = 0; idx < 50; idx++)
-                {
-                    Items.Add(source[idx]);
+                    Items.Add(item);
                 }
 
                 Debug.WriteLine($"Items.Count: {Items.Count}");
