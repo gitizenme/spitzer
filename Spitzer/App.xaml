@@ -8,6 +8,14 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            <Style x:Key="SearchBarStyle"
+                   TargetType="SearchBar">
+                <Setter Property="TextColor"
+                        Value="{DynamicResource PrimaryTextColor}" />
+                <Setter Property="PlaceholderColor"
+                        Value="{DynamicResource PrimaryTextColor}" />
+            </Style>
+
             <Style x:Key="LargeLabelStyle"
                    TargetType="Label">
                 <Setter Property="TextColor"

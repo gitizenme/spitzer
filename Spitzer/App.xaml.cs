@@ -5,6 +5,7 @@ using Acr.UserDialogs;
 using FFImageLoading;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using MonkeyCache.FileStore;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
@@ -18,9 +19,11 @@ namespace Spitzer
 
         public App()
         {
+            Barrel.ApplicationId = "app.spitzer.mobile";
+            
             InitializeComponent();
             SetTheme(Theme.Light);
-
+            
             ToastConfig.DefaultBackgroundColor = System.Drawing.Color.Gray;
             ToastConfig.DefaultMessageTextColor = System.Drawing.Color.Navy;
             ToastConfig.DefaultActionTextColor = System.Drawing.Color.DarkRed;
