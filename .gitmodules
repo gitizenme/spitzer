@@ -1,0 +1,3 @@
+[submodule "FFImageLoading"]
+	path = FFImageLoading
+	url = https://github.com/gitizenme/FFImageLoading
