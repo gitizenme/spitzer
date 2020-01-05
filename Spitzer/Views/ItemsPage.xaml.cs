@@ -55,8 +55,8 @@ namespace Spitzer.Views
 
         private void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (e.NewTextValue.Length > 3)
-            {
+            if (viewModel != null && e.NewTextValue.Length > 3)
+            { 
                 viewModel.FilterCommand.Execute(e.NewTextValue);
             }
         }

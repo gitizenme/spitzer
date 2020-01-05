@@ -109,7 +109,7 @@
 
         <DataTemplate x:Key="BasicTemplate">
             <StackLayout>
-                <Label Text="Scheduling an observation for new content..."
+                <Label Text="Scheduling an observation for new images..."
                        Margin="10,25,10,10"
                        Style="{StaticResource LargeLabelStyle}"
                        FontAttributes="Bold"
@@ -129,7 +129,7 @@
                        FontSize="18"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center" />
-                <Label Text="Try a broader filter?"
+                <Label Text="Try a broader search?"
                        Style="{StaticResource MediumLabelStyle}"
                        FontAttributes="Italic"
                        LineBreakMode="WordWrap"
@@ -154,8 +154,8 @@
                    SearchCommand="{Binding FilterCommand}"
                    SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
                    TextChanged="OnTextChanged"
-                   TextColor="{DynamicResource PrimaryColor}"
-                   Placeholder="Filter" />
+                   Style="{StaticResource SearchBarStyle}"
+                   Placeholder="type here to search..." />
         <CollectionView x:Name="ItemsCollectionView"
                         ItemsSource="{Binding Items}"
                         ItemTemplate="{StaticResource ItemsPageSelector}"

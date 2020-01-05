@@ -2,6 +2,7 @@
 using System.ComponentModel;
 using System.Reflection;
 using Microsoft.AppCenter.Analytics;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +16,8 @@ namespace Spitzer.Views
         public AboutPage()
         {
             InitializeComponent();
+            AppName.Text = AppInfo.Name;
+            AppVersion.Text = $"v{AppInfo.VersionString}-{AppInfo.BuildString}";
             Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
     }

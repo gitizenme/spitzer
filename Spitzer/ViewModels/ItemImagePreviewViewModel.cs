@@ -20,9 +20,19 @@ namespace Spitzer.ViewModels
             {
                 if (args is PreviewToastMessage toastMessage)
                 {
+                    var backgroundColor = Color.White;
+                    var textColor = Color.Black;
+                    if (App.CurrentTheme == Theme.Dark)
+                    {
+                        backgroundColor = Color.Black;
+                        textColor = Color.White;
+                    }
+                    
                     UserDialogs.Instance.Toast(new ToastConfig(toastMessage.Message)
                         .SetDuration(TimeSpan.FromSeconds(toastMessage.Duration))
                         .SetPosition(ToastPosition.Bottom)
+                        .SetBackgroundColor(backgroundColor)
+                        .SetMessageTextColor(textColor)
                     );
                 }
             });

@@ -5,6 +5,7 @@ using Acr.UserDialogs;
 using FFImageLoading;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.AppCenter.Crashes;
+using MonkeyCache.FileStore;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Spitzer.Services;
@@ -15,12 +16,15 @@ namespace Spitzer
 {
     public partial class App : Application
     {
+        public static Theme CurrentTheme;
 
         public App()
         {
+            Barrel.ApplicationId = "app.spitzer.mobile";
+            
             InitializeComponent();
             SetTheme(Theme.Light);
-
+            
             ToastConfig.DefaultBackgroundColor = System.Drawing.Color.Gray;
             ToastConfig.DefaultMessageTextColor = System.Drawing.Color.Navy;
             ToastConfig.DefaultActionTextColor = System.Drawing.Color.DarkRed;
@@ -53,9 +57,9 @@ namespace Spitzer
             base.OnResume();
             ImageService.Instance.SetExitTasksEarly(false);
 
-            Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
+            CurrentTheme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
 
-            SetTheme(theme);
+            SetTheme(CurrentTheme);
             Analytics.TrackEvent($"Called: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 

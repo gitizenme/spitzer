@@ -28,7 +28,8 @@
     <MtouchDebug>true</MtouchDebug>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <CodesignKey>iPhone Developer: Jose Chavez (C2F29Z47FY)</CodesignKey>
-    <MtouchExtraArgs></MtouchExtraArgs>
+    <MtouchExtraArgs>
+    </MtouchExtraArgs>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -120,6 +121,7 @@
     <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
+    <PackageReference Include="MonkeyCache.FileStore" Version="1.3.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />
     <PackageReference Include="Xamarin.TestCloud.Agent" Version="0.21.9" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
@@ -129,15 +131,15 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Common\FFImageLoading.csproj">
+    <ProjectReference Include="..\FFImageLoading\source\FFImageLoading.Common\FFImageLoading.csproj">
       <Project>{F64A9281-44CF-47A3-BC05-7E8DB7BE0DAC}</Project>
       <Name>FFImageLoading</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj">
+    <ProjectReference Include="..\FFImageLoading\source\FFImageLoading.Forms\FFImageLoading.Forms.csproj">
       <Project>{B2088991-B68B-40C4-B7D0-64AD9DB28D2F}</Project>
       <Name>FFImageLoading.Forms</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj">
+    <ProjectReference Include="..\FFImageLoading\source\FFImageLoading.Transformations\FFImageLoading.Transformations.csproj">
       <Project>{13BDF72E-54BE-4CF7-B280-CEE6DF9E3BE6}</Project>
       <Name>FFImageLoading.Transformations</Name>
     </ProjectReference>
@@ -145,15 +147,15 @@
       <Project>{B0E4B4B2-4FCD-468F-9B10-BC6F2232FB61}</Project>
       <Name>Spitzer</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj">
+    <ProjectReference Include="..\FFImageLoading\source\FFImageLoading.Touch\FFImageLoading.Touch.csproj">
       <Project>{1597F7D4-432C-4F26-B508-0F6FAF0B9711}</Project>
       <Name>FFImageLoading.Touch</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Forms.Touch\FFImageLoading.Forms.Touch.csproj">
+    <ProjectReference Include="..\FFImageLoading\source\FFImageLoading.Forms.Touch\FFImageLoading.Forms.Touch.csproj">
       <Project>{1E70A5AF-AAFA-4247-8AFE-39CDA73EBCEC}</Project>
       <Name>FFImageLoading.Forms.Touch</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\FFImageLoading\source\FFImageLoading.Transformations.Touch\FFImageLoading.Transformations.Touch.csproj">
+    <ProjectReference Include="..\FFImageLoading\source\FFImageLoading.Transformations.Touch\FFImageLoading.Transformations.Touch.csproj">
       <Project>{A19942AA-BE22-4CF5-9173-4A78D6B0EB06}</Project>
       <Name>FFImageLoading.Transformations.Touch</Name>
     </ProjectReference>
