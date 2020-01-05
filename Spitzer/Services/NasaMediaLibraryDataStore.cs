@@ -33,6 +33,7 @@ namespace Spitzer.Services
                 library = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
                 if (library != null)
                 {
+                    GetPagesFromCache(client, request);
                     return;
                 }
             }
@@ -42,6 +43,7 @@ namespace Spitzer.Services
                 library = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
                 if (library != null)
                 {
+                    GetPagesFromCache(client, request);
                     return;
                 }
             }
@@ -54,27 +56,47 @@ namespace Spitzer.Services
                     var libraryQueryResponse = client.Execute<NasaMediaLibrary>(request);
                     library = libraryQueryResponse.Data;
                     Barrel.Current.Add(key: searchUri, data: libraryQueryResponse.Content, expireIn: TimeSpan.FromDays(1));
+                    GetPagesFromCache(client, request);
                 }
             }
 
-            // if (library.Collection.Metadata.TotalHits > library.Collection.Items.Count)
-            // {
-            //     Debug.WriteLine($"There is more data, TotalHits: {library.Collection.Metadata.TotalHits}, Items.Count: {library.Collection.Items.Count}");
-            //     var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
-            //     Debug.WriteLine($"pages: {pages}");
-            //     request.AddParameter("page", 0);
-            //     for (int page = 2; page <= pages; page++)
-            //     {
-            //         Debug.WriteLine($"Loading page: {page} of {pages}");
-            //         request.Parameters[2].Value = page;
-            //         var pageResponse = client.Execute<NasaMediaLibrary>(request);
-            //         if (pageResponse.Data != null)
-            //         {
-            //             Debug.WriteLine($"Adding {pageResponse.Data.Collection.Items.Count} to library");
-            //             library.Collection.Items.AddRange(pageResponse.Data.Collection.Items);
-            //         }
-            //     }
-            // }
+            if (library != null && library.Collection.Metadata.TotalHits > library.Collection.Items.Count)
+            {
+                Debug.WriteLine($"There is more data, TotalHits: {library.Collection.Metadata.TotalHits}, Items.Count: {library.Collection.Items.Count}");
+                var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
+                Debug.WriteLine($"pages: {pages}");
+                request.AddParameter("page", 0);
+                for (int page = 2; page <= pages; page++)
+                {
+                    GetPage(page, pages, request, client);
+                }
+            }
+        }
+
+        private void GetPagesFromCache(RestClient client, RestRequest request)
+        {
+            var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
+            for (int page = 2; page <= pages; page++)
+            {
+                var searchUri = client.BaseUrl + request.Resource + "?" + string.Join("&", request.Parameters);
+                var pageItems = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
+                library.Collection.Items.AddRange(pageItems.Collection.Items);
+            }
+        }
+
+        private void GetPage(int page, long pages, RestRequest request, RestClient client)
+        {
+            Debug.WriteLine($"Loading page: {page} of {pages}");
+            request.Parameters[2].Value = page;
+            var searchUri = client.BaseUrl + request.Resource + "?" + string.Join("&", request.Parameters);
+            var pageResponse = client.Execute<NasaMediaLibrary>(request);
+            if (pageResponse.Data != null)
+            {
+                Debug.WriteLine($"Adding {pageResponse.Data.Collection.Items.Count} to library");
+                library.Collection.Items.AddRange(pageResponse.Data.Collection.Items);
+                Barrel.Current.Empty(searchUri);
+                Barrel.Current.Add(key: searchUri, data: pageResponse.Content, expireIn: TimeSpan.FromDays(1));
+            }
         }
 
         public async Task<MediaItem> GetItemAsync(string id)

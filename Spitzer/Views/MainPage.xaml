@@ -19,6 +19,17 @@
             </x:Arguments>
         </NavigationPage>
         
+        <NavigationPage Title="Media">
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="iOS" Value="tab_feed.png"/>
+                </OnPlatform>
+            </NavigationPage.Icon>
+            <x:Arguments>
+                <views:MediaPage />
+            </x:Arguments>
+        </NavigationPage>
+        
         <NavigationPage Title="About">
             <NavigationPage.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource">

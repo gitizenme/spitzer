@@ -14,13 +14,11 @@ namespace Spitzer.Controls
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            var viewModel = (ItemsViewModel)container.BindingContext;
-            if (viewModel.IsFirstLoad)
+            if (container.BindingContext is ItemsViewModel viewModel && viewModel.IsFirstLoad)
             {
                 return BasicTemplate;
             }
-            Debug.WriteLine($"viewModel.Items.Count: {viewModel.Items.Count}");
-            return viewModel.Items.Count == 0 ? AdvancedTemplate : BasicTemplate;
+            return AdvancedTemplate;
         }
     }
 }
