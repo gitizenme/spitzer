@@ -13,7 +13,7 @@
         <NavigationPage Title="Gallery" x:Name="SpitzerPage">
             <NavigationPage.IconImageSource>
                 <FontImageSource
-                    FontFamily="{StaticResource FontAwesome5ProRegularFamily}"
+                    FontFamily="{StaticResource FontAwesome5ProLightFamily}"
                     Glyph="{x:Static fonts:FontAwesomeGlyphs.Images}" />
             </NavigationPage.IconImageSource>
             <x:Arguments>
@@ -24,7 +24,7 @@
         <NavigationPage Title="Media" x:Name="MediaPage">
             <NavigationPage.IconImageSource>
                 <FontImageSource
-                    FontFamily="{StaticResource FontAwesome5ProRegularFamily}"
+                    FontFamily="{StaticResource FontAwesome5ProLightFamily}"
                     Glyph="{x:Static fonts:FontAwesomeGlyphs.Newspaper}" />
             </NavigationPage.IconImageSource>
             <x:Arguments>
@@ -35,7 +35,7 @@
         <NavigationPage Title="About" x:Name="AboutPage">
             <NavigationPage.IconImageSource>
                 <FontImageSource
-                    FontFamily="{StaticResource FontAwesome5ProRegularFamily}"
+                    FontFamily="{StaticResource FontAwesome5ProLightFamily}"
                     Glyph="{x:Static fonts:FontAwesomeGlyphs.InfoCircle}" />
             </NavigationPage.IconImageSource>
             <x:Arguments>

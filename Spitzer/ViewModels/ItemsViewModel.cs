@@ -92,7 +92,7 @@ namespace Spitzer.ViewModels
         {
             if (!String.IsNullOrEmpty(filter))
             {
-                var filteredItems = sortedCollection.Where(item => item.Title.ToLower().Contains(filter.ToLower())).ToList();
+                var filteredItems = sortedCollection.Where(item => item.Title.ToLower().Contains(filter.ToLower()) || item.Description.ToLower().Contains(filter.ToLower()) || item.DateCreated.ToLower().Contains(filter.ToLower())).ToList();
                 Items = new ObservableCollection<MediaItem>(filteredItems);
             }
             else

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -16,13 +17,14 @@ namespace Spitzer.ViewModels
     public class MediaPageViewModel : BaseViewModel
     {
         private ObservableCollection<RssSchema> items;
+        private IOrderedEnumerable<RssSchema> uniqueContent;
 
         public MediaPageViewModel()
         {
             Title = "Media";
 
             Items = new ObservableCollection<RssSchema>();
-         
+
             LoadFeedCommand = new Command(async () => await ExecuteLoadFeedCommand());
             ResetItemsCommand = new Command(ExecuteResetItemsCommand);
         }
@@ -41,8 +43,9 @@ namespace Spitzer.ViewModels
 
         private void ExecuteResetItemsCommand()
         {
-            Items = new ObservableCollection<RssSchema>(source.OrderByDescending(o=>o.PublishDate).ToList());
+            Items = new ObservableCollection<RssSchema>(source.OrderByDescending(o => o.PublishDate).ToList());
         }
+
         private async Task ExecuteLoadFeedCommand()
         {
             if (IsBusy)
@@ -58,13 +61,30 @@ namespace Spitzer.ViewModels
                 rssContent = await GetContentForFeed("https://www.nasa.gov/rss/dyn/solar_system.rss", "NASA");
                 source.AddRange(rssContent);
 
-                rssContent = await GetContentForFeed("http://www.spitzer.caltech.edu/news_category/12-Home-Page-Features?format=xml", "Spitzer");
+                rssContent =
+                    await GetContentForFeed(
+                        "http://www.spitzer.caltech.edu/news_category/12-Home-Page-Features?format=xml",
+                        "Spitzer Home Page");
                 source.AddRange(rssContent);
 
-                var uniqueContent = source.GroupBy(x => x.Title)
-                    .Select(g => g.First()).OrderByDescending(o=>o.PublishDate);                
-                
-                Items = new ObservableCollection<RssSchema>(uniqueContent.ToList());
+                rssContent =
+                    await GetContentForFeed("http://www.spitzer.caltech.edu/resource_list/2-Featured-Images?format=xml",
+                        "Spitzer Featured Images");
+                source.AddRange(rssContent);
+
+                rssContent =
+                    await GetContentForFeed("http://www.spitzer.caltech.edu/news_category/NewsCategory?format=xml",
+                        "Spitzer Recent News");
+                source.AddRange(rssContent);
+
+                rssContent = await GetContentForFeed("http://www.spitzer.caltech.edu/feeds/video_showcase.xml",
+                    "Spitzer Video Showcase");
+                source.AddRange(rssContent);
+
+                uniqueContent = source.GroupBy(x => x.Title)
+                    .Select(g => g.First()).OrderByDescending(o => o.PublishDate);
+
+                Items = new ObservableCollection<RssSchema>(uniqueContent);
             }
             catch (Exception ex)
             {
@@ -74,7 +94,6 @@ namespace Spitzer.ViewModels
             {
                 IsBusy = false;
             }
-            
         }
 
         private async Task<IEnumerable<RssSchema>> GetContentForFeed(string uri, string author)
@@ -104,13 +123,17 @@ namespace Spitzer.ViewModels
         {
             if (!String.IsNullOrEmpty(filter))
             {
-                var filteredItems = source.Where(item => item.Title.ToLower().Contains(filter.ToLower())).ToList();
-                Items = new ObservableCollection<RssSchema>(filteredItems.OrderByDescending(o=>o.PublishDate).ToList());
+                var filteredItems = uniqueContent.Where(item =>
+                    item.Title.ToLower().Contains(filter.ToLower()) ||
+                    item.Author.ToLower().Contains(filter.ToLower()) ||
+                    item.Content.ToLower().Contains(filter.ToLower()) || item.PublishDate
+                        .ToString(CultureInfo.CurrentCulture).ToLower().Contains(filter.ToLower())).ToList();
+                Items = new ObservableCollection<RssSchema>(filteredItems);
             }
             else
             {
-                Items = new ObservableCollection<RssSchema>(source.OrderByDescending(o=>o.PublishDate).ToList());
+                Items = new ObservableCollection<RssSchema>(uniqueContent);
             }
-        }        
+        }
     }
 }

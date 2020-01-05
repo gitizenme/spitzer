@@ -164,7 +164,7 @@
                    SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
                    TextChanged="OnTextChanged"
                    Style="{StaticResource SearchBarStyle}"
-                   Placeholder="type here to search..." />
+                   Placeholder="Search by title, description, date..." />
         <CollectionView x:Name="ItemsCollectionView"
                         ItemsSource="{Binding Items}"
                         ItemTemplate="{StaticResource ItemsPageSelector}"
