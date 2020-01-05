@@ -19,11 +19,12 @@ namespace Spitzer.ViewModels
 
         public MediaPageViewModel()
         {
+            Title = "Media";
+
             Items = new ObservableCollection<RssSchema>();
          
             LoadFeedCommand = new Command(async () => await ExecuteLoadFeedCommand());
             ResetItemsCommand = new Command(ExecuteResetItemsCommand);
-
         }
 
         private List<RssSchema> source { get; set; }

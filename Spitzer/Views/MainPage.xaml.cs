@@ -16,8 +16,6 @@ namespace Spitzer.Views
         {
             InitializeComponent();
             Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
-            // TODO Use Font Awesome for tab bar icons...
-            // MediaPage.IconImageSource = 
         }
     }
 }

@@ -37,11 +37,15 @@
 	<string>Save Spitzer images to your photo library</string>
 	<key>CFBundleIdentifier</key>
 	<string>ws.chavez.spitzer</string>
-	<key>CFBundleExecutable</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en-US</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Font Awesome 5 Pro-Solid-900.otf</string>
+		<string>Font Awesome 5 Pro-Regular-400.otf</string>
+		<string>Font Awesome 5 Pro-Light-300.otf</string>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>5</string>
+	<string>6</string>
 </dict>
 </plist>

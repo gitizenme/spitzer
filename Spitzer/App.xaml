@@ -9,6 +9,21 @@
 
     <Application.Resources>
         <ResourceDictionary>
+            <OnPlatform x:Key="FontAwesome5ProRegularFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="FontAwesome5Pro-Regular" />
+                <On Platform="Android" Value="Font Awesome 5 Pro-Regular-400.otf#Regular" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesome5ProLightFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="FontAwesome5Pro-Light" />
+                <On Platform="Android" Value="Font Awesome 5 Pro-Light-300.otf#Light" />
+            </OnPlatform>
+
+            <OnPlatform x:Key="FontAwesome5ProSolidFamily" x:TypeArguments="x:String">
+                <On Platform="iOS" Value="FontAwesome5Pro-Solid" />
+                <On Platform="Android" Value="Font Awesome 5 Pro-Solid-900.otf#Solid" />
+            </OnPlatform>
+
             <Style x:Key="SearchBarStyle"
                    TargetType="SearchBar">
                 <Setter Property="TextColor"
@@ -110,16 +125,16 @@
                 <Setter Property="FontSize"
                         Value="22" />
             </Style>
-                
-                <Style x:Key="HyperlinkSpanTextStyle"
-                       TargetType="Span">
-                        <Setter Property="TextColor"
-                                Value="{DynamicResource HyperlinkColor}" />
-                        <Setter Property="FontSize"
-                                Value="22" />
-                        <Setter Property="TextDecorations"
-                                Value="Underline" />
-                </Style>                
+
+            <Style x:Key="HyperlinkSpanTextStyle"
+                   TargetType="Span">
+                <Setter Property="TextColor"
+                        Value="{DynamicResource HyperlinkColor}" />
+                <Setter Property="FontSize"
+                        Value="22" />
+                <Setter Property="TextDecorations"
+                        Value="Underline" />
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 
