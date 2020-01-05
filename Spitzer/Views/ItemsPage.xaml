@@ -28,6 +28,11 @@
                        Style="{StaticResource MediumLabelStyle}"
                        LineBreakMode="TailTruncation"
                        MaxLines="4" />
+                <Label Text="{Binding DateCreated}"
+                       d:Text="{Binding .}"
+                       Style="{StaticResource MediumLabelStyle}"
+                       LineBreakMode="TailTruncation"
+                       MaxLines="1" />
                 <BoxView Style="{StaticResource BoxViewStyle}" />
             </StackLayout>
         </DataTemplate>
@@ -56,6 +61,11 @@
                                Style="{StaticResource MediumLabelStyle}"
                                LineBreakMode="TailTruncation"
                                MaxLines="4" />
+                        <Label Text="{Binding DateCreated}"
+                               d:Text="{Binding .}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="1" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
@@ -78,6 +88,11 @@
                                Style="{StaticResource MediumLabelStyle}"
                                LineBreakMode="TailTruncation"
                                MaxLines="4" />
+                        <Label Text="{Binding DateCreated}"
+                               d:Text="{Binding .}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="1" />
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="End">
                         <forms:CachedImage Source="{Binding ImagePreview}" LoadingPlaceholder="AppIcon.png"
