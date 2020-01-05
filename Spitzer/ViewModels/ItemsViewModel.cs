@@ -17,6 +17,19 @@ namespace Spitzer.ViewModels
     {
         readonly IList<MediaItem> source;
 
+        private bool isFirstLoad;
+        private ObservableCollection<MediaItem> items;
+
+        public ItemsViewModel()
+        {
+            IsFirstLoad = true;
+            Title = "Gallery";
+            source = new List<MediaItem>();
+            Items = new ObservableCollection<MediaItem>();
+            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            ResetItemsCommand = new Command(ExecuteResetItemsCommand);
+        }
+
         public ObservableCollection<MediaItem> Items
         {
             get => items;
@@ -27,23 +40,10 @@ namespace Spitzer.ViewModels
         public ICommand ResetItemsCommand { get; }
         public ICommand FilterCommand => new Command<string>(FilterItems);
 
-        private bool isFirstLoad;
-        private ObservableCollection<MediaItem> items;
-
         public bool IsFirstLoad
         {
             get => isFirstLoad;
             private set => SetProperty(ref isFirstLoad, value);
-        }
-
-        public ItemsViewModel()
-        {
-            IsFirstLoad = true;
-            Title = "Spitzer Gallery";
-            source = new List<MediaItem>();
-            Items = new ObservableCollection<MediaItem>();
-            LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
-            ResetItemsCommand = new Command(ExecuteResetItemsCommand);
         }
 
         private void ExecuteResetItemsCommand()

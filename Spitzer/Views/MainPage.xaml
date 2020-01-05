@@ -1,45 +1,47 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
             mc:Ignorable="d"
             xmlns:views="clr-namespace:Spitzer.Views"
+            xmlns:fonts="clr-namespace:Spitzer.Styles;assembly=Spitzer"
             x:Class="Spitzer.Views.MainPage">
 
     <TabbedPage.Children>
-        <NavigationPage Title="Spitzer" x:Name="SpitzerPage">
+        <NavigationPage Title="Gallery" x:Name="SpitzerPage">
             <NavigationPage.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="iOS" Value="AppIcon"/>
-                </OnPlatform>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesome5ProRegularFamily}"
+                    Glyph="{x:Static fonts:FontAwesomeGlyphs.Images}" />
             </NavigationPage.IconImageSource>
             <x:Arguments>
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
-        
+
         <NavigationPage Title="Media" x:Name="MediaPage">
             <NavigationPage.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
-                </OnPlatform>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesome5ProRegularFamily}"
+                    Glyph="{x:Static fonts:FontAwesomeGlyphs.Newspaper}" />
             </NavigationPage.IconImageSource>
             <x:Arguments>
                 <views:MediaPage />
             </x:Arguments>
         </NavigationPage>
-        
+
         <NavigationPage Title="About" x:Name="AboutPage">
             <NavigationPage.IconImageSource>
-                <OnPlatform x:TypeArguments="ImageSource">
-                    <On Platform="iOS" Value="tab_about.png"/>
-                </OnPlatform>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesome5ProRegularFamily}"
+                    Glyph="{x:Static fonts:FontAwesomeGlyphs.InfoCircle}" />
             </NavigationPage.IconImageSource>
             <x:Arguments>
                 <views:AboutPage />
             </x:Arguments>
         </NavigationPage>
     </TabbedPage.Children>
-    
+
 </TabbedPage>
