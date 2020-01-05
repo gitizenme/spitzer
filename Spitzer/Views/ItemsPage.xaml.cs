@@ -27,7 +27,14 @@ namespace Spitzer.Views
         {
             InitializeComponent();
 
-            BindingContext = viewModel = new ItemsViewModel();
+            viewModel = new ItemsViewModel();
+            
+            if (viewModel.Items?.Count == 0)
+            {
+                viewModel.LoadItemsCommand.Execute(null);
+            }
+
+            BindingContext = viewModel;
             Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
@@ -43,21 +50,16 @@ namespace Spitzer.Views
             ItemsCollectionView.SelectedItem = null;
         }
 
-        protected override void OnAppearing()
-        {
-            base.OnAppearing();
-
-            if (viewModel.Items.Count == 0)
-            {
-                viewModel.LoadItemsCommand.Execute(null);
-            }
-        }
-
         private void OnTextChanged(object sender, TextChangedEventArgs e)
         {
-            if (viewModel != null && e.NewTextValue.Length > 3)
-            { 
-                viewModel.FilterCommand.Execute(e.NewTextValue);
+            if (e.NewTextValue != null && !string.IsNullOrWhiteSpace(e.NewTextValue))
+            {
+                Console.WriteLine($"text: {e.NewTextValue}");
+                viewModel?.FilterCommand.Execute(e.NewTextValue);
+            }
+            else
+            {
+                viewModel?.ResetItemsCommand.Execute(null);
             }
         }
         

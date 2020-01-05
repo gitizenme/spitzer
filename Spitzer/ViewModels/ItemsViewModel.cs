@@ -9,6 +9,7 @@ using System.Linq;
 using System.Windows.Input;
 using FFImageLoading.Cache;
 using FFImageLoading.Forms;
+using Microsoft.AppCenter.Crashes;
 
 namespace Spitzer.ViewModels
 {
@@ -16,11 +17,18 @@ namespace Spitzer.ViewModels
     {
         readonly IList<MediaItem> source;
 
-        public ObservableCollection<MediaItem> Items { get; private set; }
+        public ObservableCollection<MediaItem> Items
+        {
+            get => items;
+            private set => SetProperty(ref items, value);
+        }
+
         public ICommand LoadItemsCommand { get; }
+        public ICommand ResetItemsCommand { get; }
         public ICommand FilterCommand => new Command<string>(FilterItems);
 
         private bool isFirstLoad;
+        private ObservableCollection<MediaItem> items;
 
         public bool IsFirstLoad
         {
@@ -35,6 +43,12 @@ namespace Spitzer.ViewModels
             source = new List<MediaItem>();
             Items = new ObservableCollection<MediaItem>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            ResetItemsCommand = new Command(ExecuteResetItemsCommand);
+        }
+
+        private void ExecuteResetItemsCommand()
+        {
+            Items = new ObservableCollection<MediaItem>(source);
         }
 
         async Task ExecuteLoadItemsCommand()
@@ -46,19 +60,18 @@ namespace Spitzer.ViewModels
 
             try
             {
-                Items.Clear();
                 var items = await NasaMediaLibrary.GetItemsAsync(true);
                 foreach (var item in items)
                 {
                     source.Add(item);
-                    Items.Add(item);
                 }
+                Items = new ObservableCollection<MediaItem>(source);
 
                 Debug.WriteLine($"Items.Count: {Items.Count}");
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                Crashes.TrackError(ex);
             }
             finally
             {
@@ -74,30 +87,12 @@ namespace Spitzer.ViewModels
         {
             if (!String.IsNullOrEmpty(filter))
             {
-                Debug.WriteLine($"filter = {filter}");
                 var filteredItems = source.Where(item => item.Title.ToLower().Contains(filter.ToLower())).ToList();
-                foreach (var item in source)
-                {
-                    if (!filteredItems.Contains(item))
-                    {
-                        Items.Remove(item);
-                    }
-                    else
-                    {
-                        if (!Items.Contains(item))
-                        {
-                            Items.Add(item);
-                        }
-                    }
-                }
+                Items = new ObservableCollection<MediaItem>(filteredItems);
             }
             else
             {
-                Items.Clear();
-                foreach (var item in source)
-                {
-                    Items.Add(item);
-                }
+                Items = new ObservableCollection<MediaItem>(source);
             }
         }
     }

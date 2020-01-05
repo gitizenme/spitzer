@@ -1,42 +1,24 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:controls="clr-namespace:Spitzer.Controls"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
-             mc:Ignorable="d"
-             x:Class="Spitzer.Views.ItemsPage"
+             xmlns:controls="clr-namespace:Spitzer.Controls;assembly=Spitzer"
+             xmlns:viewModels="clr-namespace:Spitzer.ViewModels;assembly=Spitzer"
+             x:Class="Spitzer.Views.MediaPage"
              Title="{Binding Title}"
-             BackgroundColor="{DynamicResource PageBackgroundColor}"
-             x:Name="BrowseItemsPage">
-
-    <ContentPage.ToolbarItems>
-    </ContentPage.ToolbarItems>
-
+             BackgroundColor="{DynamicResource PageBackgroundColor}">
+    
+    <ContentPage.BindingContext>
+        <viewModels:MediaPageViewModel />
+    </ContentPage.BindingContext>
+    
     <ContentPage.Resources>
-        <DataTemplate x:Key="TextOnlyTemplate">
-            <StackLayout Padding="10" HeightRequest="150" Spacing="10">
-                <Label Text="{Binding Title}"
-                       d:Text="{Binding .}"
-                       Style="{StaticResource LargeLabelStyle}"
-                       LineBreakMode="TailTruncation"
-                       MaxLines="2" />
-                <Label Text="{Binding Description}"
-                       d:Text="{Binding .}"
-                       Style="{StaticResource MediumLabelStyle}"
-                       LineBreakMode="TailTruncation"
-                       MaxLines="4" />
-                <BoxView Style="{StaticResource BoxViewStyle}" />
-            </StackLayout>
-        </DataTemplate>
-
         <DataTemplate x:Key="ImageLeftTemplate">
-            <StackLayout HeightRequest="150" Spacing="10">
+            <StackLayout HeightRequest="200" Spacing="10">
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Spacing="10" HorizontalOptions="Start">
-                        <forms:CachedImage Source="{Binding ImagePreview}" LoadingPlaceholder="AppIcon.png"
+                        <forms:CachedImage Source="{Binding ImageUrl}" LoadingPlaceholder="AppIcon.png"
                                            HeightRequest="150" WidthRequest="150"
                                            RetryCount="3"
                                            RetryDelay="5000"
@@ -47,15 +29,21 @@
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
                         <Label Text="{Binding Title}"
-                               d:Text="{Binding .}"
                                Style="{StaticResource LargeLabelStyle}"
                                LineBreakMode="TailTruncation"
                                MaxLines="2" />
-                        <Label Text="{Binding Description}"
-                               d:Text="{Binding .}"
+                        <Label Text="{Binding Summary}"
                                Style="{StaticResource MediumLabelStyle}"
                                LineBreakMode="TailTruncation"
                                MaxLines="4" />
+                        <Label Text="{Binding Author}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="1" />
+                        <Label Text="{Binding PublishDate}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="1" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
@@ -63,43 +51,6 @@
                 </StackLayout>
             </StackLayout>
         </DataTemplate>
-
-        <DataTemplate x:Key="ImageRightTemplate">
-            <StackLayout HeightRequest="150" Spacing="10">
-                <StackLayout Orientation="Horizontal">
-                    <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
-                        <Label Text="{Binding Title}"
-                               d:Text="{Binding .}"
-                               Style="{StaticResource LargeLabelStyle}"
-                               LineBreakMode="TailTruncation"
-                               MaxLines="2" />
-                        <Label Text="{Binding Description}"
-                               d:Text="{Binding .}"
-                               Style="{StaticResource MediumLabelStyle}"
-                               LineBreakMode="TailTruncation"
-                               MaxLines="4" />
-                    </StackLayout>
-                    <StackLayout Spacing="10" HorizontalOptions="End">
-                        <forms:CachedImage Source="{Binding ImagePreview}" LoadingPlaceholder="AppIcon.png"
-                                           HeightRequest="150" WidthRequest="150"
-                                           RetryCount="3"
-                                           RetryDelay="5000"
-                                           DownsampleToViewSize="true"
-                                           HorizontalOptions="StartAndExpand"
-                                           VerticalOptions="Center"
-                                           Aspect="AspectFill" />
-                    </StackLayout>
-                </StackLayout>
-                <StackLayout>
-                    <BoxView Style="{StaticResource BoxViewStyle}" />
-                </StackLayout>
-            </StackLayout>
-        </DataTemplate>
-
-        <controls:ItemsPageDataTemplateSelector x:Key="ItemsPageSelector"
-                                                TextOnlyTemplate="{StaticResource TextOnlyTemplate}"
-                                                ImageLeftTemplate="{StaticResource ImageLeftTemplate}"
-                                                ImageRightTemplate="{StaticResource ImageRightTemplate}" />
 
         <DataTemplate x:Key="BasicTemplate">
             <StackLayout>
@@ -138,23 +89,19 @@
                                                  AdvancedTemplate="{StaticResource AdvancedTemplate}" />
 
     </ContentPage.Resources>
-    <!--
-                IsPullToRefreshEnabled="True"
-                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
--->
-
+    
     <StackLayout>
-        <SearchBar x:Name="searchBar"
+        <SearchBar x:Name="SearchBar"
                    SearchCommand="{Binding FilterCommand}"
-                   SearchCommandParameter="{Binding Source={x:Reference searchBar}, Path=Text}"
+                   SearchCommandParameter="{Binding Source={x:Reference SearchBar}, Path=Text}"
                    TextChanged="OnTextChanged"
                    Style="{StaticResource SearchBarStyle}"
                    Placeholder="type here to search..." />
         <CollectionView x:Name="ItemsCollectionView"
                         ItemsSource="{Binding Items}"
-                        ItemTemplate="{StaticResource ItemsPageSelector}"
+                        ItemTemplate="{StaticResource ImageLeftTemplate}"
                         ItemsUpdatingScrollMode="KeepItemsInView"
-                        EmptyView="{Binding Source={x:Reference searchBar}, Path=Text}"
+                        EmptyView="{Binding Source={x:Reference SearchBar}, Path=Text}"
                         EmptyViewTemplate="{StaticResource SearchSelector}"
                         SelectionChanged="OnItemSelected"
                         SelectionMode="Single">
@@ -163,5 +110,4 @@
                                    ItemSpacing="20" />
             </CollectionView.ItemsLayout>
         </CollectionView>
-    </StackLayout>
-</ContentPage>
+    </StackLayout></ContentPage>

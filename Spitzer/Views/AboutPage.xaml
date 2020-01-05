@@ -57,15 +57,12 @@
                     <Label.FormattedText>
                         <FormattedString>
                             <FormattedString.Spans>
-                                <Span Style="{StaticResource SpanTextStyle}" Text="Images are queried in realtime using the API from the " />
+                                <Span Style="{StaticResource SpanTextStyle}" Text="This app is developed under the MIT open source license and is hosted on GitHub " />
                                 <controls:HyperlinkSpan Style="{StaticResource HyperlinkSpanTextStyle}"
-                                                        Text="NASA Image and Video Library"
-                                                        Url="https://images.nasa.gov" />
+                                                        Text="https://github.com/gitizenme/spitzer"
+                                                        Url="https://github.com/gitizenme/spitzer" />
                                 <Span Style="{StaticResource SpanTextStyle}"
-                                      Text=" release " />
-                                <controls:HyperlinkSpan Style="{StaticResource HyperlinkSpanTextStyle}"
-                                                        Text="v1.5.3"
-                                                        Url="https://images.nasa.gov/docs/images.nasa.gov_api_docs.pdf" />
+                                      Text=", contributions are welcome." />
                             </FormattedString.Spans>
                         </FormattedString>
                     </Label.FormattedText>

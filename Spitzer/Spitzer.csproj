@@ -13,6 +13,7 @@
     <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
+    <PackageReference Include="Microsoft.Toolkit.Parsers" Version="6.0.0" />
     <PackageReference Include="MonkeyCache" Version="1.3.0" />
     <PackageReference Include="MonkeyCache.FileStore" Version="1.3.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.4.0.991265" />  
