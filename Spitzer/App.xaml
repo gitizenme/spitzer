@@ -1,4 +1,5 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
@@ -38,7 +39,7 @@
                         Value="{DynamicResource TertiaryTextColor}" />
                 <Setter Property="FontSize"
                         Value="15" />
-            </Style>            
+            </Style>
 
             <Style x:Key="LargeImageOverlayLabelStyle"
                    TargetType="Label">
@@ -62,56 +63,64 @@
                         Value="White" />
                 <Setter Property="FontSize"
                         Value="15" />
-            </Style>            
-            
-            
+            </Style>
+
             <Style x:Key="BoxViewStyle"
                    TargetType="BoxView">
                 <Setter Property="BackgroundColor"
                         Value="{DynamicResource SecondaryColor}" />
                 <Setter Property="HeightRequest"
-                        Value="3"/>
-            </Style>            
+                        Value="3" />
+            </Style>
+
+            <Style x:Key="ButtonStyle"
+                   TargetType="Button">
+                <Setter Property="BackgroundColor"
+                        Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="BorderColor"
+                        Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="TextColor"
+                        Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="Margin"
+                        Value="0,10,0,0" />
+            </Style>
 
             <Style x:Key="FrameStyle"
                    TargetType="Frame">
                 <Setter Property="BackgroundColor"
                         Value="{DynamicResource TransparentColor}" />
-                <Setter Property="BorderColor" 
-                        Value="{DynamicResource SecondaryColor}"/>
-            </Style>            
-  
-            <!--Global Styles-->
-            <!--
-            <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="{DynamicResource BackgroundColor}" />
-                <Setter Property="BarTextColor" Value="{DynamicResource TextColor}" />
+                <Setter Property="BorderColor"
+                        Value="{DynamicResource SecondaryColor}" />
             </Style>
-            <Style TargetType="View">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
+
+            <Style x:Key="SpanTextBoldStyle"
+                   TargetType="Span">
+                <Setter Property="TextColor"
+                        Value="{DynamicResource PrimaryTextColor}" />
+                <Setter Property="FontSize"
+                        Value="22" />
+                <Setter Property="FontAttributes"
+                        Value="Bold" />
             </Style>
-            <Style TargetType="ContentPage">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
+
+            <Style x:Key="SpanTextStyle"
+                   TargetType="Span">
+                <Setter Property="TextColor"
+                        Value="{DynamicResource SecondaryTextColor}" />
+                <Setter Property="FontSize"
+                        Value="22" />
             </Style>
-            <Style TargetType="StackLayout">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
-            </Style>
-            <Style TargetType="CollectionView">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
-            </Style>
-            <Style TargetType="Label">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
-                <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
-            </Style>
-            <Style TargetType="Image">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
-            </Style>
-            <Style TargetType="Button">
-                <Setter Property="BackgroundColor" Value="{DynamicResource BackgroundColor}" />
-                <Setter Property="TextColor" Value="{DynamicResource TextColor}" />
-            </Style>
-        -->
+                
+                <Style x:Key="HyperlinkSpanTextStyle"
+                       TargetType="Span">
+                        <Setter Property="TextColor"
+                                Value="{DynamicResource HyperlinkColor}" />
+                        <Setter Property="FontSize"
+                                Value="22" />
+                        <Setter Property="TextDecorations"
+                                Value="Underline" />
+                </Style>                
         </ResourceDictionary>
     </Application.Resources>
-    
+
 </Application>

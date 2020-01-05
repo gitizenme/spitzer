@@ -16,6 +16,7 @@ namespace Spitzer
 {
     public partial class App : Application
     {
+        public static Theme CurrentTheme;
 
         public App()
         {
@@ -56,9 +57,9 @@ namespace Spitzer
             base.OnResume();
             ImageService.Instance.SetExitTasksEarly(false);
 
-            Theme theme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
+            CurrentTheme = await DependencyService.Get<IEnvironment>().GetOperatingSystemTheme();
 
-            SetTheme(theme);
+            SetTheme(CurrentTheme);
             Analytics.TrackEvent($"Called: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
