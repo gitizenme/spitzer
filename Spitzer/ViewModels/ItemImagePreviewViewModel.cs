@@ -20,6 +20,8 @@ namespace Spitzer.ViewModels
             {
                 if (args is PreviewToastMessage toastMessage)
                 {
+                    // TODO duplicate code in MediaPage.xaml.cs
+
                     var backgroundColor = Color.White;
                     var textColor = Color.Black;
                     if (App.CurrentTheme == Theme.Dark)

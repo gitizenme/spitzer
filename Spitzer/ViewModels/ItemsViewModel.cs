@@ -9,6 +9,7 @@ using System.Linq;
 using System.Windows.Input;
 using FFImageLoading.Cache;
 using FFImageLoading.Forms;
+using Microsoft.AppCenter.Crashes;
 
 namespace Spitzer.ViewModels
 {
@@ -59,7 +60,6 @@ namespace Spitzer.ViewModels
 
             try
             {
-                Items.Clear();
                 var items = await NasaMediaLibrary.GetItemsAsync(true);
                 foreach (var item in items)
                 {
@@ -71,7 +71,7 @@ namespace Spitzer.ViewModels
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex);
+                Crashes.TrackError(ex);
             }
             finally
             {

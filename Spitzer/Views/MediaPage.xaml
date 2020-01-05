@@ -2,14 +2,112 @@
 
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:controls="clr-namespace:Spitzer.Controls;assembly=Spitzer"
+             xmlns:viewModels="clr-namespace:Spitzer.ViewModels;assembly=Spitzer"
              x:Class="Spitzer.Views.MediaPage"
              Title="{Binding Title}"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Media"
-                   VerticalOptions="CenterAndExpand"
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    
+    <ContentPage.BindingContext>
+        <viewModels:MediaPageViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <DataTemplate x:Key="ImageLeftTemplate">
+            <StackLayout HeightRequest="200" Spacing="10">
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Spacing="10" HorizontalOptions="Start">
+                        <forms:CachedImage Source="{Binding ImageUrl}" LoadingPlaceholder="AppIcon.png"
+                                           HeightRequest="150" WidthRequest="150"
+                                           RetryCount="3"
+                                           RetryDelay="5000"
+                                           DownsampleToViewSize="true"
+                                           HorizontalOptions="StartAndExpand"
+                                           VerticalOptions="Center"
+                                           Aspect="AspectFill" />
+                    </StackLayout>
+                    <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
+                        <Label Text="{Binding Title}"
+                               Style="{StaticResource LargeLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="2" />
+                        <Label Text="{Binding Summary}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="4" />
+                        <Label Text="{Binding Author}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="1" />
+                        <Label Text="{Binding PublishDate}"
+                               Style="{StaticResource MediumLabelStyle}"
+                               LineBreakMode="TailTruncation"
+                               MaxLines="1" />
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout>
+                    <BoxView Style="{StaticResource BoxViewStyle}" />
+                </StackLayout>
+            </StackLayout>
+        </DataTemplate>
+
+        <DataTemplate x:Key="BasicTemplate">
+            <StackLayout>
+                <Label Text="Scheduling an observation for new images..."
+                       Margin="10,25,10,10"
+                       Style="{StaticResource LargeLabelStyle}"
+                       FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
+                       FontSize="18"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </DataTemplate>
+        <DataTemplate x:Key="AdvancedTemplate">
+            <StackLayout>
+                <Label Text="No results matched your filter."
+                       Margin="10,25,10,10"
+                       Style="{StaticResource LargeLabelStyle}"
+                       FontAttributes="Bold"
+                       LineBreakMode="WordWrap"
+                       FontSize="18"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="Try a broader search?"
+                       Style="{StaticResource MediumLabelStyle}"
+                       FontAttributes="Italic"
+                       LineBreakMode="WordWrap"
+                       FontSize="12"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center" />
+            </StackLayout>
+        </DataTemplate>
+
+        <controls:SearchTermDataTemplateSelector x:Key="SearchSelector"
+                                                 BasicTemplate="{StaticResource BasicTemplate}"
+                                                 AdvancedTemplate="{StaticResource AdvancedTemplate}" />
+
+    </ContentPage.Resources>
+    
+    <StackLayout>
+        <SearchBar x:Name="SearchBar"
+                   SearchCommand="{Binding FilterCommand}"
+                   SearchCommandParameter="{Binding Source={x:Reference SearchBar}, Path=Text}"
+                   TextChanged="OnTextChanged"
+                   Style="{StaticResource SearchBarStyle}"
+                   Placeholder="type here to search..." />
+        <CollectionView x:Name="ItemsCollectionView"
+                        ItemsSource="{Binding Items}"
+                        ItemTemplate="{StaticResource ImageLeftTemplate}"
+                        ItemsUpdatingScrollMode="KeepItemsInView"
+                        EmptyView="{Binding Source={x:Reference SearchBar}, Path=Text}"
+                        EmptyViewTemplate="{StaticResource SearchSelector}"
+                        SelectionChanged="OnItemSelected"
+                        SelectionMode="Single">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical"
+                                   ItemSpacing="20" />
+            </CollectionView.ItemsLayout>
+        </CollectionView>
+    </StackLayout></ContentPage>

@@ -22,14 +22,12 @@
                        d:Text="{Binding .}"
                        Style="{StaticResource LargeLabelStyle}"
                        LineBreakMode="TailTruncation"
-                       MaxLines="2"
-                       FontSize="16" />
+                       MaxLines="2" />
                 <Label Text="{Binding Description}"
                        d:Text="{Binding .}"
                        Style="{StaticResource MediumLabelStyle}"
                        LineBreakMode="TailTruncation"
-                       MaxLines="6"
-                       FontSize="13" />
+                       MaxLines="4" />
                 <BoxView Style="{StaticResource BoxViewStyle}" />
             </StackLayout>
         </DataTemplate>
@@ -52,14 +50,12 @@
                                d:Text="{Binding .}"
                                Style="{StaticResource LargeLabelStyle}"
                                LineBreakMode="TailTruncation"
-                               MaxLines="2"
-                               FontSize="16" />
+                               MaxLines="2" />
                         <Label Text="{Binding Description}"
                                d:Text="{Binding .}"
                                Style="{StaticResource MediumLabelStyle}"
                                LineBreakMode="TailTruncation"
-                               MaxLines="6"
-                               FontSize="13" />
+                               MaxLines="4" />
                     </StackLayout>
                 </StackLayout>
                 <StackLayout>
@@ -76,14 +72,12 @@
                                d:Text="{Binding .}"
                                Style="{StaticResource LargeLabelStyle}"
                                LineBreakMode="TailTruncation"
-                               MaxLines="2"
-                               FontSize="16" />
+                               MaxLines="2" />
                         <Label Text="{Binding Description}"
                                d:Text="{Binding .}"
                                Style="{StaticResource MediumLabelStyle}"
                                LineBreakMode="TailTruncation"
-                               MaxLines="6"
-                               FontSize="13" />
+                               MaxLines="4" />
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="End">
                         <forms:CachedImage Source="{Binding ImagePreview}" LoadingPlaceholder="AppIcon.png"

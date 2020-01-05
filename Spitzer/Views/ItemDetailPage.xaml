@@ -40,12 +40,6 @@
                                            HorizontalOptions="StartAndExpand"
                                            VerticalOptions="Center"
                                            Aspect="AspectFill">
-                            <!--
-                            <ffimageloadingforms:CachedImage.Behaviors>
-                                <behaviors:CachedImageDimensionsBehavior />
-                            </ffimageloadingforms:CachedImage.Behaviors>
-                                           FileWriteFinished="CachedImage_OnFileWriteFinished"
-                        -->
                         </ffimageloadingforms:CachedImage>
                     </StackLayout>
                     <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">

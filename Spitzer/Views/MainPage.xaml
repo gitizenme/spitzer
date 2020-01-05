@@ -8,34 +8,34 @@
             x:Class="Spitzer.Views.MainPage">
 
     <TabbedPage.Children>
-        <NavigationPage Title="Browse">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
-                    <On Platform="iOS" Value="tab_feed.png"/>
+        <NavigationPage Title="Spitzer" x:Name="SpitzerPage">
+            <NavigationPage.IconImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
+                    <On Platform="iOS" Value="AppIcon"/>
                 </OnPlatform>
-            </NavigationPage.Icon>
+            </NavigationPage.IconImageSource>
             <x:Arguments>
                 <views:ItemsPage />
             </x:Arguments>
         </NavigationPage>
         
-        <NavigationPage Title="Media">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
+        <NavigationPage Title="Media" x:Name="MediaPage">
+            <NavigationPage.IconImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
                     <On Platform="iOS" Value="tab_feed.png"/>
                 </OnPlatform>
-            </NavigationPage.Icon>
+            </NavigationPage.IconImageSource>
             <x:Arguments>
                 <views:MediaPage />
             </x:Arguments>
         </NavigationPage>
         
-        <NavigationPage Title="About">
-            <NavigationPage.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource">
+        <NavigationPage Title="About" x:Name="AboutPage">
+            <NavigationPage.IconImageSource>
+                <OnPlatform x:TypeArguments="ImageSource">
                     <On Platform="iOS" Value="tab_about.png"/>
                 </OnPlatform>
-            </NavigationPage.Icon>
+            </NavigationPage.IconImageSource>
             <x:Arguments>
                 <views:AboutPage />
             </x:Arguments>
