@@ -19,6 +19,7 @@ namespace Spitzer.ViewModels
 
         private bool isFirstLoad;
         private ObservableCollection<MediaItem> items;
+        private IOrderedEnumerable<MediaItem> sortedCollection;
 
         public ItemsViewModel()
         {
@@ -65,7 +66,11 @@ namespace Spitzer.ViewModels
                 {
                     source.Add(item);
                 }
-                Items = new ObservableCollection<MediaItem>(source);
+
+                sortedCollection = source.GroupBy(x => x.Title)
+                    .Select(g => g.First()).OrderByDescending(o => o.DateSort);                
+                
+                Items = new ObservableCollection<MediaItem>(sortedCollection);
 
                 Debug.WriteLine($"Items.Count: {Items.Count}");
             }
@@ -87,12 +92,12 @@ namespace Spitzer.ViewModels
         {
             if (!String.IsNullOrEmpty(filter))
             {
-                var filteredItems = source.Where(item => item.Title.ToLower().Contains(filter.ToLower())).ToList();
+                var filteredItems = sortedCollection.Where(item => item.Title.ToLower().Contains(filter.ToLower()) || item.Description.ToLower().Contains(filter.ToLower()) || item.DateCreated.ToLower().Contains(filter.ToLower())).ToList();
                 Items = new ObservableCollection<MediaItem>(filteredItems);
             }
             else
             {
-                Items = new ObservableCollection<MediaItem>(source);
+                Items = new ObservableCollection<MediaItem>(sortedCollection);
             }
         }
     }

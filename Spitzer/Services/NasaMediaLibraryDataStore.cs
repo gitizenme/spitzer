@@ -22,14 +22,16 @@ namespace Spitzer.Services
 
             var request = new RestRequest("search", Method.GET);
             request.AddParameter("q", "spitzer space telescope"); // adds to POST or URL querystring based on Method
-            request.AddParameter("keywords", "spitzer space telescope"); // adds to POST or URL querystring based on Method
+            request.AddParameter("keywords",
+                "spitzer space telescope"); // adds to POST or URL querystring based on Method
 
-            var searchUri = client.BaseUrl.ToString() + request.Resource + "?" + string.Join("&", request.Parameters);
-            
-            var current = Connectivity.NetworkAccess;
-            
-            if (current != NetworkAccess.Internet)
+            var searchUri = client.BaseUrl + request.Resource + "?" + string.Join("&", request.Parameters);
+
+            var networkAccess = Connectivity.NetworkAccess;
+
+            if (networkAccess != NetworkAccess.Internet)
             {
+                Debug.WriteLine("Offline: loading pages from cache");
                 library = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
                 if (library != null)
                 {
@@ -37,36 +39,28 @@ namespace Spitzer.Services
                     return;
                 }
             }
-            
-            if(!Barrel.Current.IsExpired(key: request.Resource))
+
+            if (!Barrel.Current.IsExpired(key: request.Resource))
             {
+                Debug.WriteLine("Loading pages from cache");
                 library = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
                 if (library != null)
                 {
                     GetPagesFromCache(client, request);
-                    return;
                 }
             }
             else
             {
-                library = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
-                if (library == null)
-                {
-                    // return content type is sniffed but can be explicitly set via RestClient.AddHandler();
-                    var libraryQueryResponse = client.Execute<NasaMediaLibrary>(request);
-                    library = libraryQueryResponse.Data;
-                    Barrel.Current.Add(key: searchUri, data: libraryQueryResponse.Content, expireIn: TimeSpan.FromDays(1));
-                    GetPagesFromCache(client, request);
-                }
-            }
-
-            if (library != null && library.Collection.Metadata.TotalHits > library.Collection.Items.Count)
-            {
-                Debug.WriteLine($"There is more data, TotalHits: {library.Collection.Metadata.TotalHits}, Items.Count: {library.Collection.Items.Count}");
+                Debug.WriteLine("Loading pages from API");
+                var libraryQueryResponse = client.Execute<NasaMediaLibrary>(request);
+                library = libraryQueryResponse.Data;
+                Barrel.Current.Add(key: searchUri, data: libraryQueryResponse.Content, expireIn: TimeSpan.FromDays(1));
+                Debug.WriteLine(
+                    $"There is more data, TotalHits: {library.Collection.Metadata.TotalHits}, Items.Count: {library.Collection.Items.Count}");
                 var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
                 Debug.WriteLine($"pages: {pages}");
                 request.AddParameter("page", 0);
-                for (int page = 2; page <= pages; page++)
+                for (int page = 1; page <= pages; page++)
                 {
                     GetPage(page, pages, request, client);
                 }
@@ -101,14 +95,14 @@ namespace Spitzer.Services
 
         public async Task<MediaItem> GetItemAsync(string id)
         {
-
-            foreach(MediaItem item in library.Collection.Items)
+            foreach (MediaItem item in library.Collection.Items)
             {
-                if(item.Data.FirstOrDefault(d => d.NasaId == id) != null)
+                if (item.Data.FirstOrDefault(d => d.NasaId == id) != null)
                 {
                     return await Task.FromResult(item);
                 }
             }
+
             return await Task.FromResult<MediaItem>(null);
         }
 
@@ -118,6 +112,7 @@ namespace Spitzer.Services
             {
                 return await Task.FromResult(library.Collection.Items.Select((MediaItem arg) => arg));
             }
+
             return await Task.FromResult<IEnumerable<MediaItem>>(null);
         }
     }

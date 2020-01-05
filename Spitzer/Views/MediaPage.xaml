@@ -96,7 +96,7 @@
                    SearchCommandParameter="{Binding Source={x:Reference SearchBar}, Path=Text}"
                    TextChanged="OnTextChanged"
                    Style="{StaticResource SearchBarStyle}"
-                   Placeholder="type here to search..." />
+                   Placeholder="Search by title, description, author, date..." />
         <CollectionView x:Name="ItemsCollectionView"
                         ItemsSource="{Binding Items}"
                         ItemTemplate="{StaticResource ImageLeftTemplate}"
