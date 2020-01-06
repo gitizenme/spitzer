@@ -22,7 +22,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>MinimumOSVersion</key>
-	<string>11.0</string>
+	<string>10.0</string>
 	<key>CFBundleDisplayName</key>
 	<string>Spitzer Gallery</string>
 	<key>UILaunchStoryboardName</key>
@@ -57,6 +57,6 @@
 		</dict>
 	</dict>
 	<key>CFBundleVersion</key>
-	<string>7</string>
+	<string>8</string>
 </dict>
 </plist>
