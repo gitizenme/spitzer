@@ -26,6 +26,7 @@
     <Folder Include="Models\Images\" />
     <Folder Include="Models\Metadata\" />
     <Folder Include="Themes\" />
+    <Folder Include="Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Annotations.cs" />

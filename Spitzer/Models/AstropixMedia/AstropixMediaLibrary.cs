@@ -2,19 +2,18 @@
 //
 // To parse this JSON data, add NuGet 'Newtonsoft.Json' then do:
 //
-//    using Spitzer.Models;
+//    using Spitzer.Models.AstropixMedia;
 //
 //    var astropixMediaLibrary = AstropixMediaLibrary.FromJson(jsonString);
 
-namespace Spitzer.Models
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace Spitzer.Models.AstropixMedia
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-
     public partial class AstropixMediaLibrary
     {
         [JsonProperty("creator")]
@@ -293,12 +292,12 @@ namespace Spitzer.Models
 
     public partial class AstropixMediaLibrary
     {
-        public static List<AstropixMediaLibrary> FromJson(string json) => JsonConvert.DeserializeObject<List<AstropixMediaLibrary>>(json, Spitzer.Models.Converter.Settings);
+        public static List<AstropixMediaLibrary> FromJson(string json) => JsonConvert.DeserializeObject<List<AstropixMediaLibrary>>(json, NasaMedia.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<AstropixMediaLibrary> self) => JsonConvert.SerializeObject(self, Spitzer.Models.Converter.Settings);
+        public static string ToJson(this List<AstropixMediaLibrary> self) => JsonConvert.SerializeObject(self, NasaMedia.Converter.Settings);
     }
 
     internal static class Converter

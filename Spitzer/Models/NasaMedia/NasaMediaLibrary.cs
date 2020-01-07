@@ -7,15 +7,14 @@
 //    var nasaMediaLibrary = NasaMediaLibrary.FromJson(jsonString);
 
 
-namespace Spitzer.Models
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
+
+namespace Spitzer.Models.NasaMedia
 {
-    using System;
-    using System.Collections.Generic;
-
-    using System.Globalization;
-    using Newtonsoft.Json;
-    using Newtonsoft.Json.Converters;
-
     public partial class NasaMediaLibrary
     {
         [JsonProperty("collection")]
@@ -120,12 +119,12 @@ namespace Spitzer.Models
 
     public partial class NasaMediaLibrary
     {
-        public static NasaMediaLibrary FromJson(string json) => JsonConvert.DeserializeObject<NasaMediaLibrary>(json, Spitzer.Models.Converter.Settings);
+        public static NasaMediaLibrary FromJson(string json) => JsonConvert.DeserializeObject<NasaMediaLibrary>(json, NasaMedia.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this NasaMediaLibrary self) => JsonConvert.SerializeObject(self, Spitzer.Models.Converter.Settings);
+        public static string ToJson(this NasaMediaLibrary self) => JsonConvert.SerializeObject(self, NasaMedia.Converter.Settings);
     }
 
     internal static class Converter

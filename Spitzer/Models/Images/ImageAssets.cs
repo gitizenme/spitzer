@@ -17,12 +17,12 @@ namespace Spitzer.Models.Images
 
     public class ImageAssets
     {
-        public static List<Uri> FromJson(string json) => JsonConvert.DeserializeObject<List<Uri>>(json, Spitzer.Models.Converter.Settings);
+        public static List<Uri> FromJson(string json) => JsonConvert.DeserializeObject<List<Uri>>(json, NasaMedia.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this List<Uri> self) => JsonConvert.SerializeObject(self, Spitzer.Models.Converter.Settings);
+        public static string ToJson(this List<Uri> self) => JsonConvert.SerializeObject(self, NasaMedia.Converter.Settings);
     }
 
     internal static class Converter

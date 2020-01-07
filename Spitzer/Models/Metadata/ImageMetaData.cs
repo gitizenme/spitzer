@@ -161,13 +161,13 @@ namespace Spitzer.Models.ImageMetadata
     public partial class ImageMetaData
     {
         public static ImageMetaData FromJson(string json) =>
-            JsonConvert.DeserializeObject<ImageMetaData>(json, Spitzer.Models.Converter.Settings);
+            JsonConvert.DeserializeObject<ImageMetaData>(json, NasaMedia.Converter.Settings);
     }
 
     public static class Serialize
     {
         public static string ToJson(this ImageMetaData self) =>
-            JsonConvert.SerializeObject(self, Spitzer.Models.Converter.Settings);
+            JsonConvert.SerializeObject(self, NasaMedia.Converter.Settings);
     }
 
     internal static class Converter
