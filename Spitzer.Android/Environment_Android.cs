@@ -29,6 +29,7 @@ using Xamarin.Forms;
 
 using Spitzer.Droid;
 using Android.OS;
+using Spitzer.Interfaces;
 
 [assembly: Dependency(typeof(Environment_Android))]
 

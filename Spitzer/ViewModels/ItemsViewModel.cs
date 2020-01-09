@@ -72,7 +72,7 @@ namespace Spitzer.ViewModels
 
         private void ExecuteResetItemsCommand()
         {
-            Items = new ObservableCollection<MediaItem>(source);
+            Items = new ObservableCollection<MediaItem>(sortedCollection);
         }
 
         async Task ExecuteLoadItemsCommand()

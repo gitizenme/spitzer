@@ -21,10 +21,9 @@
 // SOFTWARE.
 //
 
-using System;
 using System.Threading.Tasks;
 
-namespace Spitzer
+namespace Spitzer.Interfaces
 {
     public interface IEnvironment
     {

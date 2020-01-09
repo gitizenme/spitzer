@@ -3,6 +3,7 @@ using UIKit;
 using Xamarin.Forms;
 using Spitzer.iOS;
 using System.Threading.Tasks;
+using Spitzer.Interfaces;
 
 [assembly: Dependency(typeof(Environment_iOS))]
 namespace Spitzer.iOS

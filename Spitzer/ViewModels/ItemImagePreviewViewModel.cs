@@ -26,6 +26,7 @@ using System.Windows.Input;
 using Acr.UserDialogs;
 using FFImageLoading;
 using FFImageLoading.Work;
+using Spitzer.Interfaces;
 using Spitzer.Views;
 using Xamarin.Forms;
 

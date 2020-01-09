@@ -30,6 +30,7 @@ using System.Threading.Tasks;
 using Acr.UserDialogs;
 using Microsoft.AppCenter.Analytics;
 using Microsoft.Toolkit.Parsers.Rss;
+using Spitzer.Interfaces;
 using Spitzer.ViewModels;
 using Xamarin.Essentials;
 using Xamarin.Forms;
