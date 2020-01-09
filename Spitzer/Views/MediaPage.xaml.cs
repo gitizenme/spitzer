@@ -97,6 +97,11 @@ namespace Spitzer.Views
             {
                 viewModel?.ResetItemsCommand.Execute(null);
             }
-        }        
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SpitzerModelPage());
+        }
     }
 }

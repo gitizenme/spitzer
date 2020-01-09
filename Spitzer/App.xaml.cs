@@ -23,6 +23,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Reflection;
 using Acr.UserDialogs;
 using FFImageLoading;
@@ -40,7 +41,7 @@ namespace Spitzer
     public partial class App : Application
     {
         public static Theme CurrentTheme;
-
+        
         public App()
         {
             Barrel.ApplicationId = "app.spitzer.mobile";
