@@ -99,7 +99,7 @@
                                                         Text="IPAC"
                                                         Url="https://www.ipac.caltech.edu/" />
                                 <Span Style="{StaticResource SpanTextStyle}"
-                                      Text=" on the campus of the . " />
+                                      Text=" on the campus of the " />
                                 <controls:HyperlinkSpan Style="{StaticResource HyperlinkSpanTextStyle}"
                                                         Text="California Institute of Technology"
                                                         Url="https://www.caltech.edu/" />
