@@ -7,22 +7,6 @@
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand" BackgroundColor="White">
             <forms:UrhoSurface x:Name="UrhoSurface" VerticalOptions="FillAndExpand"/>
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="XRotation" Text="250" HorizontalOptions="Start" WidthRequest="100"/>
-                <Slider ValueChanged="XSlider_OnValueChanged" Minimum="0" Maximum="500" Value="250" WidthRequest="300" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="YRotation" Text="250" HorizontalOptions="Start" WidthRequest="100"/>
-                <Slider ValueChanged="YSlider_OnValueChanged" Minimum="0" Maximum="500" Value="250" WidthRequest="300" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="ZRotation" Text="250" HorizontalOptions="Start" WidthRequest="100"/>
-                <Slider ValueChanged="ZSlider_OnValueChanged" Minimum="0" Maximum="500" Value="250" WidthRequest="300" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal">
-                <Label x:Name="Scale" Text="1" HorizontalOptions="Start" WidthRequest="100"/>
-                <Slider ValueChanged="Scale_OnValueChanged" Minimum="0" Maximum="10" Value="1" WidthRequest="300" HorizontalOptions="FillAndExpand"/>
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
