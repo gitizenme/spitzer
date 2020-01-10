@@ -88,8 +88,551 @@
     <BundleResource Include="Resources\Font Awesome 5 Pro-Solid-900.otf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </BundleResource>
-    <BundleResource Include="Resources\Models\Spitzer.mdl">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    <BundleResource Include="Resources\SpitzerModel\Antenna Blanket_51.mdl">
+      <Link>Resources\Models\SpitzerModel\Antenna Blanket_51.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Antenna Blanket_51.txt">
+      <Link>Resources\Models\SpitzerModel\Antenna Blanket_51.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Antenna Blanket_51.xml">
+      <Link>Resources\Models\SpitzerModel\Antenna Blanket_51.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Antenna Blanket_52.mdl">
+      <Link>Resources\Models\SpitzerModel\Antenna Blanket_52.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Antenna Blanket_52.txt">
+      <Link>Resources\Models\SpitzerModel\Antenna Blanket_52.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Antenna Blanket_52.xml">
+      <Link>Resources\Models\SpitzerModel\Antenna Blanket_52.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Astrostrike_0.xml">
+      <Link>Resources\Models\SpitzerModel\Astrostrike_0.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Battery_1.xml">
+      <Link>Resources\Models\SpitzerModel\Battery_1.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Black Plastic_2.xml">
+      <Link>Resources\Models\SpitzerModel\Black Plastic_2.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Bolts_3.xml">
+      <Link>Resources\Models\SpitzerModel\Bolts_3.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Brass_4.xml">
+      <Link>Resources\Models\SpitzerModel\Brass_4.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Brushed Metal_5.xml">
+      <Link>Resources\Models\SpitzerModel\Brushed Metal_5.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Chrome 1 smooth_8.xml">
+      <Link>Resources\Models\SpitzerModel\Chrome 1 smooth_8.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Chrome 1_6.xml">
+      <Link>Resources\Models\SpitzerModel\Chrome 1_6.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Chrome 2 smooth_10.xml">
+      <Link>Resources\Models\SpitzerModel\Chrome 2 smooth_10.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Chrome 2_9.xml">
+      <Link>Resources\Models\SpitzerModel\Chrome 2_9.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Chrome Dark_11.xml">
+      <Link>Resources\Models\SpitzerModel\Chrome Dark_11.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Copper Light_13.xml">
+      <Link>Resources\Models\SpitzerModel\Copper Light_13.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Copper smooth_14.xml">
+      <Link>Resources\Models\SpitzerModel\Copper smooth_14.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Copper_12.xml">
+      <Link>Resources\Models\SpitzerModel\Copper_12.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\CTA Telescope Shield_15.xml">
+      <Link>Resources\Models\SpitzerModel\CTA Telescope Shield_15.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\CTA Tube Dark_16.xml">
+      <Link>Resources\Models\SpitzerModel\CTA Tube Dark_16.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\CTA Tube Inside_17.xml">
+      <Link>Resources\Models\SpitzerModel\CTA Tube Inside_17.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\CTA Tube Light_18.xml">
+      <Link>Resources\Models\SpitzerModel\CTA Tube Light_18.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Dish Surface_19.xml">
+      <Link>Resources\Models\SpitzerModel\Dish Surface_19.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Dish_Conduit_20.xml">
+      <Link>Resources\Models\SpitzerModel\Dish_Conduit_20.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Dish_reflector_strut_21.xml">
+      <Link>Resources\Models\SpitzerModel\Dish_reflector_strut_21.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Dish_Subreflect1_22.xml">
+      <Link>Resources\Models\SpitzerModel\Dish_Subreflect1_22.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Foil Gold Dish_24.xml">
+      <Link>Resources\Models\SpitzerModel\Foil Gold Dish_24.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Foil Gold_23.xml">
+      <Link>Resources\Models\SpitzerModel\Foil Gold_23.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Foil Silver_25.xml">
+      <Link>Resources\Models\SpitzerModel\Foil Silver_25.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Gold_26.xml">
+      <Link>Resources\Models\SpitzerModel\Gold_26.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Mirror_27.xml">
+      <Link>Resources\Models\SpitzerModel\Mirror_27.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\NoTexture.xml">
+      <Link>Resources\Models\SpitzerModel\NoTexture.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Radome_28.xml">
+      <Link>Resources\Models\SpitzerModel\Radome_28.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Scene.xml">
+      <Link>Resources\Models\SpitzerModel\Scene.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Cells Edges_30.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Cells Edges_30.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Cells_29.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Cells_29.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Panel Base_31.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Panel Base_31.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Panel Core_32.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Panel Core_32.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Panels Trim_33.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Panels Trim_33.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Shield Dark_34.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Shield Dark_34.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Shield Keel_35.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Shield Keel_35.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Solar Shield Support_36.xml">
+      <Link>Resources\Models\SpitzerModel\Solar Shield Support_36.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Spacecraft Base_37.xml">
+      <Link>Resources\Models\SpitzerModel\Spacecraft Base_37.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Spacecraft Panels Dark_38.xml">
+      <Link>Resources\Models\SpitzerModel\Spacecraft Panels Dark_38.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Spacecraft Shield Core_40.xml">
+      <Link>Resources\Models\SpitzerModel\Spacecraft Shield Core_40.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Spacecraft Shield_39.xml">
+      <Link>Resources\Models\SpitzerModel\Spacecraft Shield_39.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Spacecraft Silver Core_41.xml">
+      <Link>Resources\Models\SpitzerModel\Spacecraft Silver Core_41.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Strut Chrome_42.xml">
+      <Link>Resources\Models\SpitzerModel\Strut Chrome_42.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Strut Gold_43.xml">
+      <Link>Resources\Models\SpitzerModel\Strut Gold_43.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Strut Solar_44.xml">
+      <Link>Resources\Models\SpitzerModel\Strut Solar_44.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_0.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_0.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_0.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_0.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_0.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_0.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_1.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_1.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_1.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_1.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_1.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_1.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_10.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_10.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_10.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_10.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_10.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_10.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_11.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_11.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_11.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_11.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_11.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_11.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_12.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_12.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_12.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_12.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_12.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_12.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_13.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_13.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_13.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_13.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_13.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_13.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_14.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_14.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_14.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_14.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_14.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_14.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_15.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_15.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_15.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_15.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_15.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_15.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_16.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_16.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_16.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_16.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_16.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_16.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_17.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_17.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_17.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_17.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_17.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_17.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_18.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_18.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_18.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_18.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_18.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_18.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_19.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_19.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_19.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_19.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_19.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_19.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_2.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_2.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_2.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_2.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_2.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_2.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_20.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_20.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_20.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_20.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_20.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_20.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_21.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_21.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_21.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_21.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_21.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_21.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_22.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_22.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_22.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_22.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_22.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_22.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_23.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_23.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_23.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_23.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_23.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_23.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_24.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_24.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_24.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_24.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_24.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_24.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_25.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_25.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_25.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_25.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_25.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_25.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_26.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_26.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_26.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_26.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_26.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_26.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_27.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_27.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_27.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_27.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_27.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_27.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_28.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_28.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_28.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_28.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_28.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_28.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_29.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_29.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_29.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_29.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_29.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_29.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_3.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_3.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_3.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_3.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_3.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_3.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_30.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_30.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_30.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_30.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_30.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_30.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_31.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_31.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_31.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_31.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_31.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_31.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_32.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_32.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_32.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_32.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_32.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_32.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_33.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_33.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_33.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_33.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_33.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_33.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_34.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_34.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_34.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_34.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_34.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_34.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_35.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_35.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_35.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_35.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_35.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_35.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_36.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_36.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_36.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_36.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_36.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_36.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_37.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_37.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_37.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_37.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_37.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_37.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_38.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_38.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_38.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_38.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_38.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_38.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_39.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_39.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_39.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_39.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_39.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_39.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_4.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_4.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_4.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_4.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_4.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_4.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_40.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_40.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_40.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_40.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_40.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_40.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_41.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_41.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_41.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_41.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_41.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_41.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_42.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_42.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_42.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_42.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_42.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_42.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_5.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_5.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_5.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_5.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_5.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_5.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_6.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_6.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_6.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_6.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_6.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_6.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_7.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_7.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_7.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_7.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_7.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_7.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_8.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_8.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_8.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_8.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_8.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_8.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_9.mdl">
+      <Link>Resources\Models\SpitzerModel\Telescope_9.mdl</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_9.txt">
+      <Link>Resources\Models\SpitzerModel\Telescope_9.txt</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\Telescope_9.xml">
+      <Link>Resources\Models\SpitzerModel\Telescope_9.xml</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\SpitzerModel\White Plastic_45.xml">
+      <Link>Resources\Models\SpitzerModel\White Plastic_45.xml</Link>
     </BundleResource>
     <BundleResource Include="Resources\tab_about.png" />
     <BundleResource Include="Resources\tab_about%402x.png" />

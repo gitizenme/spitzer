@@ -21,17 +21,17 @@ namespace Spitzer.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SpitzerModelPage : ContentPage
     {
-        private object urhoApp;
+        private SpitzerModel urhoApp;
 
         public SpitzerModelPage()
         {
             InitializeComponent();
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             // base.OnAppearing();
-            urhoApp = UrhoSurface.Show<SpitzerModel>(new ApplicationOptions(assetsFolder: null)
+            urhoApp = await UrhoSurface.Show<SpitzerModel>(new ApplicationOptions(assetsFolder: null)
                 {Orientation = ApplicationOptions.OrientationType.LandscapeAndPortrait});
         }
 
@@ -39,6 +39,34 @@ namespace Spitzer.Views
         {
             UrhoSurface.OnDestroy();
             base.OnDisappearing();
+        }
+
+        private void XSlider_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            float newValue = (float) (e.NewValue - e.OldValue);
+            XRotation.Text = string.Format($"{newValue}");
+            urhoApp?.RotateX((float) (e.NewValue - e.OldValue));
+        }
+
+        private void YSlider_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            float newValue = (float) (e.NewValue - e.OldValue);
+            YRotation.Text = string.Format($"{newValue}");
+            urhoApp?.RotateY((float) (e.NewValue - e.OldValue));
+        }
+
+        private void ZSlider_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            float newValue = (float) (e.NewValue - e.OldValue);
+            ZRotation.Text = string.Format($"{newValue}");
+            urhoApp?.RotateZ((float) (e.NewValue - e.OldValue));
+        }
+
+        private void Scale_OnValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            float newValue = (float) (e.NewValue - e.OldValue);
+            Scale.Text = string.Format($"{e.NewValue}");
+            urhoApp?.Scale((float) (e.NewValue));
         }
     }
 
@@ -52,6 +80,9 @@ namespace Spitzer.Views
         Node plotNode;
         bool movementsEnabled;
         List<Bar> bars;
+        private float xRotation;
+        private float yRotation;
+        private float zRotation;
 
 
         public Bar SelectedBar { get; private set; }
@@ -94,18 +125,15 @@ namespace Spitzer.Views
             scene = new Scene();
             octree = scene.CreateComponent<Octree>();
 
-            telescope = scene.CreateChild("Telescope");
-            telescope.Scale = new Vector3(1f, 1f, 1f);
-            // telescope.SetScale(.1f);
-            var telescopeObject = telescope.CreateComponent<StaticModel>();
-            telescopeObject.Model = ResourceCache.GetModel("Models/Spitzer.mdl");
-
+            ResourceCache.AddResourceDir("SpitzerModel", 1);
+            telescope = scene.InstantiateXml(source: ResourceCache.GetFile("Scene.xml"),
+                position: new Vector3(x: 0, y: -1f, z:1f),
+                rotation: new Quaternion(180, 90, 180));
+            telescope.SetScale(3);
+            
             var cameraNode = scene.CreateChild();
             camera = cameraNode.CreateComponent<Camera>();
-            // camera.Orthographic = true;
-            // camera.OrthoSize = (float)Application.Current.Graphics.Height * Application.PixelSize;
             cameraNode.Position = new Vector3(0, 0, -35);
-            // cameraNode.Rotation = new Quaternion(-0.121f, 0.878f, -0.305f, -0.35f);
 
             Node lightNode = cameraNode.CreateChild();
             var light = lightNode.CreateComponent<Light>();
@@ -115,7 +143,6 @@ namespace Spitzer.Views
 
             try
             {
-                // await telescope.RunActionsAsync(new EaseBackOut(new RotateBy(2f, 0, 360, 0)));
                 await telescope.RunActionsAsync();
             }
             catch (OperationCanceledException)
@@ -169,7 +196,6 @@ namespace Spitzer.Views
             SelectedBar.Select();
 
 
-
             try
             {
                 await plotNode.RunActionsAsync(new EaseBackOut(new RotateBy(2f, 0, 360, 0)));
@@ -206,11 +232,6 @@ namespace Spitzer.Views
             }
 
             base.OnUpdate(timeStep);
-        }
-
-        public void Rotate(float toValue)
-        {
-            plotNode.Rotate(new Quaternion(0, toValue, 0), TransformSpace.Local);
         }
 
         public class Bar : Component
@@ -281,7 +302,31 @@ namespace Spitzer.Views
 
             public event Action<Bar> Selected;
         }
+
+        public void RotateX(float toValue)
+        {
+            xRotation = toValue;
+            telescope.Rotate(new Quaternion(xRotation, yRotation, zRotation), TransformSpace.Local);
+        }
+
+        public void RotateY(float toValue)
+        {
+            yRotation = toValue;
+            telescope.Rotate(new Quaternion(xRotation, yRotation, zRotation), TransformSpace.Local);
+        }
+
+        public void RotateZ(float toValue)
+        {
+            zRotation = toValue;
+            telescope.Rotate(new Quaternion(xRotation, yRotation, zRotation), TransformSpace.Local);
+        }
+
+        public void Scale(float toValue)
+        {
+            telescope.SetScale(toValue);
+        }
     }
+
 
     internal class RandomHelper
     {
