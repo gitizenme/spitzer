@@ -2,6 +2,7 @@ using System;
 using System.Diagnostics;
 using Microsoft.AppCenter.Crashes;
 using Urho;
+using Urho.Actions;
 using Urho.Forms;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -31,7 +32,6 @@ namespace Spitzer.Views
             UrhoSurface.OnDestroy();
             base.OnDisappearing();
         }
-
     }
 
     public class SpitzerModel : Application
@@ -40,7 +40,13 @@ namespace Spitzer.Views
         Camera camera;
         private Octree octree;
         private Node telescope;
-        
+        private bool movementsEnabled;
+        private float touchSensitivity = 2f;
+        private Node cameraNode;
+        private const float CameraMinDist = 1.0f;
+        private const float CameraInitialDist = 3.0f;
+        private const float CameraMaxDist = 50.0f;
+
         [Preserve]
         public SpitzerModel(ApplicationOptions options) : base(options)
         {
@@ -50,8 +56,8 @@ namespace Spitzer.Views
         {
             UnhandledException += (s, e) =>
             {
-                if (Debugger.IsAttached)
-                    Debugger.Break();
+                //if (Debugger.IsAttached)
+                //    Debugger.Break();
                 e.Handled = true;
                 Crashes.TrackError(e.Exception);
             };
@@ -78,11 +84,11 @@ namespace Spitzer.Views
 
             ResourceCache.AddResourceDir("SpitzerModel", 1);
             telescope = scene.InstantiateXml(source: ResourceCache.GetFile("Scene.xml"),
-                position: new Vector3(x: 0, y: -1f, z:1f),
+                position: new Vector3(x: 0, y: -1f, z: 1f),
                 rotation: new Quaternion(180, 90, 180));
-            telescope.SetScale(3);
-            
-            var cameraNode = scene.CreateChild();
+            telescope.SetScale(CameraInitialDist);
+
+            cameraNode = scene.CreateChild();
             camera = cameraNode.CreateComponent<Camera>();
             cameraNode.Position = new Vector3(0, 0, -35);
 
@@ -101,6 +107,40 @@ namespace Spitzer.Views
                 if (Debugger.IsAttached)
                     Debugger.Break();
             }
+
+            movementsEnabled = true;
         }
+
+        protected override void OnUpdate(float timeStep)
+        {
+            if (Input.NumTouches >= 1 && movementsEnabled)
+            {
+                if (Input.NumTouches == 1)
+                {
+                    var touch = Input.GetTouch(0);
+                    telescope.Rotate(new Quaternion(-touch.Delta.X, -touch.Delta.Y, 0), TransformSpace.Local);
+                }
+                else if (Input.NumTouches == 2)
+                {
+                    var touch1 = Input.GetTouch(0);
+                    var touch2 = Input.GetTouch(1);
+
+                    int sens = 0;
+                    // Check for zoom direction (in/out)
+                    if (Math.Abs(touch1.Position.Y - touch2.Position.Y) >
+                        Math.Abs(touch1.LastPosition.Y - touch2.LastPosition.Y))
+                        sens = 1;
+                    else
+                        sens = -1;
+                    CameraDistance += Math.Abs(touch1.Delta.Y - touch2.Delta.Y) * sens * touchSensitivity / 500.0f;
+                    CameraDistance =
+                        MathHelper.Clamp(CameraDistance, CameraMinDist, CameraMaxDist); 
+                    telescope.SetScale(CameraDistance);
+                }
+            }
+            base.OnUpdate(timeStep);
+        }
+
+        public float CameraDistance { get; set; }
     }
 }

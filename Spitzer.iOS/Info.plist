@@ -32,7 +32,7 @@
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1-9</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Save Spitzer images to your photo library</string>
 	<key>CFBundleIdentifier</key>
@@ -57,6 +57,6 @@
 		</dict>
 	</dict>
 	<key>CFBundleVersion</key>
-	<string>8</string>
+	<string>9</string>
 </dict>
 </plist>
