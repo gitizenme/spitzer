@@ -108,7 +108,6 @@ namespace Spitzer.Models
             scene = new Scene();
             octree = scene.CreateComponent<Octree>();
 
-            ResourceCache.AddResourceDir("SpitzerModel", 1);
             telescope = scene.InstantiateXml(source: ResourceCache.GetFile("Scene.xml"),
                 position: new Vector3(x: 0, y: -1f, z: 1f),
                 rotation: new Quaternion(180, 90, 180));
