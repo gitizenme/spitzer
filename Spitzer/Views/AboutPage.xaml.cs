@@ -40,7 +40,7 @@ namespace Spitzer.Views
         {
             InitializeComponent();
             AppName.Text = AppInfo.Name;
-            AppVersion.Text = $"{AppInfo.VersionString}";
+            AppVersion.Text = $"{AppInfo.VersionString}-{AppInfo.BuildString}";
             Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
     }

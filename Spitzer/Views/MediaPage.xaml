@@ -91,8 +91,8 @@
     </ContentPage.Resources>
     
     <StackLayout>
-        <StackLayout Orientation="Horizontal">
-            <Button Style="{StaticResource ButtonStyle}" Text="View 3D Model" Clicked="Button_OnClicked"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <Button Style="{StaticResource ButtonStyle}" Text="Spitzer 3D Model" Clicked="Button_OnClicked" Padding="4"/>
         </StackLayout>
         <SearchBar x:Name="SearchBar"
                    SearchCommand="{Binding FilterCommand}"
