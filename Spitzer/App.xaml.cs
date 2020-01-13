@@ -72,8 +72,8 @@ namespace Spitzer
 
         protected override void OnSleep()
         {
-            Analytics.TrackEvent("OnSleep");
             ImageService.Instance.SetExitTasksEarly(true);
+            Analytics.TrackEvent($"Called: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         protected override async void OnResume()

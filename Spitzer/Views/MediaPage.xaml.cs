@@ -48,13 +48,17 @@ namespace Spitzer.Views
             
             viewModel = new MediaPageViewModel();
             
-            viewModel.LoadFeedCommand.Execute(null);
-            
             BindingContext = viewModel;
             Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
 
         }
-        
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            viewModel.LoadFeedCommand.Execute(null);
+        }
+
         private async void OnItemSelected(object sender, SelectionChangedEventArgs args)
         {
             var item = (args.CurrentSelection.FirstOrDefault() as RssSchema);

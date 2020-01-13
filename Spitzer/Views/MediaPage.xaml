@@ -8,11 +8,11 @@
              x:Class="Spitzer.Views.MediaPage"
              Title="{Binding Title}"
              BackgroundColor="{DynamicResource PageBackgroundColor}">
-    
+
     <ContentPage.BindingContext>
         <viewModels:MediaPageViewModel />
     </ContentPage.BindingContext>
-    
+
     <ContentPage.Resources>
         <DataTemplate x:Key="ImageLeftTemplate">
             <StackLayout HeightRequest="200" Spacing="10">
@@ -89,7 +89,7 @@
                                                  AdvancedTemplate="{StaticResource AdvancedTemplate}" />
 
     </ContentPage.Resources>
-    
+
     <StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
             <Button Style="{StaticResource ButtonStyle}" Text="Spitzer 3D Model" Clicked="Button_OnClicked" Padding="4"/>
@@ -100,7 +100,10 @@
                    TextChanged="OnTextChanged"
                    Style="{StaticResource SearchBarStyle}"
                    Placeholder="Search by title, description, author, date..." />
-        <CollectionView x:Name="ItemsCollectionView"
+        <RefreshView IsRefreshing="{Binding IsBusy}"
+                   Command="{Binding LoadFeedCommand}"
+                   RefreshColor="{DynamicResource RefreshColor}">
+            <CollectionView x:Name="ItemsCollectionView"
                         ItemsSource="{Binding Items}"
                         ItemTemplate="{StaticResource ImageLeftTemplate}"
                         ItemsUpdatingScrollMode="KeepItemsInView"
@@ -108,9 +111,11 @@
                         EmptyViewTemplate="{StaticResource SearchSelector}"
                         SelectionChanged="OnItemSelected"
                         SelectionMode="Single">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Vertical"
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical"
                                    ItemSpacing="20" />
-            </CollectionView.ItemsLayout>
-        </CollectionView>
-    </StackLayout></ContentPage>
+                </CollectionView.ItemsLayout>
+            </CollectionView>
+        </RefreshView>
+    </StackLayout>
+</ContentPage>

@@ -51,7 +51,15 @@ namespace Spitzer.ViewModels
             source = new List<MediaItem>();
             Items = new ObservableCollection<MediaItem>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
+            RefreshItemsCommand = new Command(ExecuteRefreshItemsCommand);
             ResetItemsCommand = new Command(ExecuteResetItemsCommand);
+        }
+
+        private async void ExecuteRefreshItemsCommand()
+        {
+            IsRefresh = true;
+            await ExecuteLoadItemsCommand();
+            IsRefresh = false;
         }
 
         public ObservableCollection<MediaItem> Items
@@ -61,6 +69,7 @@ namespace Spitzer.ViewModels
         }
 
         public ICommand LoadItemsCommand { get; }
+        public ICommand RefreshItemsCommand { get; }
         public ICommand ResetItemsCommand { get; }
         public ICommand FilterCommand => new Command<string>(FilterItems);
 
@@ -69,6 +78,7 @@ namespace Spitzer.ViewModels
             get => isFirstLoad;
             private set => SetProperty(ref isFirstLoad, value);
         }
+        public bool IsRefresh { get; private set; }
 
         private void ExecuteResetItemsCommand()
         {
@@ -77,19 +87,14 @@ namespace Spitzer.ViewModels
 
         async Task ExecuteLoadItemsCommand()
         {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
+            Debug.WriteLine($"IsBusy: {IsBusy}");
             try
             {
-                var items = await NasaMediaLibrary.GetItemsAsync(true);
+                var items = await NasaMediaLibrary.GetItemsAsync(IsRefresh || IsFirstLoad);
                 foreach (var item in items)
                 {
                     source.Add(item);
                 }
-
                 sortedCollection = source.GroupBy(x => x.Title)
                     .Select(g => g.First()).OrderByDescending(o => o.DateSort);                
                 

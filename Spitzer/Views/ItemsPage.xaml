@@ -153,11 +153,6 @@
                                                  AdvancedTemplate="{StaticResource AdvancedTemplate}" />
 
     </ContentPage.Resources>
-    <!--
-                IsPullToRefreshEnabled="True"
-                IsRefreshing="{Binding IsBusy, Mode=OneWay}"
--->
-
     <StackLayout>
         <SearchBar x:Name="searchBar"
                    SearchCommand="{Binding FilterCommand}"
@@ -165,7 +160,10 @@
                    TextChanged="OnTextChanged"
                    Style="{StaticResource SearchBarStyle}"
                    Placeholder="Search by title, description, date..." />
-        <CollectionView x:Name="ItemsCollectionView"
+        <RefreshView IsRefreshing="{Binding IsBusy}"
+                   Command="{Binding RefreshItemsCommand}"
+                   RefreshColor="{DynamicResource RefreshColor}">
+            <CollectionView x:Name="ItemsCollectionView"
                         ItemsSource="{Binding Items}"
                         ItemTemplate="{StaticResource ItemsPageSelector}"
                         ItemsUpdatingScrollMode="KeepItemsInView"
@@ -173,10 +171,11 @@
                         EmptyViewTemplate="{StaticResource SearchSelector}"
                         SelectionChanged="OnItemSelected"
                         SelectionMode="Single">
-            <CollectionView.ItemsLayout>
-                <LinearItemsLayout Orientation="Vertical"
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical"
                                    ItemSpacing="20" />
-            </CollectionView.ItemsLayout>
-        </CollectionView>
+                </CollectionView.ItemsLayout>
+            </CollectionView>
+        </RefreshView>
     </StackLayout>
 </ContentPage>
