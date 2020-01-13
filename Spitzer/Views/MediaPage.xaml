@@ -27,7 +27,7 @@
                                            VerticalOptions="Center"
                                            Aspect="AspectFill" />
                     </StackLayout>
-                    <StackLayout Spacing="10" HorizontalOptions="EndAndExpand">
+                    <StackLayout Spacing="10" HorizontalOptions="StartAndExpand">
                         <Label Text="{Binding Title}"
                                Style="{StaticResource LargeLabelStyle}"
                                LineBreakMode="TailTruncation"

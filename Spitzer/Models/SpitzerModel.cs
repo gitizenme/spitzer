@@ -44,9 +44,9 @@ namespace Spitzer.Models
             SetupViewport();
             Input.TouchBegin += args =>
             {
-                System.Console.WriteLine($"TouchBegin numTaps: {numTaps}");
+                // System.Console.WriteLine($"TouchBegin numTaps: {numTaps}");
                 TimeSpan timeStep = (DateTime.Now - tapTimeStep);
-                System.Console.WriteLine($"TouchBegin timeStep: {timeStep.TotalMilliseconds}");
+                // System.Console.WriteLine($"TouchBegin timeStep: {timeStep.TotalMilliseconds}");
                 if(timeStep.TotalMilliseconds > 2000)
                 {
                     numTaps = 0;
@@ -81,12 +81,12 @@ namespace Spitzer.Models
 
             Input.TouchMove += args =>
             {
-                System.Console.WriteLine($"TouchMove DX/DY: {args.DX}/{args.DY}");
+                // System.Console.WriteLine($"TouchMove DX/DY: {args.DX}/{args.DY}");
                 if (Math.Abs(args.DX) > 1 || Math.Abs(args.DY) > 1)
                 {
                     numTaps = 0;
                 }
-                System.Console.WriteLine($"TouchMove numTaps: {numTaps}");
+                // System.Console.WriteLine($"TouchMove numTaps: {numTaps}");
             };
         }
 
@@ -112,7 +112,7 @@ namespace Spitzer.Models
                 position: new Vector3(x: 0, y: -1f, z: 1f),
                 rotation: new Quaternion(180, 90, 180));
             telescope.SetScale(CameraInitialDist);
-
+            CameraDistance = CameraInitialDist;
             cameraNode = scene.CreateChild();
             camera = cameraNode.CreateComponent<Camera>();
             cameraNode.Position = new Vector3(0, 0, -35);
@@ -145,7 +145,7 @@ namespace Spitzer.Models
                 if (Input.NumTouches == 1)
                 {
                     var touch = Input.GetTouch(0);
-                    telescope.Rotate(new Quaternion(-touch.Delta.X, -touch.Delta.Y, 0), TransformSpace.Local);
+                    telescope.Rotate(new Quaternion(-touch.Delta.Y, -touch.Delta.X, 0), TransformSpace.Local);
                 }
                 else if (Input.NumTouches == 2)
                 {
