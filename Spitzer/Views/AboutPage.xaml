@@ -19,15 +19,14 @@
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Grid.Row="0">
-            <ffimageloading:CachedImage Source="SplashScreenImage" VerticalOptions="CenterAndExpand"
-                                        HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-        <ScrollView Grid.Row="1">
-            <StackLayout Orientation="Vertical" Padding="16,40,16,40" Spacing="10">
+        <ScrollView Grid.Row="0">
+            <StackLayout Orientation="Vertical" Padding="16,16,16,16" Spacing="10">
+                <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                    <ffimageloading:CachedImage Source="SplashScreenImage" VerticalOptions="CenterAndExpand"
+                                                HorizontalOptions="CenterAndExpand"  HeightRequest="150"/>
+                </StackLayout>
                 <Label FontSize="22">
                     <Label.FormattedText>
                         <FormattedString>

@@ -61,7 +61,9 @@ namespace Spitzer.Views
             if (item == null)
                 return;
 
-            var opened = await Launcher.TryOpenAsync(item.FeedUrl);
+            var url = item.FeedUrl.Trim();
+            Console.WriteLine($"feedUrl: {url}");
+            var opened = await Launcher.TryOpenAsync(url);
             
             if (!opened)
             {
@@ -97,6 +99,11 @@ namespace Spitzer.Views
             {
                 viewModel?.ResetItemsCommand.Execute(null);
             }
-        }        
+        }
+
+        private void Button_OnClicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SpitzerModelPage());
+        }
     }
 }

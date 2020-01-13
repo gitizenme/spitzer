@@ -1,0 +1,686 @@
+<scene id="1">
+	<component id="1" type="Octree"/>
+	<component id="2" type="DebugRenderer"/>
+	<component id="3" type="Light">
+		<attribute name="Light Type" value="Directional"/>
+	</component>
+	<component id="4" type="PhysicsWorld"/>
+	<node id="16777216">
+		<attribute name="Name" value="Scene"/>
+		<node id="16777217">
+			<attribute name="Name" value="Antenna Blanket_51"/>
+			<component id="16777216" type="StaticModel">
+				<attribute name="Model" value="Model;Antenna Blanket_51.mdl"/>
+				<attribute name="Material" value="Material;Foil Gold Dish_24.xml"/>
+			</component>
+			<component id="16777217" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777218" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Antenna Blanket_51.mdl"/>
+			</component>
+		</node>
+		<node id="16777218">
+			<attribute name="Name" value="Antenna Blanket_52"/>
+			<component id="16777219" type="StaticModel">
+				<attribute name="Model" value="Model;Antenna Blanket_52.mdl"/>
+				<attribute name="Material" value="Material;Radome_28.xml"/>
+			</component>
+			<component id="16777220" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777221" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Antenna Blanket_52.mdl"/>
+			</component>
+		</node>
+		<node id="16777219">
+			<attribute name="Name" value="Telescope_0"/>
+			<component id="16777222" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_0.mdl"/>
+				<attribute name="Material" value="Material;Astrostrike_0.xml"/>
+			</component>
+			<component id="16777223" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777224" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_0.mdl"/>
+			</component>
+		</node>
+		<node id="16777220">
+			<attribute name="Name" value="Telescope_1"/>
+			<component id="16777225" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_1.mdl"/>
+				<attribute name="Material" value="Material;Battery_1.xml"/>
+			</component>
+			<component id="16777226" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777227" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_1.mdl"/>
+			</component>
+		</node>
+		<node id="16777221">
+			<attribute name="Name" value="Telescope_10"/>
+			<component id="16777228" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_10.mdl"/>
+				<attribute name="Material" value="Material;Chrome Dark_11.xml"/>
+			</component>
+			<component id="16777229" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777230" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_10.mdl"/>
+			</component>
+		</node>
+		<node id="16777222">
+			<attribute name="Name" value="Telescope_11"/>
+			<component id="16777231" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_11.mdl"/>
+				<attribute name="Material" value="Material;Copper_12.xml"/>
+			</component>
+			<component id="16777232" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777233" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_11.mdl"/>
+			</component>
+		</node>
+		<node id="16777223">
+			<attribute name="Name" value="Telescope_12"/>
+			<component id="16777234" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_12.mdl"/>
+				<attribute name="Material" value="Material;Copper Light_13.xml"/>
+			</component>
+			<component id="16777235" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777236" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_12.mdl"/>
+			</component>
+		</node>
+		<node id="16777224">
+			<attribute name="Name" value="Telescope_13"/>
+			<component id="16777237" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_13.mdl"/>
+				<attribute name="Material" value="Material;Copper smooth_14.xml"/>
+			</component>
+			<component id="16777238" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777239" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_13.mdl"/>
+			</component>
+		</node>
+		<node id="16777225">
+			<attribute name="Name" value="Telescope_14"/>
+			<component id="16777240" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_14.mdl"/>
+				<attribute name="Material" value="Material;CTA Telescope Shield_15.xml"/>
+			</component>
+			<component id="16777241" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777242" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_14.mdl"/>
+			</component>
+		</node>
+		<node id="16777226">
+			<attribute name="Name" value="Telescope_15"/>
+			<component id="16777243" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_15.mdl"/>
+				<attribute name="Material" value="Material;CTA Tube Dark_16.xml"/>
+			</component>
+			<component id="16777244" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777245" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_15.mdl"/>
+			</component>
+		</node>
+		<node id="16777227">
+			<attribute name="Name" value="Telescope_16"/>
+			<component id="16777246" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_16.mdl"/>
+				<attribute name="Material" value="Material;CTA Tube Inside_17.xml"/>
+			</component>
+			<component id="16777247" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777248" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_16.mdl"/>
+			</component>
+		</node>
+		<node id="16777228">
+			<attribute name="Name" value="Telescope_17"/>
+			<component id="16777249" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_17.mdl"/>
+				<attribute name="Material" value="Material;CTA Tube Light_18.xml"/>
+			</component>
+			<component id="16777250" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777251" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_17.mdl"/>
+			</component>
+		</node>
+		<node id="16777229">
+			<attribute name="Name" value="Telescope_18"/>
+			<component id="16777252" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_18.mdl"/>
+				<attribute name="Material" value="Material;Dish Surface_19.xml"/>
+			</component>
+			<component id="16777253" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777254" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_18.mdl"/>
+			</component>
+		</node>
+		<node id="16777230">
+			<attribute name="Name" value="Telescope_19"/>
+			<component id="16777255" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_19.mdl"/>
+				<attribute name="Material" value="Material;Dish_Conduit_20.xml"/>
+			</component>
+			<component id="16777256" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777257" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_19.mdl"/>
+			</component>
+		</node>
+		<node id="16777231">
+			<attribute name="Name" value="Telescope_2"/>
+			<component id="16777258" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_2.mdl"/>
+				<attribute name="Material" value="Material;Black Plastic_2.xml"/>
+			</component>
+			<component id="16777259" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777260" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_2.mdl"/>
+			</component>
+		</node>
+		<node id="16777232">
+			<attribute name="Name" value="Telescope_20"/>
+			<component id="16777261" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_20.mdl"/>
+				<attribute name="Material" value="Material;Dish_reflector_strut_21.xml"/>
+			</component>
+			<component id="16777262" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777263" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_20.mdl"/>
+			</component>
+		</node>
+		<node id="16777233">
+			<attribute name="Name" value="Telescope_21"/>
+			<component id="16777264" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_21.mdl"/>
+				<attribute name="Material" value="Material;Dish_Subreflect1_22.xml"/>
+			</component>
+			<component id="16777265" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777266" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_21.mdl"/>
+			</component>
+		</node>
+		<node id="16777234">
+			<attribute name="Name" value="Telescope_22"/>
+			<component id="16777267" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_22.mdl"/>
+				<attribute name="Material" value="Material;Foil Gold_23.xml"/>
+			</component>
+			<component id="16777268" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777269" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_22.mdl"/>
+			</component>
+		</node>
+		<node id="16777235">
+			<attribute name="Name" value="Telescope_23"/>
+			<component id="16777270" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_23.mdl"/>
+				<attribute name="Material" value="Material;Foil Silver_25.xml"/>
+			</component>
+			<component id="16777271" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777272" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_23.mdl"/>
+			</component>
+		</node>
+		<node id="16777236">
+			<attribute name="Name" value="Telescope_24"/>
+			<component id="16777273" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_24.mdl"/>
+				<attribute name="Material" value="Material;Gold_26.xml"/>
+			</component>
+			<component id="16777274" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777275" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_24.mdl"/>
+			</component>
+		</node>
+		<node id="16777237">
+			<attribute name="Name" value="Telescope_25"/>
+			<component id="16777276" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_25.mdl"/>
+				<attribute name="Material" value="Material;Mirror_27.xml"/>
+			</component>
+			<component id="16777277" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777278" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_25.mdl"/>
+			</component>
+		</node>
+		<node id="16777238">
+			<attribute name="Name" value="Telescope_26"/>
+			<component id="16777279" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_26.mdl"/>
+				<attribute name="Material" value="Material;Solar Cells_29.xml"/>
+			</component>
+			<component id="16777280" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777281" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_26.mdl"/>
+			</component>
+		</node>
+		<node id="16777239">
+			<attribute name="Name" value="Telescope_27"/>
+			<component id="16777282" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_27.mdl"/>
+				<attribute name="Material" value="Material;Solar Cells Edges_30.xml"/>
+			</component>
+			<component id="16777283" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777284" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_27.mdl"/>
+			</component>
+		</node>
+		<node id="16777240">
+			<attribute name="Name" value="Telescope_28"/>
+			<component id="16777285" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_28.mdl"/>
+				<attribute name="Material" value="Material;Solar Panel Base_31.xml"/>
+			</component>
+			<component id="16777286" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777287" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_28.mdl"/>
+			</component>
+		</node>
+		<node id="16777241">
+			<attribute name="Name" value="Telescope_29"/>
+			<component id="16777288" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_29.mdl"/>
+				<attribute name="Material" value="Material;Solar Panel Core_32.xml"/>
+			</component>
+			<component id="16777289" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777290" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_29.mdl"/>
+			</component>
+		</node>
+		<node id="16777242">
+			<attribute name="Name" value="Telescope_3"/>
+			<component id="16777291" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_3.mdl"/>
+				<attribute name="Material" value="Material;Bolts_3.xml"/>
+			</component>
+			<component id="16777292" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777293" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_3.mdl"/>
+			</component>
+		</node>
+		<node id="16777243">
+			<attribute name="Name" value="Telescope_30"/>
+			<component id="16777294" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_30.mdl"/>
+				<attribute name="Material" value="Material;Solar Panels Trim_33.xml"/>
+			</component>
+			<component id="16777295" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777296" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_30.mdl"/>
+			</component>
+		</node>
+		<node id="16777244">
+			<attribute name="Name" value="Telescope_31"/>
+			<component id="16777297" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_31.mdl"/>
+				<attribute name="Material" value="Material;Solar Shield Dark_34.xml"/>
+			</component>
+			<component id="16777298" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777299" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_31.mdl"/>
+			</component>
+		</node>
+		<node id="16777245">
+			<attribute name="Name" value="Telescope_32"/>
+			<component id="16777300" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_32.mdl"/>
+				<attribute name="Material" value="Material;Solar Shield Keel_35.xml"/>
+			</component>
+			<component id="16777301" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777302" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_32.mdl"/>
+			</component>
+		</node>
+		<node id="16777246">
+			<attribute name="Name" value="Telescope_33"/>
+			<component id="16777303" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_33.mdl"/>
+				<attribute name="Material" value="Material;Solar Shield Support_36.xml"/>
+			</component>
+			<component id="16777304" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777305" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_33.mdl"/>
+			</component>
+		</node>
+		<node id="16777247">
+			<attribute name="Name" value="Telescope_34"/>
+			<component id="16777306" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_34.mdl"/>
+				<attribute name="Material" value="Material;Spacecraft Base_37.xml"/>
+			</component>
+			<component id="16777307" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777308" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_34.mdl"/>
+			</component>
+		</node>
+		<node id="16777248">
+			<attribute name="Name" value="Telescope_35"/>
+			<component id="16777309" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_35.mdl"/>
+				<attribute name="Material" value="Material;Spacecraft Panels Dark_38.xml"/>
+			</component>
+			<component id="16777310" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777311" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_35.mdl"/>
+			</component>
+		</node>
+		<node id="16777249">
+			<attribute name="Name" value="Telescope_36"/>
+			<component id="16777312" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_36.mdl"/>
+				<attribute name="Material" value="Material;Spacecraft Shield_39.xml"/>
+			</component>
+			<component id="16777313" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777314" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_36.mdl"/>
+			</component>
+		</node>
+		<node id="16777250">
+			<attribute name="Name" value="Telescope_37"/>
+			<component id="16777315" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_37.mdl"/>
+				<attribute name="Material" value="Material;Spacecraft Shield Core_40.xml"/>
+			</component>
+			<component id="16777316" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777317" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_37.mdl"/>
+			</component>
+		</node>
+		<node id="16777251">
+			<attribute name="Name" value="Telescope_38"/>
+			<component id="16777318" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_38.mdl"/>
+				<attribute name="Material" value="Material;Spacecraft Silver Core_41.xml"/>
+			</component>
+			<component id="16777319" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777320" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_38.mdl"/>
+			</component>
+		</node>
+		<node id="16777252">
+			<attribute name="Name" value="Telescope_39"/>
+			<component id="16777321" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_39.mdl"/>
+				<attribute name="Material" value="Material;Strut Chrome_42.xml"/>
+			</component>
+			<component id="16777322" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777323" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_39.mdl"/>
+			</component>
+		</node>
+		<node id="16777253">
+			<attribute name="Name" value="Telescope_4"/>
+			<component id="16777324" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_4.mdl"/>
+				<attribute name="Material" value="Material;Brass_4.xml"/>
+			</component>
+			<component id="16777325" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777326" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_4.mdl"/>
+			</component>
+		</node>
+		<node id="16777254">
+			<attribute name="Name" value="Telescope_40"/>
+			<component id="16777327" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_40.mdl"/>
+				<attribute name="Material" value="Material;Strut Gold_43.xml"/>
+			</component>
+			<component id="16777328" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777329" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_40.mdl"/>
+			</component>
+		</node>
+		<node id="16777255">
+			<attribute name="Name" value="Telescope_41"/>
+			<component id="16777330" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_41.mdl"/>
+				<attribute name="Material" value="Material;Strut Solar_44.xml"/>
+			</component>
+			<component id="16777331" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777332" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_41.mdl"/>
+			</component>
+		</node>
+		<node id="16777256">
+			<attribute name="Name" value="Telescope_42"/>
+			<component id="16777333" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_42.mdl"/>
+				<attribute name="Material" value="Material;White Plastic_45.xml"/>
+			</component>
+			<component id="16777334" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777335" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_42.mdl"/>
+			</component>
+		</node>
+		<node id="16777257">
+			<attribute name="Name" value="Telescope_5"/>
+			<component id="16777336" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_5.mdl"/>
+				<attribute name="Material" value="Material;Brushed Metal_5.xml"/>
+			</component>
+			<component id="16777337" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777338" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_5.mdl"/>
+			</component>
+		</node>
+		<node id="16777258">
+			<attribute name="Name" value="Telescope_6"/>
+			<component id="16777339" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_6.mdl"/>
+				<attribute name="Material" value="Material;Chrome 1_6.xml"/>
+			</component>
+			<component id="16777340" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777341" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_6.mdl"/>
+			</component>
+		</node>
+		<node id="16777259">
+			<attribute name="Name" value="Telescope_7"/>
+			<component id="16777342" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_7.mdl"/>
+				<attribute name="Material" value="Material;Chrome 1 smooth_8.xml"/>
+			</component>
+			<component id="16777343" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777344" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_7.mdl"/>
+			</component>
+		</node>
+		<node id="16777260">
+			<attribute name="Name" value="Telescope_8"/>
+			<component id="16777345" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_8.mdl"/>
+				<attribute name="Material" value="Material;Chrome 2_9.xml"/>
+			</component>
+			<component id="16777346" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777347" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_8.mdl"/>
+			</component>
+		</node>
+		<node id="16777261">
+			<attribute name="Name" value="Telescope_9"/>
+			<component id="16777348" type="StaticModel">
+				<attribute name="Model" value="Model;Telescope_9.mdl"/>
+				<attribute name="Material" value="Material;Chrome 2 smooth_10.xml"/>
+			</component>
+			<component id="16777349" type="RigidBody">
+				<attribute name="Collision Layer" value="2"/>
+				<attribute name="Use Gravity" value="false"/>
+			</component>
+			<component id="16777350" type="CollisionShape">
+				<attribute name="Shape Type" value="TriangleMesh"/>
+				<attribute name="Model" value="Model;Telescope_9.mdl"/>
+			</component>
+		</node>
+	</node>
+</scene>

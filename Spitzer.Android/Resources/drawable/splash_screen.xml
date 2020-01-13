@@ -2,11 +2,9 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
     <item android:drawable="@android:color/white"/>
     <item
-        android:width="215dp"
-        android:height="105dp"
         android:gravity="center">
         <bitmap
-            android:src="@drawable/app_logo_light"
+            android:src="@drawable/SplashScreenImage_light"
             android:gravity="fill"/>
     </item>
 </layer-list>
