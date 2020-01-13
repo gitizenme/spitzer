@@ -55,7 +55,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <MtouchDebug>true</MtouchDebug>
-    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchLink>None</MtouchLink>
+    <MtouchInterpreter>-all</MtouchInterpreter>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>none</DebugType>
@@ -74,9 +75,6 @@
     </MtouchI18n>
     <OnDemandResourcesInitialInstallTags>
     </OnDemandResourcesInitialInstallTags>
-    <AssemblyName>Spitzer.iOS</AssemblyName>
-    <DelaySign>false</DelaySign>
-    <PublicSign>false</PublicSign>
     <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
   </PropertyGroup>
   <ItemGroup>

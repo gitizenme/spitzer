@@ -71,11 +71,6 @@ namespace Spitzer.ViewModels
 
         private async Task ExecuteLoadFeedCommand()
         {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
-
             try
             {
                 var rssContent = await GetContentForFeed("https://www.jpl.nasa.gov/multimedia/rss/news.xml", "JPL");
@@ -121,24 +116,33 @@ namespace Spitzer.ViewModels
 
         private async Task<IEnumerable<RssSchema>> GetContentForFeed(string uri, string author)
         {
-            var parser = new RssParser();
-            string feedContent;
             IEnumerable<RssSchema> rssSchemata = null;
 
-            using (var client = new HttpClient())
+            try
             {
-                feedContent = await client.GetStringAsync(uri);
-            }
-
-            if (feedContent != null)
-            {
-                rssSchemata = parser.Parse(feedContent);
-                foreach (var schema in rssSchemata)
+                using (var client = new HttpClient())
                 {
-                    schema.Author = author;
+                    var parser = new RssParser();
+                    var feedContent = await client.GetStringAsync(uri);
+                    if (feedContent != null)
+                    {
+                        rssSchemata = parser.Parse(feedContent);
+                        foreach (var schema in rssSchemata)
+                        {
+                            schema.Author = author;
+                        }
+                    }
                 }
             }
-
+            catch (Exception e)
+            {
+                Crashes.TrackError(e, new Dictionary<string, string>
+                {
+                    { "URI" , uri },
+                    { "Author", author }
+                });
+            }
+            
             return rssSchemata;
         }
 

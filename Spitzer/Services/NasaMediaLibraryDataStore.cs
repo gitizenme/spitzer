@@ -40,6 +40,12 @@ namespace Spitzer.Interfaces
 
         public NasaMediaLibraryDataStore()
         {
+        }
+
+        public void LoadDataStore(bool forceRefresh = false)
+        {
+            Debug.WriteLine($"forceRefresh: {forceRefresh}");
+
             // https://images-api.nasa.gov/search?q=spitzer space telescope&keywords=spitzer space telescope&page=1
             var client = new RestClient("https://images-api.nasa.gov");
 
@@ -63,12 +69,13 @@ namespace Spitzer.Interfaces
                 }
             }
 
-            if (!Barrel.Current.IsExpired(key: request.Resource))
+            if (!forceRefresh && !Barrel.Current.IsExpired(key: searchUri))
             {
                 Debug.WriteLine("Loading pages from cache");
                 library = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
                 if (library != null)
                 {
+                    request.AddParameter("page", 0);
                     GetPagesFromCache(client, request);
                 }
             }
@@ -83,11 +90,12 @@ namespace Spitzer.Interfaces
                 var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
                 Debug.WriteLine($"pages: {pages}");
                 request.AddParameter("page", 0);
-                for (int page = 1; page <= pages; page++)
+                for (int page = 2; page <= pages; page++)
                 {
                     GetPage(page, pages, request, client);
                 }
             }
+
         }
 
         private void GetPagesFromCache(RestClient client, RestRequest request)
@@ -95,21 +103,24 @@ namespace Spitzer.Interfaces
             var pages = library.Collection.Metadata.TotalHits / library.Collection.Items.Count;
             for (int page = 2; page <= pages; page++)
             {
+                Debug.WriteLine($"GetPagesFromCache Loading page: {page} of {pages}");
+                request.Parameters[2].Value = page;
                 var searchUri = client.BaseUrl + request.Resource + "?" + string.Join("&", request.Parameters);
                 var pageItems = Barrel.Current.Get<NasaMediaLibrary>(searchUri);
+                Debug.WriteLine($"GetPagesFromCache Adding {pageItems.Collection.Items.Count} to library, from URI: {searchUri}");
                 library.Collection.Items.AddRange(pageItems.Collection.Items);
             }
         }
 
         private void GetPage(int page, long pages, RestRequest request, RestClient client)
         {
-            Debug.WriteLine($"Loading page: {page} of {pages}");
+            Debug.WriteLine($"GetPage Loading page: {page} of {pages}");
             request.Parameters[2].Value = page;
             var searchUri = client.BaseUrl + request.Resource + "?" + string.Join("&", request.Parameters);
             var pageResponse = client.Execute<NasaMediaLibrary>(request);
             if (pageResponse.Data != null)
             {
-                Debug.WriteLine($"Adding {pageResponse.Data.Collection.Items.Count} to library");
+                Debug.WriteLine($"GetPage Adding {pageResponse.Data.Collection.Items.Count} to library, from URI: {searchUri}");
                 library.Collection.Items.AddRange(pageResponse.Data.Collection.Items);
                 Barrel.Current.Empty(searchUri);
                 Barrel.Current.Add(key: searchUri, data: pageResponse.Content, expireIn: TimeSpan.FromDays(1));
@@ -131,6 +142,11 @@ namespace Spitzer.Interfaces
 
         public async Task<IEnumerable<MediaItem>> GetItemsAsync(bool forceRefresh = false)
         {
+            if(forceRefresh)
+            {
+                LoadDataStore(forceRefresh);
+            }
+
             if (library.Collection.Items != null)
             {
                 return await Task.FromResult(library.Collection.Items.Select((MediaItem arg) => arg));

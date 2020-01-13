@@ -29,6 +29,7 @@ namespace Spitzer.Interfaces
 {
     public interface IMediaLibrary<T>
     {
+        void LoadDataStore(bool forceRefresh = false);
         Task<IEnumerable<T>> GetItemsAsync(bool forceRefresh = false);
     }
 }

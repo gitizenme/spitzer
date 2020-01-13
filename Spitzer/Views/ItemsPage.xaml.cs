@@ -52,13 +52,17 @@ namespace Spitzer.Views
 
             viewModel = new ItemsViewModel();
             
-            if (viewModel.Items?.Count == 0)
+            BindingContext = viewModel;
+            Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (!viewModel.IsBusy)
             {
                 viewModel.LoadItemsCommand.Execute(null);
             }
-
-            BindingContext = viewModel;
-            Analytics.TrackEvent($"Opening: {MethodBase.GetCurrentMethod().ReflectedType?.Name}.{MethodBase.GetCurrentMethod().Name}");
         }
 
         private async void OnItemSelected(object sender, SelectionChangedEventArgs args)
