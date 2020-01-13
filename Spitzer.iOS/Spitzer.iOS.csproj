@@ -63,14 +63,17 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile></DocumentationFile>
+    <DocumentationFile>
+    </DocumentationFile>
     <MtouchArch>ARM64</MtouchArch>
     <CodesignKey>iPhone Developer: Jose Chavez (C2F29Z47FY)</CodesignKey>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <CodesignProvision>VS: WildCard Development</CodesignProvision>
     <MtouchExtraArgs>--linksdkonly</MtouchExtraArgs>
-    <MtouchI18n></MtouchI18n>
-    <OnDemandResourcesInitialInstallTags></OnDemandResourcesInitialInstallTags>
+    <MtouchI18n>
+    </MtouchI18n>
+    <OnDemandResourcesInitialInstallTags>
+    </OnDemandResourcesInitialInstallTags>
     <AssemblyName>Spitzer.iOS</AssemblyName>
     <DelaySign>false</DelaySign>
     <PublicSign>false</PublicSign>
@@ -676,7 +679,7 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.32" />
     <PackageReference Include="Microsoft.AppCenter.Analytics" Version="2.6.4" />
     <PackageReference Include="Microsoft.AppCenter.Crashes" Version="2.6.4" />
     <PackageReference Include="Microsoft.Toolkit.Parsers" Version="6.0.0" />
