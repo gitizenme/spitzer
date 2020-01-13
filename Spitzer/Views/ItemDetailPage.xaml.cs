@@ -113,7 +113,10 @@ namespace Spitzer.Views
                             await Share.RequestAsync(new ShareFileRequest()
                             {
                                 File = new ShareFile(destFile),
-                                Title = item.ImageTitle
+                                Title = item.ImageTitle,
+                                PresentationSourceBounds = DeviceInfo.Platform== DevicePlatform.iOS && DeviceInfo.Idiom == DeviceIdiom.Tablet
+                                    ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                                    : System.Drawing.Rectangle.Empty
                             });                    
                         }
                         else
@@ -139,7 +142,10 @@ namespace Spitzer.Views
                     await Share.RequestAsync(new ShareTextRequest
                     {
                         Uri = item.ImagePreview.ToString(),
-                        Title = item.ImageTitle
+                        Title = item.ImageTitle,
+                        PresentationSourceBounds = DeviceInfo.Platform== DevicePlatform.iOS && DeviceInfo.Idiom == DeviceIdiom.Tablet
+                            ? new System.Drawing.Rectangle(0, 20, 0, 0)
+                            : System.Drawing.Rectangle.Empty
                     });
                 }
                 catch (Exception e)
