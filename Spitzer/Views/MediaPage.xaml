@@ -19,7 +19,8 @@
                 <StackLayout Orientation="Horizontal">
                     <StackLayout Spacing="10" HorizontalOptions="Start">
                         <forms:CachedImage Source="{Binding ImageUrl}" LoadingPlaceholder="AppIcon.png"
-                                           HeightRequest="150" WidthRequest="150"
+                                           HeightRequest="{OnIdiom 150, Phone=150, Tablet=300}" 
+                                           WidthRequest="{OnIdiom 150, Phone=150, Tablet=300}"
                                            RetryCount="3"
                                            RetryDelay="5000"
                                            DownsampleToViewSize="true"
