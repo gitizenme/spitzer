@@ -15,9 +15,9 @@
 
     <ContentPage.Resources>
         <DataTemplate x:Key="ImageLeftTemplate">
-            <StackLayout HeightRequest="200" Spacing="10">
+            <StackLayout Spacing="10">
                 <StackLayout Orientation="Horizontal">
-                    <StackLayout Spacing="10" HorizontalOptions="Start">
+                    <StackLayout HorizontalOptions="Start">
                         <forms:CachedImage Source="{Binding ImageUrl}" LoadingPlaceholder="AppIcon.png"
                                            HeightRequest="{OnIdiom 150, Phone=150, Tablet=300}" 
                                            WidthRequest="{OnIdiom 150, Phone=150, Tablet=300}"
@@ -92,9 +92,6 @@
     </ContentPage.Resources>
 
     <StackLayout>
-        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-            <Button Style="{StaticResource ButtonStyle}" Text="Spitzer 3D Model" Clicked="Button_OnClicked" Padding="4"/>
-        </StackLayout>
         <SearchBar x:Name="SearchBar"
                    SearchCommand="{Binding FilterCommand}"
                    SearchCommandParameter="{Binding Source={x:Reference SearchBar}, Path=Text}"

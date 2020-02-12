@@ -21,6 +21,17 @@
             </x:Arguments>
         </NavigationPage>
 
+        <NavigationPage Title="Model" x:Name="SpitzerModelPage">
+            <NavigationPage.IconImageSource>
+                <FontImageSource
+                    FontFamily="{StaticResource FontAwesome5ProLightFamily}"
+                    Glyph="{x:Static fonts:FontAwesomeGlyphs.Telescope}" />
+            </NavigationPage.IconImageSource>
+            <x:Arguments>
+                <views:SpitzerModelPage />
+            </x:Arguments>
+        </NavigationPage>
+
         <NavigationPage Title="Media" x:Name="MediaPage">
             <NavigationPage.IconImageSource>
                 <FontImageSource

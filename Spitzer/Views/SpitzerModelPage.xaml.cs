@@ -14,6 +14,7 @@ namespace Spitzer.Views
         public SpitzerModelPage()
         {
             InitializeComponent();
+            Title = "Model";
         }
 
         protected override async void OnAppearing()
